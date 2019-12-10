@@ -13,6 +13,7 @@ struct ListExampleView: View {
     var body: some View {
         List {
             Text("Text")
+            Image(systemName: "circle")
         }
     }
 
