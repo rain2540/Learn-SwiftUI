@@ -22,17 +22,25 @@ struct ListExampleView: View {
 
   var body: some View {
     List {
+
       Section(header: Text("First Section")) {
+
         Text("Text")
+
         Image(systemName: "circle")
+
         TextField("TextField", text: $text)
+
         SecureField("SecureField", text: $password)
       }
 
       Section(header: Text("Second Section")) {
+
         Button("Button") {
           print("CLick Button in a list row")
         }
+        
+        Toggle("Toggle", isOn: $toggleOn)
       }
     }
   }
