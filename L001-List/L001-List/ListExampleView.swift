@@ -21,44 +21,47 @@ struct ListExampleView: View {
   @State private var stepperValue = 1
   
   var body: some View {
-    List {
-      
-      Section(header: Text("First Section")) {
+    NavigationView {
+      List {
         
-        Text("Text")
-        
-        Image(systemName: "circle")
-        
-        TextField("TextField", text: $text)
-        
-        SecureField("SecureField", text: $password)
-      }
-      
-      Section(header: Text("Second Section")) {
-        
-        Button("Button") {
-          print("CLick Button in a list row")
+        Section(header: Text("First Section")) {
+          
+          Text("Text")
+          
+          Image(systemName: "circle")
+          
+          TextField("TextField", text: $text)
+          
+          SecureField("SecureField", text: $password)
         }
         
-        Toggle("Toggle", isOn: $toggleOn)
-        
-        HStack {
-          Text("Slider, Value: \(Int(sliderValue))")
-          Slider(value: $sliderValue, in: 0 ... 10)
-        }
-        
-        Stepper("Stepper, Value: \(stepperValue)", value: $stepperValue)
-      }
-      
-      Section(header: Text("Third Section")) {
-        Picker(selection: $pickerSelection, label: Text("Picker")) {
-          ForEach(0 ..< options.count) {
-            Text(self.options[$0]).tag($0)
+        Section(header: Text("Second Section")) {
+          
+          Button("Button") {
+            print("CLick Button in a list row")
           }
+          
+          Toggle("Toggle", isOn: $toggleOn)
+          
+          HStack {
+            Text("Slider, Value: \(Int(sliderValue))")
+            Slider(value: $sliderValue, in: 0 ... 10)
+          }
+          
+          Stepper("Stepper, Value: \(stepperValue)", value: $stepperValue)
         }
         
-        DatePicker("DatePicker", selection: $date)
+        Section(header: Text("Third Section")) {
+          Picker(selection: $pickerSelection, label: Text("Picker")) {
+            ForEach(0 ..< options.count) {
+              Text(self.options[$0]).tag($0)
+            }
+          }
+          
+          DatePicker("DatePicker", selection: $date)
+        }
       }
+      .navigationBarTitle(Text("List Examples"))
     }
   }
   
