@@ -22,3 +22,10 @@
 | Form | ----- |
 | NavigationView | UINavigationController |
 | TabbedView | UITabBarController |
+
+## 单词
+
+|Words|Meaning|
+|:---:|:---:|
+|Stack|栈|
+|Toggle|切换|
