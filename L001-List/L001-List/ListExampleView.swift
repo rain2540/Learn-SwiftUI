@@ -25,6 +25,7 @@ struct ListExampleView: View {
       Text("Text")
       Image(systemName: "circle")
       TextField("TextField", text: $text)
+      SecureField("SecureField", text: $password)
     }
   }
 
