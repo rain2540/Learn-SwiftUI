@@ -55,6 +55,8 @@ struct ListExampleView: View {
           Text(self.options[$0]).tag($0)
         }
       }
+
+      DatePicker("DatePicker", selection: $date)
     }
   }
 
