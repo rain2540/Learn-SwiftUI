@@ -28,8 +28,11 @@ struct ListExampleView: View {
         TextField("TextField", text: $text)
         SecureField("SecureField", text: $password)
       }
-      Button("Button") {
-        print("CLick Button in a list row")
+
+      Section(header: Text("Second Section")) {
+        Button("Button") {
+          print("CLick Button in a list row")
+        }
       }
     }
   }
