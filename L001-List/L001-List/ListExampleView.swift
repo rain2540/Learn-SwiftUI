@@ -10,17 +10,19 @@ import SwiftUI
 
 struct ListExampleView: View {
 
-    var body: some View {
-        List {
-            Text("Text")
-            Image(systemName: "circle")
-        }
+  @State private var text = ""
+
+  var body: some View {
+    List {
+      Text("Text")
+      Image(systemName: "circle")
     }
+  }
 
 }
 
 struct ListExampleView_Previews: PreviewProvider {
-    static var previews: some View {
-        ListExampleView()
-    }
+  static var previews: some View {
+    ListExampleView()
+  }
 }
