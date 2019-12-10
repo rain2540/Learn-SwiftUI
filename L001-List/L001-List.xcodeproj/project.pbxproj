@@ -15,6 +15,7 @@
 		B7B7486E239F828D00C908B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B7486C239F828D00C908B8 /* LaunchScreen.storyboard */; };
 		B7B74879239F828D00C908B8 /* L001_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B74878239F828D00C908B8 /* L001_ListTests.swift */; };
 		B7B74884239F828E00C908B8 /* L001_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B74883239F828E00C908B8 /* L001_ListUITests.swift */; };
+		B7B74892239F832800C908B8 /* ListExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B74891239F832800C908B8 /* ListExampleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B7B7487F239F828E00C908B8 /* L001-ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "L001-ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B74883239F828E00C908B8 /* L001_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L001_ListUITests.swift; sourceTree = "<group>"; };
 		B7B74885239F828E00C908B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7B74891239F832800C908B8 /* ListExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExampleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				B7B74861239F828C00C908B8 /* AppDelegate.swift */,
 				B7B74863239F828C00C908B8 /* SceneDelegate.swift */,
 				B7B74865239F828C00C908B8 /* ContentView.swift */,
+				B7B74891239F832800C908B8 /* ListExampleView.swift */,
 				B7B74867239F828D00C908B8 /* Assets.xcassets */,
 				B7B7486C239F828D00C908B8 /* LaunchScreen.storyboard */,
 				B7B7486F239F828D00C908B8 /* Info.plist */,
@@ -270,6 +273,7 @@
 				B7B74862239F828C00C908B8 /* AppDelegate.swift in Sources */,
 				B7B74864239F828C00C908B8 /* SceneDelegate.swift in Sources */,
 				B7B74866239F828C00C908B8 /* ContentView.swift in Sources */,
+				B7B74892239F832800C908B8 /* ListExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
