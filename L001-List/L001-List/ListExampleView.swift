@@ -39,8 +39,13 @@ struct ListExampleView: View {
         Button("Button") {
           print("CLick Button in a list row")
         }
-        
+
         Toggle("Toggle", isOn: $toggleOn)
+
+        HStack {
+          Text("Slider, Value: \(Int(sliderValue))")
+          Slider(value: $sliderValue, in: 0 ... 10)
+        }
       }
     }
   }
