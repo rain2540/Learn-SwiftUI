@@ -9,13 +9,22 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
+
+  var body: some View {
+    Text("Hello, World!")
+  }
+
+  func tabbarItem(text: String, image: String) -> some View {
+    VStack {
+      Image(image)
+      Text(text)
     }
+  }
+
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+  }
 }
