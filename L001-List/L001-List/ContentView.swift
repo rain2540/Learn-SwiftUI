@@ -11,7 +11,12 @@ import SwiftUI
 struct ContentView: View {
 
   var body: some View {
-    Text("Hello, World!")
+    TabView {
+      ListExampleView().tabItem {
+        Image(systemName: "circle")
+        Text("List")
+      }
+    }
   }
 
   func tabbarItem(text: String, image: String) -> some View {
