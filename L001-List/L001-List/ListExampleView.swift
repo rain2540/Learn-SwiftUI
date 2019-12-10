@@ -22,10 +22,12 @@ struct ListExampleView: View {
 
   var body: some View {
     List {
-      Text("Text")
-      Image(systemName: "circle")
-      TextField("TextField", text: $text)
-      SecureField("SecureField", text: $password)
+      Section(header: Text("First Section")) {
+        Text("Text")
+        Image(systemName: "circle")
+        TextField("TextField", text: $text)
+        SecureField("SecureField", text: $password)
+      }
     }
   }
 
