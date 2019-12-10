@@ -12,9 +12,15 @@ struct ContentView: View {
 
   var body: some View {
     TabView {
-      ListExampleView().tabItem {
-        Image(systemName: "circle")
-        Text("List")
+      ListExampleView()
+        .tabItem {
+          Image(systemName: "circle")
+          Text("List")
+      }
+
+      FormExampleView()
+        .tabItem {
+          tabbarItem(text: "Form", image: "icon-movies")
       }
     }
   }
