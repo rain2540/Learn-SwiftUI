@@ -16,6 +16,7 @@ struct ListExampleView: View {
     List {
       Text("Text")
       Image(systemName: "circle")
+      TextField("TextField", text: $text)
     }
   }
 
