@@ -49,6 +49,12 @@ struct ListExampleView: View {
 
         Stepper("Stepper, Value: \(stepperValue)", value: $stepperValue)
       }
+
+      Picker(selection: $pickerSelection, label: Text("Picker")) {
+        ForEach(0 ..< options.count) {
+          Text(self.options[$0]).tag($0)
+        }
+      }
     }
   }
 
