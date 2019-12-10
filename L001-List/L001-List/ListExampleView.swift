@@ -46,6 +46,8 @@ struct ListExampleView: View {
           Text("Slider, Value: \(Int(sliderValue))")
           Slider(value: $sliderValue, in: 0 ... 10)
         }
+
+        Stepper("Stepper, Value: \(stepperValue)", value: $stepperValue)
       }
     }
   }
