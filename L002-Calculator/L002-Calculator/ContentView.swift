@@ -9,9 +9,15 @@
 import SwiftUI
 
 struct ContentView: View {
+
   var body: some View {
-    Text("Hello, World!")
+    Text("+")
+      .font(.title)
+      .foregroundColor(.white)
+      .padding()
+      .background(Color.orange)
   }
+  
 }
 
 struct ContentView_Previews: PreviewProvider {
