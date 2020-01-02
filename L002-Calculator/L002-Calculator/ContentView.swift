@@ -12,12 +12,14 @@ struct ContentView: View {
 
   var body: some View {
     Text("+")
-      .font(.title)
+      .font(.system(size: 38))
       .foregroundColor(.white)
-      .padding()
-      .background(Color.orange)
+      .frame(width: 88, height: 88)
+      .background(Color("operatorBackground"))
+      .cornerRadius(44)
+
   }
-  
+
 }
 
 struct ContentView_Previews: PreviewProvider {
