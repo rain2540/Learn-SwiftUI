@@ -11,6 +11,16 @@ import SwiftUI
 struct ContentView: View {
 
   var body: some View {
+    HStack {
+      CalculatorButton()
+    }
+  }
+
+}
+
+
+struct CalculatorButton: View {
+  var body: some View {
     Button(action: {
       print("Button: +")
     }) {
@@ -22,8 +32,8 @@ struct ContentView: View {
         .cornerRadius(44)
     }
   }
-
 }
+
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
