@@ -11,19 +11,16 @@ import SwiftUI
 struct ContentView: View {
 
   var body: some View {
-    HStack {
-      Button(action: {
-        print("Button: +")
-      }) {
-        Text("+")
-          .font(.system(size: 38))
-          .foregroundColor(.white)
-          .frame(width: 88, height: 88)
-          .background(Color("operatorBackground"))
-          .cornerRadius(44)
-      }
 
+    HStack {
+      CalculatorButton(
+        title: "+",
+        size: CGSize(width: 88, height: 88),
+        backgroundColorName: "operatorBackground") {
+          print("Button: +")
+      }
     }
+
   }
 
 }
