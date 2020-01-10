@@ -30,3 +30,17 @@ enum CalculatorButtonItem {
     case command(Command)
 
 }
+
+
+extension CalculatorButtonItem {
+
+    var title: String {
+        switch self {
+            case .digit(let value): return String(value)
+            case .dot: return "."
+            case .op(let op): return op.rawValue
+            case .command(let command): return command.rawValue
+        }
+    }
+
+}
