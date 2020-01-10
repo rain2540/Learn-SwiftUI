@@ -6,7 +6,7 @@
 //  Copyright © 2020 Smartech. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum CalculatorButtonItem {
 
@@ -41,6 +41,10 @@ extension CalculatorButtonItem {
             case .op(let op): return op.rawValue
             case .command(let command): return command.rawValue
         }
+    }
+
+    var size: CGSize {
+        CGSize(width: 88, height: 88)
     }
 
 }
