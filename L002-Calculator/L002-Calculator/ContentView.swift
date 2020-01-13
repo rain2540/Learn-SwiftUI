@@ -16,6 +16,18 @@ struct ContentView: View {
 
   var body: some View {
 
+    CalculatorButtonRow(row: row)
+
+  }
+
+}
+
+
+struct CalculatorButtonRow: View {
+
+  let row: [CalculatorButtonItem]
+
+  var body: some View {
     HStack {
       ForEach(row, id: \.self) { item in
         CalculatorButton(
@@ -26,7 +38,6 @@ struct ContentView: View {
         }
       }
     }
-
   }
 
 }
