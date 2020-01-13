@@ -17,32 +17,13 @@ struct ContentView: View {
   var body: some View {
 
     HStack {
-      CalculatorButton(
-        title: "1",
-        size: CGSize(width: 88, height: 88),
-        backgroundColorName: "digitBackground") {
-          print("Button: 1")
-      }
-
-      CalculatorButton(
-        title: "2",
-        size: CGSize(width: 88, height: 88),
-        backgroundColorName: "digitBackground") {
-          print("Button: 2")
-      }
-
-      CalculatorButton(
-        title: "3",
-        size: CGSize(width: 88, height: 88),
-        backgroundColorName: "digitBackground") {
-          print("Button: 3")
-      }
-
-      CalculatorButton(
-        title: "+",
-        size: CGSize(width: 88, height: 88),
-        backgroundColorName: "operatorBackground") {
-          print("Button: +")
+      ForEach(row, id: \.self) { item in
+        CalculatorButton(
+          title: item.title,
+          size: item.size,
+          backgroundColorName: item.backgroundColorName) {
+            print("Button: \(item.title)")
+        }
       }
     }
 
