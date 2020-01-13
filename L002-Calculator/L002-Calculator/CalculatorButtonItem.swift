@@ -47,4 +47,12 @@ extension CalculatorButtonItem {
         CGSize(width: 88, height: 88)
     }
 
+    var backgroundColorName: String {
+        switch self {
+            case .digit, .dot: return "digitBackground"
+            case .op: return "operatorBackground"
+            case .command: return "commandBackground"
+        }
+    }
+
 }
