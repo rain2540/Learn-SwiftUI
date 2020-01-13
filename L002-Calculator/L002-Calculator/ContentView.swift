@@ -10,6 +10,10 @@ import SwiftUI
 
 struct ContentView: View {
 
+  let row: [CalculatorButtonItem] = [
+    .digit(1), .digit(2), .digit(3), .op(.plus)
+  ]
+
   var body: some View {
 
     HStack {
