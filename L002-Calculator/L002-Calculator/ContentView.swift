@@ -11,25 +11,7 @@ import SwiftUI
 struct ContentView: View {
 
   var body: some View {
-
-    VStack(spacing: 8) {
-      CalculatorButtonRow(row: [
-        .command(.clear), .command(.flip), .command(.percent), .op(.divide)
-      ])
-      CalculatorButtonRow(row: [
-        .digit(7), .digit(8), .digit(9), .op(.multiply)
-      ])
-      CalculatorButtonRow(row: [
-        .digit(4), .digit(5), .digit(6), .op(.minus)
-      ])
-      CalculatorButtonRow(row: [
-        .digit(1), .digit(2), .digit(3), .op(.plus)
-      ])
-      CalculatorButtonRow(row: [
-        .digit(0), .dot, .op(.equal)
-      ])
-    }
-
+    CalculatorButtonPad()
   }
 
 }
