@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
 
   var body: some View {
-    VStack(spacing: 12) {
+    VStack(alignment: .trailing, spacing: 12) {
       Text("0").font(.system(size: 76))
       CalculatorButtonPad()
     }
