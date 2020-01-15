@@ -11,7 +11,10 @@ import SwiftUI
 struct ContentView: View {
 
   var body: some View {
-    CalculatorButtonPad()
+    VStack(spacing: 12) {
+      Text("0").font(.system(size: 76))
+      CalculatorButtonPad()
+    }
   }
 
 }
