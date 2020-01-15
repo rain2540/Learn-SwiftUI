@@ -11,8 +11,13 @@ import SwiftUI
 struct ContentView: View {
 
   var body: some View {
-    VStack(alignment: .trailing, spacing: 12) {
-      Text("0").font(.system(size: 76))
+    VStack(spacing: 12) {
+      Text("0")
+        .font(.system(size: 76))
+        .frame(
+          minWidth: 0,
+          maxWidth: .infinity,
+          alignment: .trailing)
       CalculatorButtonPad()
     }
   }
