@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
 
+  let scale: CGFloat = UIScreen.main.bounds.width / 414
+
   var body: some View {
     VStack(spacing: 12) {
       Spacer()
@@ -22,6 +24,7 @@ struct ContentView: View {
           minWidth: 0,
           maxWidth: .infinity,
           alignment: .trailing)
+
       CalculatorButtonPad()
         .padding(.bottom)
     }
