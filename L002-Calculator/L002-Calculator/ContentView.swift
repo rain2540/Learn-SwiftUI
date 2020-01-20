@@ -100,6 +100,7 @@ struct ContentView_Previews: PreviewProvider {
     Group {
       ContentView()
       ContentView().previewDevice("iPhone SE")
+      ContentView().previewDevice("iPad Air 2")
     }
   }
 }
