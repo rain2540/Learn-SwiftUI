@@ -24,7 +24,7 @@ struct ContentView: View {
           minWidth: 0,
           maxWidth: .infinity,
           alignment: .trailing)
-
+        .scaleEffect(scale)
       CalculatorButtonPad()
         .padding(.bottom)
     }
