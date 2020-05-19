@@ -13,6 +13,8 @@ let scale: CGFloat = UIScreen.main.bounds.width / 414
 
 struct ContentView: View {
 
+  @State private var brain: CalculatorBrain = .left("0")
+
   var body: some View {
     VStack(spacing: 12) {
       Spacer()
