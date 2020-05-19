@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 enum CalculatorButtonItem {
 
@@ -55,6 +56,13 @@ extension CalculatorButtonItem {
             case .digit, .dot: return "digitBackground"
             case .op: return "operatorBackground"
             case .command: return "commandBackground"
+        }
+    }
+
+    var foregroundColor: Color {
+        switch self {
+            case .command: return Color("commandForeground")
+            default: return .white
         }
     }
 
