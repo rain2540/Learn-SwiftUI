@@ -75,7 +75,7 @@ struct CalculatorButtonRow: View {
           backgroundColorName: item.backgroundColorName,
           foregroundColor: item.foregroundColor)
         {
-            print("Button: \(item.title)")
+          self.brain = self.brain.apply(item: item)
         }
       }
     }
