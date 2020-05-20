@@ -18,7 +18,7 @@ struct ContentView: View {
   var body: some View {
     VStack(spacing: 12) {
       Spacer()
-      Text("0")
+      Text(brain.output)
         .font(.system(size: 76))
         .minimumScaleFactor(0.5)
         .padding(.trailing, 24 * scale)
@@ -27,6 +27,9 @@ struct ContentView: View {
           minWidth: 0,
           maxWidth: .infinity,
           alignment: .trailing)
+      Button("Test") {
+        self.brain = .left("1.23")
+      }
       CalculatorButtonPad()
         .padding(.bottom)
     }
