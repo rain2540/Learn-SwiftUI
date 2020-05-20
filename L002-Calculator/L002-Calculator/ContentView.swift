@@ -30,7 +30,7 @@ struct ContentView: View {
       Button("Test") {
         self.brain = .left("1.23")
       }
-      CalculatorButtonPad()
+      CalculatorButtonPad(brain: $brain)
         .padding(.bottom)
     }
   }
@@ -39,6 +39,8 @@ struct ContentView: View {
 
 
 struct CalculatorButtonPad: View {
+
+  @Binding var brain: CalculatorBrain
 
   let pad: [[CalculatorButtonItem]] = [
     [.command(.clear), .command(.flip), .command(.percent), .op(.divide)],
@@ -51,7 +53,7 @@ struct CalculatorButtonPad: View {
   var body: some View {
     VStack(spacing: 8) {
       ForEach(pad, id: \.self) { row in
-        CalculatorButtonRow(row: row)
+        CalculatorButtonRow(row: row, brain: self.$brain)
       }
     }
   }
@@ -62,6 +64,7 @@ struct CalculatorButtonPad: View {
 struct CalculatorButtonRow: View {
 
   let row: [CalculatorButtonItem]
+  @Binding var brain: CalculatorBrain
 
   var body: some View {
     HStack {
