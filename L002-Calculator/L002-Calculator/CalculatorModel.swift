@@ -13,5 +13,6 @@ import Combine
 class CalculatorModel: ObservableObject {
 
     @Published var brain: CalculatorBrain = .left("0")
+    @Published var history: [CalculatorButtonItem] = []
 
 }
