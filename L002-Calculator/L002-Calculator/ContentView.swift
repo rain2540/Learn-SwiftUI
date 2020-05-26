@@ -28,7 +28,7 @@ struct ContentView: View {
           minWidth: 0,
           maxWidth: .infinity,
           alignment: .trailing)
-      CalculatorButtonPad(brain: model)
+      CalculatorButtonPad(model: model)
         .padding(.bottom)
     }
   }
@@ -52,7 +52,7 @@ struct CalculatorButtonPad: View {
   var body: some View {
     VStack(spacing: 8) {
       ForEach(pad, id: \.self) { row in
-        CalculatorButtonRow(row: row, brain: self.model)
+        CalculatorButtonRow(row: row, model: self.model)
       }
     }
   }
