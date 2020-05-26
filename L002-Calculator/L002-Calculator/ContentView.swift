@@ -19,6 +19,9 @@ struct ContentView: View {
   var body: some View {
     VStack(spacing: 12) {
       Spacer()
+      Button("操作履历：\(model.history.count)") {
+        print(self.model.history)
+      }
       Text(model.brain.output)
         .font(.system(size: 76))
         .minimumScaleFactor(0.5)
@@ -42,7 +45,7 @@ struct CalculatorButtonPad: View {
   var model: CalculatorModel
 
   let pad: [[CalculatorButtonItem]] = [
-    [.command(.clear), .command(.flip), .command(.percent), .op(.divide)],
+    [.command(.clear), .command(.flip), .command(.percent), .op(.divide),],
     [.digit(7), .digit(8), .digit(9), .op(.multiply),],
     [.digit(4), .digit(5), .digit(6), .op(.minus),],
     [.digit(1), .digit(2), .digit(3), .op(.plus),],
