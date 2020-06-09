@@ -34,6 +34,9 @@ class CalculatorModel: ObservableObject {
     func apply(_ item: CalculatorButtonItem) {
         brain = brain.apply(item: item)
         history.append(item)
+
+        temporaryKept.removeAll()
+        slidingIndex = Float(totalCount)
     }
 
     func keepHistory(upTo index: Int) {
