@@ -15,12 +15,15 @@ struct ContentView: View {
 
   //@State private var brain: CalculatorBrain = .left("0")
   @ObservedObject var model = CalculatorModel()
+  @State private var editingHistory = false
 
   var body: some View {
     VStack(spacing: 12) {
       Spacer()
       Button("操作履历：\(model.history.count)") {
-        print(self.model.history)
+        self.editingHistory = true
+      }.sheet(isPresented: self.$editingHistory) {
+        HistoryView(model: self.model)
       }
       Text(model.brain.output)
         .font(.system(size: 76))
