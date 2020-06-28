@@ -45,7 +45,7 @@ class CalculatorModel: ObservableObject {
         let total = history + temporaryKept
 
         history = Array(total[..<index])
-        temporaryKept = Array(total[..<index])
+        temporaryKept = Array(total[index...])
 
         brain = history.reduce(CalculatorBrain.left("0"), { (result, item) in
             result.apply(item: item)
