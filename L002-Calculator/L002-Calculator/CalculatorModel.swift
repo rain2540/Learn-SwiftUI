@@ -27,6 +27,7 @@ class CalculatorModel: ObservableObject {
 
     var slidingIndex: Float = 0 {
         didSet {
+            // 维护 `history` 和 `temporaryKept`
             keepHistory(upTo: Int(slidingIndex))
         }
     }
