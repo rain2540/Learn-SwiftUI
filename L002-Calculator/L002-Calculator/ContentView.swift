@@ -14,7 +14,8 @@ let scale: CGFloat = UIScreen.main.bounds.width / 414
 struct ContentView: View {
 
   //@State private var brain: CalculatorBrain = .left("0")
-  @ObservedObject var model = CalculatorModel()
+  //@ObservedObject var model = CalculatorModel()
+  @EnvironmentObject var model: CalculatorModel
   @State private var editingHistory = false
 
   var body: some View {
@@ -34,7 +35,7 @@ struct ContentView: View {
           minWidth: 0,
           maxWidth: .infinity,
           alignment: .trailing)
-      CalculatorButtonPad(model: model)
+      CalculatorButtonPad()
         .padding(.bottom)
     }
   }
@@ -45,7 +46,7 @@ struct ContentView: View {
 struct CalculatorButtonPad: View {
 
   //@Binding var brain: CalculatorBrain
-  var model: CalculatorModel
+  //var model: CalculatorModel
 
   let pad: [[CalculatorButtonItem]] = [
     [.command(.clear), .command(.flip), .command(.percent), .op(.divide),],
@@ -58,7 +59,7 @@ struct CalculatorButtonPad: View {
   var body: some View {
     VStack(spacing: 8) {
       ForEach(pad, id: \.self) { row in
-        CalculatorButtonRow(row: row, model: self.model)
+        CalculatorButtonRow(row: row)
       }
     }
   }
@@ -70,7 +71,8 @@ struct CalculatorButtonRow: View {
 
   let row: [CalculatorButtonItem]
   //@Binding var brain: CalculatorBrain
-  var model: CalculatorModel
+  //var model: CalculatorModel
+  @EnvironmentObject var model: CalculatorModel
 
   var body: some View {
     HStack {
