@@ -10,14 +10,24 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        Text("Hello, world!").padding()
+        TabView {
+            ListExampleView()
+                .tabItem {
+                    Image(systemName: "circle")
+                    Text("List")
+                }
+            FormExampleView()
+                .tabItem {
+                    tabbarItem(text: "Form", image: "icon-movies")
+                }
+        }
     }
     
     func tabbarItem(text: String, image: String) -> some View {
-      VStack {
-        Image(image)
-        Text(text)
-      }
+        VStack {
+            Image(image)
+            Text(text)
+        }
     }
 }
 
