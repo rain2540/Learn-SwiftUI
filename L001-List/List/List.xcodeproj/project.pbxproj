@@ -16,6 +16,7 @@
 		B7AC43B024B4D8B1009C27DC /* ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC43AF24B4D8B1009C27DC /* ListTests.swift */; };
 		B7AC43BB24B4D8B1009C27DC /* ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC43BA24B4D8B1009C27DC /* ListUITests.swift */; };
 		B7AC43C924B4D922009C27DC /* ListExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC43C824B4D922009C27DC /* ListExampleView.swift */; };
+		B7AC43CB24B4D9ED009C27DC /* FormExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC43CA24B4D9ED009C27DC /* FormExampleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B7AC43BA24B4D8B1009C27DC /* ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUITests.swift; sourceTree = "<group>"; };
 		B7AC43BC24B4D8B1009C27DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7AC43C824B4D922009C27DC /* ListExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExampleView.swift; sourceTree = "<group>"; };
+		B7AC43CA24B4D9ED009C27DC /* FormExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormExampleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				B7AC439A24B4D8AF009C27DC /* SceneDelegate.swift */,
 				B7AC439C24B4D8AF009C27DC /* ContentView.swift */,
 				B7AC43C824B4D922009C27DC /* ListExampleView.swift */,
+				B7AC43CA24B4D9ED009C27DC /* FormExampleView.swift */,
 				B7AC439E24B4D8B1009C27DC /* Assets.xcassets */,
 				B7AC43A324B4D8B1009C27DC /* LaunchScreen.storyboard */,
 				B7AC43A624B4D8B1009C27DC /* Info.plist */,
@@ -272,6 +275,7 @@
 				B7AC439924B4D8AF009C27DC /* AppDelegate.swift in Sources */,
 				B7AC439B24B4D8AF009C27DC /* SceneDelegate.swift in Sources */,
 				B7AC439D24B4D8AF009C27DC /* ContentView.swift in Sources */,
+				B7AC43CB24B4D9ED009C27DC /* FormExampleView.swift in Sources */,
 				B7AC43C924B4D922009C27DC /* ListExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
