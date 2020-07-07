@@ -13,7 +13,7 @@ enum CalculatorBrain {
     case leftOp(left: String, op: CalculatorButtonItem.Op)
     case leftOpRight(left: String, op: CalculatorButtonItem.Op, right: String)
     case error
-
+    
     @discardableResult
     func apply(item: CalculatorButtonItem) -> CalculatorBrain {
         switch item {
@@ -27,7 +27,7 @@ enum CalculatorBrain {
                 return apply(command: command)
         }
     }
-
+    
     var output: String {
         let result: String
         switch self {
@@ -41,7 +41,7 @@ enum CalculatorBrain {
         }
         return formatter.string(from: value as NSNumber)!
     }
-
+    
     private func apply(num: Int) -> CalculatorBrain {
         switch self {
             case .left(let left):
@@ -54,7 +54,7 @@ enum CalculatorBrain {
                 return .left("0".apply(num: num))
         }
     }
-
+    
     private func applyDot() -> CalculatorBrain {
         switch self {
             case .left(let left):
@@ -67,7 +67,7 @@ enum CalculatorBrain {
                 return .left("0".applyDot())
         }
     }
-
+    
     private func apply(op: CalculatorButtonItem.Op) -> CalculatorBrain {
         switch self {
             case .left(let left):
@@ -76,7 +76,7 @@ enum CalculatorBrain {
                         return .leftOp(left: left, op: op)
                     case .equal:
                         return self
-            }
+                }
             case .leftOp(let left, let currentOp):
                 switch op {
                     case .plus, .minus, .multiply, .divide:
@@ -86,8 +86,8 @@ enum CalculatorBrain {
                             return .leftOp(left: result, op: currentOp)
                         } else {
                             return .error
-                    }
-            }
+                        }
+                }
             case .leftOpRight(let left, let currentOp, let right):
                 switch op {
                     case .plus, .minus, .multiply, .divide:
@@ -95,19 +95,19 @@ enum CalculatorBrain {
                             return .leftOp(left: result, op: op)
                         } else {
                             return .error
-                    }
+                        }
                     case .equal:
                         if let result = currentOp.calculate(l: left, r: right) {
                             return .left(result)
                         } else {
                             return .error
-                    }
-            }
+                        }
+                }
             case .error:
                 return self
         }
     }
-
+    
     private func apply(command: CalculatorButtonItem.Command) -> CalculatorBrain {
         switch command {
             case .clear:
@@ -122,7 +122,7 @@ enum CalculatorBrain {
                         return .leftOpRight(left: left, op: op, right: right.flipped())
                     case .error:
                         return .left("-0")
-            }
+                }
             case .percent:
                 switch self {
                     case .left(let left):
@@ -133,7 +133,7 @@ enum CalculatorBrain {
                         return .leftOpRight(left: left, op: op, right: right.percentaged())
                     case .error:
                         return .left("-0")
-            }
+                }
         }
     }
 }
@@ -150,19 +150,19 @@ extension String {
     var containsDot: Bool {
         return contains(".")
     }
-
+    
     var startWithNegative: Bool {
         return starts(with: "-")
     }
-
+    
     func apply(num: Int) -> String {
         return self == "0" ? "\(num)" : "\(self)\(num)"
     }
-
+    
     func applyDot() -> String {
         return containsDot ? self : "\(self)."
     }
-
+    
     func flipped() -> String {
         if startWithNegative {
             var s = self
@@ -180,11 +180,11 @@ extension String {
 
 extension CalculatorButtonItem.Op {
     func calculate(l: String, r: String) -> String? {
-
+        
         guard let left = Double(l), let right = Double(r) else {
             return nil
         }
-
+        
         let result: Double?
         switch self {
             case .plus: result = left + right
