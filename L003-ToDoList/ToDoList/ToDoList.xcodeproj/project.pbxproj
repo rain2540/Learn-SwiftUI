@@ -21,7 +21,8 @@
 		B726E99C24B7A78C00668730 /* Int+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726E99624B7A78C00668730 /* Int+Timepiece.swift */; };
 		B726E99D24B7A78C00668730 /* String+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726E99724B7A78C00668730 /* String+Timepiece.swift */; };
 		B726E99E24B7A78C00668730 /* SATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726E99824B7A78C00668730 /* SATextField.swift */; };
-		B726E9A024B7A80500668730 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726E99F24B7A80500668730 /* ToDoItem.swift */; };
+		B726E9A024B7A80500668730 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726E99F24B7A80500668730 /* TodoItem.swift */; };
+		B726E9A224B7AAE400668730 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726E9A124B7AAE400668730 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +63,8 @@
 		B726E99624B7A78C00668730 /* Int+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Timepiece.swift"; sourceTree = "<group>"; };
 		B726E99724B7A78C00668730 /* String+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Timepiece.swift"; sourceTree = "<group>"; };
 		B726E99824B7A78C00668730 /* SATextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SATextField.swift; sourceTree = "<group>"; };
-		B726E99F24B7A80500668730 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		B726E99F24B7A80500668730 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		B726E9A124B7AAE400668730 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +118,8 @@
 				B726E96224B7A52200668730 /* AppDelegate.swift */,
 				B726E96424B7A52200668730 /* SceneDelegate.swift */,
 				B726E96624B7A52200668730 /* ContentView.swift */,
-				B726E99F24B7A80500668730 /* ToDoItem.swift */,
+				B726E99F24B7A80500668730 /* TodoItem.swift */,
+				B726E9A124B7AAE400668730 /* Home.swift */,
 				B726E99224B7A78C00668730 /* Third-Parties */,
 				B726E96824B7A52500668730 /* Assets.xcassets */,
 				B726E96D24B7A52500668730 /* LaunchScreen.storyboard */,
@@ -297,7 +300,8 @@
 			files = (
 				B726E99D24B7A78C00668730 /* String+Timepiece.swift in Sources */,
 				B726E99C24B7A78C00668730 /* Int+Timepiece.swift in Sources */,
-				B726E9A024B7A80500668730 /* ToDoItem.swift in Sources */,
+				B726E9A024B7A80500668730 /* TodoItem.swift in Sources */,
+				B726E9A224B7AAE400668730 /* Home.swift in Sources */,
 				B726E96324B7A52200668730 /* AppDelegate.swift in Sources */,
 				B726E99A24B7A78C00668730 /* Date.swift in Sources */,
 				B726E99924B7A78C00668730 /* Date+Timepiece.swift in Sources */,
