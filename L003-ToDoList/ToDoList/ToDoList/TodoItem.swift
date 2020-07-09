@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class ToDo: NSObject, NSCoding {
+class Todo: NSObject, NSCoding {
     func encode(with coder: NSCoder) {
         coder.encode(self.title, forKey: "title")
         coder.encode(self.dueDate, forKey: "dueDate")
@@ -31,7 +31,7 @@ class ToDo: NSObject, NSCoding {
     }
 }
 
-var emptyTodo: ToDo = Todo(title: "", dueDate: Date())
+var emptyTodo: Todo = Todo(title: "", dueDate: Date())
 
 struct TodoItem: View {
     var body: some View {
