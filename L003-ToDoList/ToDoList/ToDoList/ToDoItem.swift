@@ -31,6 +31,8 @@ class ToDo: NSObject, NSCoding {
     }
 }
 
+var emptyTodo: Todo = Todo(title: "", dueDate: Date())
+
 struct ToDoItem: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
