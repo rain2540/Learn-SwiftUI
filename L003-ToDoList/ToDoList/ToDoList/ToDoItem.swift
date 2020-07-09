@@ -12,6 +12,11 @@ class ToDo {
     var dueDate: Date = Date()
     var checked: Bool = false
     var index: Int = 0
+    
+    init(title: String, dueDate: Date) {
+        self.title = title
+        self.dueDate = dueDate
+    }
 }
 
 struct ToDoItem: View {
