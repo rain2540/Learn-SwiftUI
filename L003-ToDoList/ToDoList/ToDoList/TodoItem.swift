@@ -39,7 +39,46 @@ struct TodoItem: View {
     @State var checked: Bool = false
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Button {
+                editingMode = true
+                editingTodo = self.main.todos[self.todoIndex]
+                editingIndex = self.todoIndex
+                self.main.detailsTitle = editingTodo.title
+                self.main.dueDate = editingTodo.dueDate
+                self.main.detailsShowing = true
+                detailsShouldUpdateTitle = true
+            } label: {
+                HStack {
+                    VStack {
+                        Rectangle()
+                            .fill(Color("theme"))
+                            .frame(width: 8.0)
+                    }
+                    Spacer()
+                        .frame(width: 10.0)
+                    VStack {
+                        Spacer()
+                            .frame(height: 12.0)
+                        HStack {
+                            Text(main.todos[todoIndex].title)
+                                .font(.headline)
+                                .foregroundColor(Color("todoItemTitle"))
+                            Spacer()
+                        }
+                        Spacer()
+                            .frame(height: 4.0)
+                        HStack {
+                            Image(systemName: "clock")
+                                .resizable()
+                                .frame(width: 12.0, height: 12.0)
+                            
+                        }
+                    }
+                }
+            }
+            
+        }
     }
 }
 
