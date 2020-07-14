@@ -34,13 +34,19 @@ class Todo: NSObject, NSCoding {
 var emptyTodo: Todo = Todo(title: "", dueDate: Date())
 
 struct TodoItem: View {
+    @ObservedObject var main: Main
+    @Binding var todoIndex: Int
+    @State var checked: Bool = false
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
+/*
 struct ToDoItem_Previews: PreviewProvider {
     static var previews: some View {
         TodoItem()
     }
 }
+*/
