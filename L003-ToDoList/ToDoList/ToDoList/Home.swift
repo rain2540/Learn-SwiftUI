@@ -13,7 +13,10 @@ var editingIndex: Int = 0
 var detailsShouldUpdateTitle: Bool = false
 
 class Main: ObservableObject {
-
+    @Published var todos: [Todo] = []
+    @Published var detailsShowing: Bool = false
+    @Published var detailsTitle: String = ""
+    @Published var dueDate: Date = Date()
 }
 
 struct Home: View {
