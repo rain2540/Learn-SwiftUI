@@ -17,6 +17,15 @@ class Main: ObservableObject {
     @Published var detailsShowing: Bool = false
     @Published var detailsTitle: String = ""
     @Published var dueDate: Date = Date()
+    
+    func sort() {
+        self.todos.sort(by: {
+            $0.dueDate.timeIntervalSince1970 < $1.dueDate.timeIntervalSince1970
+        })
+        for i in 0 ..< self.todos.count {
+            self.todos[i].index = i
+        }
+    }
 }
 
 struct Home: View {
