@@ -72,8 +72,12 @@ struct TodoItem: View {
                             Image(systemName: "clock")
                                 .resizable()
                                 .frame(width: 12.0, height: 12.0)
-                            
-                        }
+                            Text(formatter.string(from: main.todos[todoIndex].dueDate))
+                                .font(.subheadline)
+                            Spacer()
+                        }.foregroundColor(Color("todoItemSubTitle"))
+                        Spacer()
+                            .frame(height: 12)
                     }
                 }
             }
