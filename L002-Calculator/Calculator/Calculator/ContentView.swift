@@ -14,25 +14,51 @@ struct ContentView: View {
 }
 
 
-struct CalculatorButton: View {
-  
-  let fontSize: CGFloat = 38
-  let title: String
-  let size: CGSize
-  let backgroundColorName: String
-  let foregroundColor: Color
-  let action: () -> Void
-  
-  var body: some View {
-    Button(action: action) {
-      Text(title)
-        .font(.system(size: fontSize * scale))
-        .foregroundColor(foregroundColor)
-        .frame(width: size.width * scale, height: size.height * scale)
-        .background(Color(backgroundColorName))
-        .cornerRadius(size.width * scale / 2)
+struct CalculatorButtonRow: View {
+    
+    let row: [CalculatorButtonItem]
+    //@Binding var brain: CalculatorBrain
+    //var model: CalculatorModel
+    @EnvironmentObject var model: CalculatorModel
+    
+    var body: some View {
+        HStack {
+            ForEach(row, id: \.self) { item in
+                CalculatorButton(
+                    title: item.title,
+                    size: item.size,
+                    backgroundColorName: item.backgroundColorName,
+                    foregroundColor: item.foregroundColor)
+                {
+                    //self.brain = self.brain.apply(item: item)
+                    self.model.apply(item)
+                }
+            }
+        }
     }
-  }
+    
+}
+
+
+struct CalculatorButton: View {
+    
+    let fontSize: CGFloat = 38
+    let title: String
+    let size: CGSize
+    let backgroundColorName: String
+    let foregroundColor: Color
+    let action: () -> Void
+    
+    var body: some View {
+        Button(action: action) {
+            Text(title)
+                .font(.system(size: fontSize * scale))
+                .foregroundColor(foregroundColor)
+                .frame(width: size.width * scale, height: size.height * scale)
+                .background(Color(backgroundColorName))
+                .cornerRadius(size.width * scale / 2)
+        }
+    }
 }
 
 
