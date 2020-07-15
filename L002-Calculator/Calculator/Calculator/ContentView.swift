@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+let scale: CGFloat = UIScreen.main.bounds.width / 414
+
 struct ContentView: View {
     var body: some View {
         Text("Hello, world!").padding()
