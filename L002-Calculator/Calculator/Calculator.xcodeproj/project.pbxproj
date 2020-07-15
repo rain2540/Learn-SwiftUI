@@ -15,6 +15,7 @@
 		B72AB89924BF510C0093FB89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72AB89724BF510C0093FB89 /* LaunchScreen.storyboard */; };
 		B72AB8A424BF510C0093FB89 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72AB8A324BF510C0093FB89 /* CalculatorTests.swift */; };
 		B72AB8AF24BF510C0093FB89 /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72AB8AE24BF510C0093FB89 /* CalculatorUITests.swift */; };
+		B72AB8BD24BF52110093FB89 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72AB8BC24BF52110093FB89 /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B72AB8AA24BF510C0093FB89 /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B72AB8AE24BF510C0093FB89 /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		B72AB8B024BF510C0093FB89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B72AB8BC24BF52110093FB89 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				B72AB88C24BF510B0093FB89 /* AppDelegate.swift */,
 				B72AB88E24BF510B0093FB89 /* SceneDelegate.swift */,
 				B72AB89024BF510B0093FB89 /* ContentView.swift */,
+				B72AB8BC24BF52110093FB89 /* CalculatorBrain.swift */,
 				B72AB89224BF510C0093FB89 /* Assets.xcassets */,
 				B72AB89724BF510C0093FB89 /* LaunchScreen.storyboard */,
 				B72AB89A24BF510C0093FB89 /* Info.plist */,
@@ -268,6 +271,7 @@
 			files = (
 				B72AB88D24BF510B0093FB89 /* AppDelegate.swift in Sources */,
 				B72AB88F24BF510B0093FB89 /* SceneDelegate.swift in Sources */,
+				B72AB8BD24BF52110093FB89 /* CalculatorBrain.swift in Sources */,
 				B72AB89124BF510B0093FB89 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
