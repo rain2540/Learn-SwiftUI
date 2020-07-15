@@ -15,6 +15,7 @@
 		B7194F0624BF20E9000916ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7194F0424BF20E9000916ED /* LaunchScreen.storyboard */; };
 		B7194F1124BF20EA000916ED /* PokeMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7194F1024BF20EA000916ED /* PokeMasterTests.swift */; };
 		B7194F1C24BF20EA000916ED /* PokeMasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7194F1B24BF20EA000916ED /* PokeMasterUITests.swift */; };
+		B7194F2A24BF21B9000916ED /* PokemonInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7194F2924BF21B9000916ED /* PokemonInfoRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B7194F1724BF20EA000916ED /* PokeMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7194F1B24BF20EA000916ED /* PokeMasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeMasterUITests.swift; sourceTree = "<group>"; };
 		B7194F1D24BF20EA000916ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7194F2924BF21B9000916ED /* PokemonInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				B7194EF924BF20E7000916ED /* AppDelegate.swift */,
 				B7194EFB24BF20E7000916ED /* SceneDelegate.swift */,
 				B7194EFD24BF20E7000916ED /* ContentView.swift */,
+				B7194F2924BF21B9000916ED /* PokemonInfoRow.swift */,
 				B7194EFF24BF20E9000916ED /* Assets.xcassets */,
 				B7194F0424BF20E9000916ED /* LaunchScreen.storyboard */,
 				B7194F0724BF20E9000916ED /* Info.plist */,
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7194F2A24BF21B9000916ED /* PokemonInfoRow.swift in Sources */,
 				B7194EFA24BF20E7000916ED /* AppDelegate.swift in Sources */,
 				B7194EFC24BF20E7000916ED /* SceneDelegate.swift in Sources */,
 				B7194EFE24BF20E7000916ED /* ContentView.swift in Sources */,
