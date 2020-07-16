@@ -81,15 +81,43 @@ struct TodoItem: View {
                     }
                 }
             }
-            
-        }
+            Button {
+                self.main.todos[self.todoIndex].checked.toggle()
+                self.checked = self.main.todos[self.todoIndex].checked
+                do {
+                    let archivedData = try NSKeyedArchiver.archivedData(withRootObject: self.main.todos, requiringSecureCoding: false)
+                    UserDefaults.standard.set(archivedData, forKey: "todos")
+                } catch {
+                    print("error")
+                }
+            } label: {
+                HStack {
+                    Spacer()
+                        .frame(width: 12)
+                    VStack {
+                        Spacer()
+                        Image(systemName: self.checked ? "checkmark.square.fill" : "square")
+                            .resizable()
+                            .frame(width: 24, height: 24)
+                            .foregroundColor(.gray)
+                        Spacer()
+                    }
+                    Spacer()
+                        .frame(width: 12)
+                }
+            }.onAppear {
+                self.checked = self.main.todos[self.todoIndex].checked
+            }
+
+        }.background(Color(self.checked ? "todoItem-bg-checked" : "todoItem-bg"))
+        .animation(.spring())
     }
 }
 
-/*
+
 struct ToDoItem_Previews: PreviewProvider {
     static var previews: some View {
-        TodoItem()
+        TodoItem(main: Main(), todoIndex: .constant(0))
     }
 }
-*/
+
