@@ -32,7 +32,7 @@ struct PokemonInfoRow: View {
                     Text("Web")
                 })
             }
-        }
+        }.background(Color.green)
     }
 }
 
