@@ -20,6 +20,18 @@ struct PokemonInfoRow: View {
                     Text(model.nameEN)
                 }
             }
+            HStack {
+                Spacer()
+                Button(action: {}, label: {
+                    Text("Fav")
+                })
+                Button(action: {}, label: {
+                    Text("Panel")
+                })
+                Button(action: {}, label: {
+                    Text("Web")
+                })
+            }
         }
     }
 }
