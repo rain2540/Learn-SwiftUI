@@ -25,6 +25,8 @@ struct PokemonInfoRow: View {
                         .fontWeight(.black)
                         .foregroundColor(.white)
                     Text(model.nameEN)
+                        .font(.subheadline)
+                        .foregroundColor(.white)
                 }
             }
             HStack {
