@@ -21,6 +21,9 @@ struct PokemonInfoRow: View {
                 Spacer()
                 VStack(alignment: .trailing) {
                     Text(model.name)
+                        .font(.title)
+                        .fontWeight(.black)
+                        .foregroundColor(.white)
                     Text(model.nameEN)
                 }
             }
