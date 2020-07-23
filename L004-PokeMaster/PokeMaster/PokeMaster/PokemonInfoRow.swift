@@ -14,6 +14,10 @@ struct PokemonInfoRow: View {
         VStack {
             HStack {
                 Image("Pokemon-\(model.id)")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .aspectRatio(contentMode: .fit)
+                    .shadow(radius: 4)
                 Spacer()
                 VStack(alignment: .trailing) {
                     Text(model.name)
