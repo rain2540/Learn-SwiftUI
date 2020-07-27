@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PokemonInfoRow: View {
+
     let model = PokemonViewModel.sample(id: 1)
 
     var body: some View {
@@ -34,26 +35,21 @@ struct PokemonInfoRow: View {
                 Spacer()
                 Button(action: { print("Fav") }, label: {
                     Image(systemName: "star")
-                        .font(.system(size: 25))
-                        .foregroundColor(.white)
-                        .frame(width: 30, height: 30)
+                        .modifier(ToolButtonModifier())
                 })
                 Button(action: { print("Panel") }, label: {
                     Image(systemName: "chart.bar")
-                        .font(.system(size: 25))
-                        .foregroundColor(.white)
-                        .frame(width: 30, height: 30)
+                        .modifier(ToolButtonModifier())
                 })
                 Button(action: { print("Web") }, label: {
                     Image(systemName: "info.circle")
-                        .font(.system(size: 25))
-                        .foregroundColor(.white)
-                        .frame(width: 30, height: 30)
+                        .modifier(ToolButtonModifier())
                 })
             }
             .padding(.bottom, 12)
         }.background(Color.green)
     }
+    
 }
 
 
