@@ -31,6 +31,7 @@ struct PokemonInfoRow: View {
                 }
             }
             .padding(.top, 12)
+
             HStack(spacing: 20) {
                 Spacer()
                 Button(action: { print("Fav") }, label: {
@@ -47,9 +48,13 @@ struct PokemonInfoRow: View {
                 })
             }
             .padding(.bottom, 12)
-        }.background(Color.green)
+        }
+        .frame(height: 120)
+        .padding(.leading, 23)
+        .padding(.trailing, 15)
+        .background(Color.green)
     }
-    
+
 }
 
 
