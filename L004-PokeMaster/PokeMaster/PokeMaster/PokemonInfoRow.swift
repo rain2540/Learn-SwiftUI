@@ -30,7 +30,7 @@ struct PokemonInfoRow: View {
                 }
             }
             .padding(.top, 12)
-            HStack {
+            HStack(spacing: 20) {
                 Spacer()
                 Button(action: { print("Fav") }, label: {
                     Image(systemName: "star")
@@ -51,6 +51,7 @@ struct PokemonInfoRow: View {
                         .frame(width: 30, height: 30)
                 })
             }
+            .padding(.bottom, 12)
         }.background(Color.green)
     }
 }
