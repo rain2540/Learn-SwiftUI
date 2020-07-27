@@ -56,6 +56,19 @@ struct PokemonInfoRow: View {
     }
 }
 
+
+struct ToolButtonModifier: ViewModifier {
+
+    func body(content: Content) -> some View {
+        content
+            .font(.system(size: 25))
+            .foregroundColor(.white)
+            .frame(width: 30, height: 30)
+    }
+
+}
+
+
 struct PokemonInfoRow_Previews: PreviewProvider {
     static var previews: some View {
         PokemonInfoRow()
