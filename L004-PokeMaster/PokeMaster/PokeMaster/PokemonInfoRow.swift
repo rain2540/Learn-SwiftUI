@@ -45,7 +45,7 @@ struct PokemonInfoRow: View {
                         .frame(width: 30, height: 30)
                 })
                 Button(action: { print("Web") }, label: {
-                    Image(systemName: "info.cycle")
+                    Image(systemName: "info.circle")
                         .font(.system(size: 25))
                         .foregroundColor(.white)
                         .frame(width: 30, height: 30)
