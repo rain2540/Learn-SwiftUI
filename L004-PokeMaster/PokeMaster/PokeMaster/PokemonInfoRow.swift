@@ -32,14 +32,23 @@ struct PokemonInfoRow: View {
             .padding(.top, 12)
             HStack {
                 Spacer()
-                Button(action: {}, label: {
-                    Text("Fav")
+                Button(action: { print("Fav") }, label: {
+                    Image(systemName: "star")
+                        .font(.system(size: 25))
+                        .foregroundColor(.white)
+                        .frame(width: 30, height: 30)
                 })
-                Button(action: {}, label: {
-                    Text("Panel")
+                Button(action: { print("Panel") }, label: {
+                    Image(systemName: "chart.bar")
+                        .font(.system(size: 25))
+                        .foregroundColor(.white)
+                        .frame(width: 30, height: 30)
                 })
-                Button(action: {}, label: {
-                    Text("Web")
+                Button(action: { print("Web") }, label: {
+                    Image(systemName: "info.cycle")
+                        .font(.system(size: 25))
+                        .foregroundColor(.white)
+                        .frame(width: 30, height: 30)
                 })
             }
         }.background(Color.green)
