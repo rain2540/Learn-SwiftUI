@@ -67,6 +67,7 @@ struct PokemonInfoRow: View {
                 )
             }
         )
+            .padding(.horizontal)
     }
 
 }
