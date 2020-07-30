@@ -75,7 +75,13 @@ struct PokemonInfoRow: View {
         )
             .padding(.horizontal)
             .onTapGesture {
-                withAnimation {
+                withAnimation(
+                    .spring(
+                        response: 0.55,
+                        dampingFraction: 0.425,
+                        blendDuration: 0)
+                    )
+                {
                     self.expanded.toggle()
                 }
         }
