@@ -9,7 +9,9 @@ import SwiftUI
 
 struct PokemonInfoRow: View {
 
-    let model = PokemonViewModel.sample(id: 1)
+    //let model = PokemonViewModel.sample(id: 1)
+    let model: PokemonViewModel
+    @State var expanded: Bool
 
     var body: some View {
         VStack {
@@ -86,7 +88,13 @@ struct ToolButtonModifier: ViewModifier {
 
 
 struct PokemonInfoRow_Previews: PreviewProvider {
+
     static var previews: some View {
-        PokemonInfoRow()
+        VStack {
+            PokemonInfoRow(model: .sample(id: 1), expanded: false)
+            PokemonInfoRow(model: .sample(id: 21), expanded: true)
+            PokemonInfoRow(model: .sample(id: 25), expanded: false)
+        }
     }
+
 }
