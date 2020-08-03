@@ -10,8 +10,10 @@ import SwiftUI
 struct PokemonList: View {
 
     var body: some View {
-        List(PokemonViewModel.all) { pokemon in
-            PokemonInfoRow(model: pokemon, expanded: false)
+        ScrollView {
+            ForEach(PokemonViewModel.all) { pokemon in
+                PokemonInfoRow(model: pokemon, expanded: false)
+            }
         }
     }
 
