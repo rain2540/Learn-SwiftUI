@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct PokemonList: View {
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(PokemonViewModel.all) { pokemon in
+            PokemonInfoRow(model: pokemon, expanded: false)
+        }
     }
+
 }
 
 struct PokemonList_Previews: PreviewProvider {
