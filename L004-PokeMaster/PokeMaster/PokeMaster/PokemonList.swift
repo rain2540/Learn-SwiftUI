@@ -9,10 +9,30 @@ import SwiftUI
 
 struct PokemonList: View {
 
+    @State var expandingIndex: Int?
+
     var body: some View {
         ScrollView {
             ForEach(PokemonViewModel.all) { pokemon in
-                PokemonInfoRow(model: pokemon, expanded: false)
+                PokemonInfoRow(
+                    model: pokemon,
+                    expanded: self.expandingIndex == pokemon.id
+                )
+                    .onTapGesture {
+                        withAnimation(
+                            .spring(
+                                response: 0.55,
+                                dampingFraction: 0.425,
+                                blendDuration: 0)
+                            )
+                        {
+                            if self.expandingIndex == pokemon.id {
+                                self.expandingIndex = nil
+                            } else {
+                                self.expandingIndex = pokemon.id
+                            }
+                        }
+                }
             }
         }
     }
