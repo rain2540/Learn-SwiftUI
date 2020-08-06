@@ -74,6 +74,8 @@ struct PokemonInfoRow: View {
             }
         )
             .padding(.horizontal)
+            /*
+            // 移除 .onTapGesture
             .onTapGesture {
                 withAnimation(
                     .spring(
@@ -85,6 +87,7 @@ struct PokemonInfoRow: View {
                     self.expanded.toggle()
                 }
         }
+        */
     }
 
 }
