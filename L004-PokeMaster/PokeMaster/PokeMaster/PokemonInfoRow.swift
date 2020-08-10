@@ -11,7 +11,7 @@ struct PokemonInfoRow: View {
 
     //let model = PokemonViewModel.sample(id: 1)
     let model: PokemonViewModel
-    @State var expanded: Bool
+    /*@State var*/ let expanded: Bool
 
     var body: some View {
         VStack {
