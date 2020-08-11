@@ -15,6 +15,12 @@ struct PokemonInfoPanel: View {
         AbilityViewModel.sample(pokemonID: model.id)
     }
     
+    var topIndicator: some View {
+        RoundedRectangle(cornerRadius: 3)
+            .frame(width: 40, height: 6)
+            .opacity(0.2)
+    }
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
