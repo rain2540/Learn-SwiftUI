@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct PokemonInfoPanel: View {
+    
+    let model: PokemonViewModel
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -15,6 +18,6 @@ struct PokemonInfoPanel: View {
 
 struct PokemonInfoPanel_Previews: PreviewProvider {
     static var previews: some View {
-        PokemonInfoPanel()
+        PokemonInfoPanel(model: .sample(id: 1))
     }
 }
