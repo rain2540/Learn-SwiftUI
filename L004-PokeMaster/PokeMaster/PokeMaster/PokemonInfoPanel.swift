@@ -11,6 +11,10 @@ struct PokemonInfoPanel: View {
     
     let model: PokemonViewModel
     
+    var abilities: [AbilityViewModel] {
+        AbilityViewModel.sample(pokemonID: model.id)
+    }
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
