@@ -28,6 +28,30 @@ struct PokemonInfoPanel: View {
     }
 }
 
+
+extension PokemonInfoPanel {
+
+    struct Header: View {
+
+        let model: PokemonViewModel
+
+        var body: some View {
+            HStack(spacing: 18) {
+                pokemonIcon
+            }
+        }
+
+        var pokemonIcon: some View {
+            Image("Pokemon-\(model.id)")
+                .resizable()
+                .frame(width: 68, height: 68)
+        }
+
+    }
+
+}
+
+
 struct PokemonInfoPanel_Previews: PreviewProvider {
     static var previews: some View {
         PokemonInfoPanel(model: .sample(id: 1))
