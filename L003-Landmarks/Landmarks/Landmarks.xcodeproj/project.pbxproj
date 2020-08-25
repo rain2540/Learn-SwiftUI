@@ -15,6 +15,7 @@
 		B7DB833C24F4FFCF005C26EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DB833A24F4FFCF005C26EF /* LaunchScreen.storyboard */; };
 		B7DB834724F4FFCF005C26EF /* LandmarksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DB834624F4FFCF005C26EF /* LandmarksTests.swift */; };
 		B7DB835224F4FFCF005C26EF /* LandmarksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DB835124F4FFCF005C26EF /* LandmarksUITests.swift */; };
+		B7DB836024F5081E005C26EF /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DB835F24F5081E005C26EF /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B7DB834D24F4FFCF005C26EF /* LandmarksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LandmarksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DB835124F4FFCF005C26EF /* LandmarksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksUITests.swift; sourceTree = "<group>"; };
 		B7DB835324F4FFCF005C26EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7DB835F24F5081E005C26EF /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				B7DB832F24F4FFC9005C26EF /* AppDelegate.swift */,
 				B7DB833124F4FFC9005C26EF /* SceneDelegate.swift */,
 				B7DB833324F4FFC9005C26EF /* ContentView.swift */,
+				B7DB835F24F5081E005C26EF /* CircleImage.swift */,
 				B7DB833524F4FFCF005C26EF /* Assets.xcassets */,
 				B7DB833A24F4FFCF005C26EF /* LaunchScreen.storyboard */,
 				B7DB833D24F4FFCF005C26EF /* Info.plist */,
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7DB833024F4FFC9005C26EF /* AppDelegate.swift in Sources */,
+				B7DB836024F5081E005C26EF /* CircleImage.swift in Sources */,
 				B7DB833224F4FFC9005C26EF /* SceneDelegate.swift in Sources */,
 				B7DB833424F4FFC9005C26EF /* ContentView.swift in Sources */,
 			);
