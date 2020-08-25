@@ -4,5 +4,5 @@
 
 ### 1.1 Creating and Combining Views
 
-* Section 1 Create a New Project and Explore the Canvas
-
+* Section 1 : Create a New Project and Explore the Canvas
+* Section 2 : Customize the Text View
