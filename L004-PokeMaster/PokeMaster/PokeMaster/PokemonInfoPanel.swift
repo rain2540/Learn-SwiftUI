@@ -80,7 +80,7 @@ extension PokemonInfoPanel {
         }
 
         var bodyStatus: some View {
-            VStack {
+            VStack(alignment: .leading) {
                 bodyStatusItem(key: "身高", value: model.height)
                 bodyStatusItem(key: "体重", value: model.weight)
             }
