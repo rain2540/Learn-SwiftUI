@@ -43,6 +43,7 @@ extension PokemonInfoPanel {
                 verticalDivider
                 VStack(spacing: 12) {
                     bodyStatus
+                    typeInfo
                 }
             }
         }
@@ -82,6 +83,21 @@ extension PokemonInfoPanel {
             VStack {
                 bodyStatusItem(key: "身高", value: model.height)
                 bodyStatusItem(key: "体重", value: model.weight)
+            }
+        }
+
+        var typeInfo: some View {
+            HStack {
+                ForEach(self.model.types) { t in
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 7)
+                            .fill(t.color)
+                            .frame(width:36, height: 14)
+                        Text(t.name)
+                            .font(.system(size: 10))
+                            .foregroundColor(.white)
+                    }
+                }
             }
         }
 
