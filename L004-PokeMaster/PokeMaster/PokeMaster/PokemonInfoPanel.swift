@@ -41,6 +41,9 @@ extension PokemonInfoPanel {
                 pokemonIcon
                 nameSpecies
                 verticalDivider
+                VStack(spacing: 12) {
+                    bodyStatus
+                }
             }
         }
 
@@ -73,6 +76,24 @@ extension PokemonInfoPanel {
             Text("")
                 .frame(width: 1, height: 44)
                 .background(Color(hex: 0x000000, alpha: 0.1))
+        }
+
+        var bodyStatus: some View {
+            VStack {
+                bodyStatusItem(key: "身高", value: model.height)
+                bodyStatusItem(key: "体重", value: model.weight)
+            }
+        }
+
+        private func bodyStatusItem(key: String, value: String) -> some View {
+            HStack {
+                Text(key)
+                    .font(.system(size: 11))
+                    .foregroundColor(.gray)
+                Text(value)
+                    .font(.system(size: 11))
+                    .foregroundColor(model.color)
+            }
         }
 
     }
