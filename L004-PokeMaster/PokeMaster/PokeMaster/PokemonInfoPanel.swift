@@ -40,6 +40,7 @@ extension PokemonInfoPanel {
             HStack(spacing: 18) {
                 pokemonIcon
                 nameSpecies
+                verticalDivider
             }
         }
 
@@ -66,6 +67,12 @@ extension PokemonInfoPanel {
                     .foregroundColor(.gray)
             }
 
+        }
+
+        var verticalDivider: some View {
+            Text("")
+                .frame(width: 1, height: 44)
+                .background(Color(hex: 0x000000, alpha: 0.1))
         }
 
     }
