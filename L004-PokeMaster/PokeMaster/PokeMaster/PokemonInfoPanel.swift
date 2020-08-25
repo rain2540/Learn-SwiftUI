@@ -74,9 +74,10 @@ extension PokemonInfoPanel {
         }
 
         var verticalDivider: some View {
-            Text("")
+            RoundedRectangle(cornerRadius: 1)
                 .frame(width: 1, height: 44)
-                .background(Color(hex: 0x000000, alpha: 0.1))
+                .opacity(0.1)
+
         }
 
         var bodyStatus: some View {
