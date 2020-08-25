@@ -24,6 +24,7 @@ struct PokemonInfoPanel: View {
     var body: some View {
         VStack(spacing: 20) {
             topIndicator
+            Header(model: model)
         }
     }
 }
@@ -38,6 +39,7 @@ extension PokemonInfoPanel {
         var body: some View {
             HStack(spacing: 18) {
                 pokemonIcon
+                nameSpecies
             }
         }
 
@@ -45,6 +47,25 @@ extension PokemonInfoPanel {
             Image("Pokemon-\(model.id)")
                 .resizable()
                 .frame(width: 68, height: 68)
+        }
+
+        var nameSpecies: some View {
+            VStack(spacing: 10) {
+                VStack {
+                    Text(model.name)
+                        .font(.system(size: 22))
+                        .fontWeight(.bold)
+                    Text(model.nameEN)
+                        .font(.system(size: 13))
+                        .fontWeight(.bold)
+                }.foregroundColor(model.color)
+
+                Text(model.genus)
+                    .font(.system(size: 13))
+                    .fontWeight(.bold)
+                    .foregroundColor(.gray)
+            }
+
         }
 
     }
