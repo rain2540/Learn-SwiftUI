@@ -20,11 +20,19 @@ struct PokemonInfoPanel: View {
             .frame(width: 40, height: 6)
             .opacity(0.2)
     }
+
+    var pokemonDescription: some View {
+        Text(model.descriptionText)
+            .font(.callout)
+            .foregroundColor(Color(hex: 0x666666))
+            .fixedSize(horizontal: false, vertical: true)
+    }
     
     var body: some View {
         VStack(spacing: 20) {
             topIndicator
             Header(model: model)
+            pokemonDescription
         }
     }
 }
