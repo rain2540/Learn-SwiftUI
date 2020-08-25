@@ -7,3 +7,4 @@
 * Section 1 : Create a New Project and Explore the Canvas
 * Section 2 : Customize the Text View
 * Section 3 : Combine Views Using Stacks
+* Section 4 : Create a Custom Image View
