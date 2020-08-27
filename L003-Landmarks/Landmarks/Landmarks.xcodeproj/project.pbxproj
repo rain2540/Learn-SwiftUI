@@ -139,6 +139,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		B718357024F7B1C8004B4A9E /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				B7DB835F24F5081E005C26EF /* CircleImage.swift */,
+				B718354E24F7A15A004B4A9E /* MapView.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
 		B7DB832324F4FFC9005C26EF = {
 			isa = PBXGroup;
 			children = (
@@ -166,8 +175,7 @@
 				B7DB832F24F4FFC9005C26EF /* AppDelegate.swift */,
 				B7DB833124F4FFC9005C26EF /* SceneDelegate.swift */,
 				B7DB833324F4FFC9005C26EF /* LandmarkDetail.swift */,
-				B7DB835F24F5081E005C26EF /* CircleImage.swift */,
-				B718354E24F7A15A004B4A9E /* MapView.swift */,
+				B718357024F7B1C8004B4A9E /* Supporting Views */,
 				B718355524F7AFDE004B4A9E /* Resources */,
 				B7DB833524F4FFCF005C26EF /* Assets.xcassets */,
 				B7DB833A24F4FFCF005C26EF /* LaunchScreen.storyboard */,
