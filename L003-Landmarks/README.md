@@ -41,3 +41,5 @@ To use UIView subclasses from within SwiftUI, you wrap the other view in a Swift
 You now have all of the components you need — the name and place, a circular image, and a map for the location.
 
 With the tools you’ve used so far, combine your custom views to create the final design for the landmark detail view.
+
+### 1.2 Building Lists and Navigation
