@@ -57,3 +57,7 @@ You’ll create views that can show information about any landmark, and dynamica
 In the first tutorial, you hard-coded information into all of your custom views. Here, you’ll learn to pass data into your custom views for display.
 
 Get started by downloading the starter project and familiarizing yourself with the sample data.
+
+#### Section 2 : Create the Row View
+
+The first view you’ll build in this tutorial is a row for displaying details about each landmark. This row view stores information in a property for the landmark it displays, so that one view can display any landmark. Later, you’ll combine multiple rows into a list of landmarks.
