@@ -14,7 +14,7 @@ struct LandmarkRow: View {
 
     var body: some View {
         HStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Text(landmark.name)
         }
     }
 }
