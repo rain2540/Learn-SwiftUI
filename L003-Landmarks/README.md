@@ -35,3 +35,9 @@ Instead of adding more code in this file, you’ll create a custom view that app
 Now you’re ready to create a map view. You can use the MKMapView class from MapKit to render the map.
 
 To use UIView subclasses from within SwiftUI, you wrap the other view in a SwiftUI view that conforms to the UIViewRepresentable protocol. SwiftUI includes similar protocols for WatchKit and AppKit views.
+
+#### Section 6 : Compose the Detail View
+
+You now have all of the components you need — the name and place, a circular image, and a map for the location.
+
+With the tools you’ve used so far, combine your custom views to create the final design for the landmark detail view.
