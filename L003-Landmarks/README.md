@@ -97,3 +97,7 @@ Next, you’ll add code to the LandmarkList_Previews preview provider to render 
 ### 1.3 Handling User Input
 
 In the Landmarks app, a user can flag their favorite places, and filter the list to show just their favorites. To create this feature, you’ll start by adding a switch to the list so users can focus on just their favorites, and then you’ll add a star-shaped button that a user taps to flag a landmark as a favorite.
+
+#### Section 1 : Mark the User’s Favorite Landmarks
+
+Begin by enhancing the list to show users their favorites at a glance. Add a star to each LandmarkRow that shows a favorite landmark.
