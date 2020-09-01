@@ -93,3 +93,7 @@ Starting with the child views, you’ll convert CircleImage, MapView, and then L
 #### Section 8 : Generating Previews Dynamically
 
 Next, you’ll add code to the LandmarkList_Previews preview provider to render previews of the list view at different device sizes. By default, previews render at the size of the device in the active scheme. You can change the preview device by calling the previewDevice(_:) modifier method.
+
+### 1.3 Handling User Input
+
+In the Landmarks app, a user can flag their favorite places, and filter the list to show just their favorites. To create this feature, you’ll start by adding a switch to the list so users can focus on just their favorites, and then you’ll add a star-shaped button that a user taps to flag a landmark as a favorite.
