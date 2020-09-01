@@ -83,3 +83,9 @@ You can create a list that displays the elements of collection by passing your c
 The list renders properly, but you can’t tap an individual landmark to see that landmark’s detail page yet.
 
 You add navigation capabilities to a list by embedding it in a NavigationView, and then nesting each row in a NavigationLink to set up a transtition to a destination view.
+
+#### Section 7 : Pass Data into Child Views
+
+The LandmarkDetail view still uses hard-coded details to show its landmark. Just like LandmarkRow, the LandmarkDetail type and the views it comprises need to use a landmark property as the source for their data.
+
+Starting with the child views, you’ll convert CircleImage, MapView, and then LandmarkDetail to display data that’s passed in, rather than hard-coding each row.
