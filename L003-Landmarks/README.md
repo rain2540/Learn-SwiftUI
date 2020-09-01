@@ -61,3 +61,9 @@ Get started by downloading the starter project and familiarizing yourself with t
 #### Section 2 : Create the Row View
 
 The first view you’ll build in this tutorial is a row for displaying details about each landmark. This row view stores information in a property for the landmark it displays, so that one view can display any landmark. Later, you’ll combine multiple rows into a list of landmarks.
+
+#### Section 3 : Customize the Row Preview
+
+Xcode’s canvas automatically recognizes and displays any type in the current editor that conforms to the PreviewProvider protocol. A preview provider returns one or more views, with options to configure the size and device.
+
+You can customize the returned content from a preview provider to render exactly the previews that are most helpful to you.
