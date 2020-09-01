@@ -77,3 +77,9 @@ When you use SwiftUI’s List type, you can display a platform-specific list of 
 Instead of specifying a list’s elements individually, you can generate rows directly from a collection.
 
 You can create a list that displays the elements of collection by passing your collection of data and a closure that provides a view for each element in the collection. The list transforms each element in the collection into a child view by using the supplied closure.
+
+#### Section 6 : Set Up Navigation Between List and Detail
+
+The list renders properly, but you can’t tap an individual landmark to see that landmark’s detail page yet.
+
+You add navigation capabilities to a list by embedding it in a NavigationView, and then nesting each row in a NavigationLink to set up a transtition to a destination view.
