@@ -101,3 +101,9 @@ In the Landmarks app, a user can flag their favorite places, and filter the list
 #### Section 1 : Mark the User’s Favorite Landmarks
 
 Begin by enhancing the list to show users their favorites at a glance. Add a star to each LandmarkRow that shows a favorite landmark.
+
+#### Section 2 : Filter the List View
+
+You can customize the list view so that it shows all of the landmarks, or just the user’s favorites. To do this, you’ll need to add a bit of state to the LandmarkList type.
+
+State is a value, or a set of values, that can change over time, and that affects a view’s behavior, content, or layout. You use a property with the @State attribute to add state to a view.
