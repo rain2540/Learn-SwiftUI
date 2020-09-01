@@ -71,3 +71,9 @@ You can customize the returned content from a preview provider to render exactly
 #### Section 4 : Create the List of Landmarks
 
 When you use SwiftUI’s List type, you can display a platform-specific list of views. The elements of the list can be static, like the child views of the stacks you’ve created so far, or dynamically generated. You can even mix static and dynamically generated views.
+
+#### Section 5 : Make the List Dynamic
+
+Instead of specifying a list’s elements individually, you can generate rows directly from a collection.
+
+You can create a list that displays the elements of collection by passing your collection of data and a closure that provides a view for each element in the collection. The list transforms each element in the collection into a child view by using the supplied closure.
