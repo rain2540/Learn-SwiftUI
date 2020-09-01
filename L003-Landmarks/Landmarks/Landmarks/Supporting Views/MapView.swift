@@ -11,6 +11,8 @@ import MapKit
 
 struct MapView: UIViewRepresentable {
 
+    var coordinate: CLLocationCoordinate2D
+
     func makeUIView(context: Context) -> MKMapView {
         MKMapView(frame: .zero)
     }
