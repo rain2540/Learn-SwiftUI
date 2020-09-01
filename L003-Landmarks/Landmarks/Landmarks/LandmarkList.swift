@@ -9,11 +9,17 @@
 import SwiftUI
 
 struct LandmarkList: View {
+
     var body: some View {
-        List(landmarkData) { landmark in
-            LandmarkRow(landmark: landmark)
+
+        NavigationView {
+            List(landmarkData) { landmark in
+                LandmarkRow(landmark: landmark)
+            }
         }
+        
     }
+
 }
 
 struct LandmarkList_Previews: PreviewProvider {
