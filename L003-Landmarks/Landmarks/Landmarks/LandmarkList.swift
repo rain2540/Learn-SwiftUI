@@ -14,7 +14,9 @@ struct LandmarkList: View {
 
         NavigationView {
             List(landmarkData) { landmark in
-                LandmarkRow(landmark: landmark)
+                NavigationLink(destination: LandmarkDetail()) {
+                    LandmarkRow(landmark: landmark)
+                }
             }
             .navigationBarTitle(Text("Landmarks"))
         }
