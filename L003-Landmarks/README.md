@@ -67,3 +67,7 @@ The first view you’ll build in this tutorial is a row for displaying details a
 Xcode’s canvas automatically recognizes and displays any type in the current editor that conforms to the PreviewProvider protocol. A preview provider returns one or more views, with options to configure the size and device.
 
 You can customize the returned content from a preview provider to render exactly the previews that are most helpful to you.
+
+#### Section 4 : Create the List of Landmarks
+
+When you use SwiftUI’s List type, you can display a platform-specific list of views. The elements of the list can be static, like the child views of the stacks you’ve created so far, or dynamically generated. You can even mix static and dynamically generated views.
