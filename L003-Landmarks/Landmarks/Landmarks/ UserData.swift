@@ -7,3 +7,11 @@
 //
 
 import SwiftUI
+import Combine
+
+
+final class UserData: ObservableObject {
+
+
+
+}
