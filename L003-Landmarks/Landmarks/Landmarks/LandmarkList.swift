@@ -10,7 +10,8 @@ import SwiftUI
 
 struct LandmarkList: View {
 
-    @State var showFavoritesOnly = true
+    @EnvironmentObject var userData: UserData
+    //@State var showFavoritesOnly = true
 
     var body: some View {
 
@@ -39,6 +40,7 @@ struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone SE", "iPhone 11 Pro"], id: \.self) { deviceName in
             LandmarkList()
+            .environmentObject(UserData())
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }
