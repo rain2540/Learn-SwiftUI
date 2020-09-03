@@ -9,9 +9,14 @@
 import SwiftUI
 
 struct Badge: View {
+
     var body: some View {
-        Text("Badge")
+        Path { path in
+
+        }
+        .fill(Color.black)
     }
+
 }
 
 struct Badge_Previews: PreviewProvider {
