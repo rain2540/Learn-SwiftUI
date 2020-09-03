@@ -107,3 +107,9 @@ Begin by enhancing the list to show users their favorites at a glance. Add a sta
 You can customize the list view so that it shows all of the landmarks, or just the user’s favorites. To do this, you’ll need to add a bit of state to the LandmarkList type.
 
 State is a value, or a set of values, that can change over time, and that affects a view’s behavior, content, or layout. You use a property with the @State attribute to add state to a view.
+
+#### Section 3 : Add a Control to Toggle the State
+
+To give the user control over the list’s filter, you need to add a control that can alter the value of showFavoritesOnly. You do this by passing a binding to a toggle control.
+
+A binding acts as a reference to a mutable state. When a user taps the toggle from off to on, and off again, the control uses the binding to update the view’s state accordingly.
