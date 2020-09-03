@@ -123,3 +123,7 @@ An observable object is a custom object for your data that can be bound to a vie
 #### Section 5 : Adopt the Model Object in Your Views
 
 Now that you’ve created the UserData object, you need to update your views to adopt it as the data store for your app.
+
+#### Section 6 : Create a Favorite Button for Each Landmark
+
+The Landmarks app can now switch between a filtered and unfiltered view of the landmarks, but the list of favorite landmarks is still hard coded. To allow the user to add and remove favorites, you need to add a favorite button to the landmark detail view.
