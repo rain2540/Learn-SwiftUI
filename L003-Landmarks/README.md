@@ -113,3 +113,9 @@ State is a value, or a set of values, that can change over time, and that affect
 To give the user control over the list’s filter, you need to add a control that can alter the value of showFavoritesOnly. You do this by passing a binding to a toggle control.
 
 A binding acts as a reference to a mutable state. When a user taps the toggle from off to on, and off again, the control uses the binding to update the view’s state accordingly.
+
+#### Section 4 : Use an Observable Object for Storage
+
+To prepare for the user to control which particular landmarks are favorites, you’ll first store the landmark data in an observable object.
+
+An observable object is a custom object for your data that can be bound to a view from storage in SwiftUI’s environment. SwiftUI watches for any changes to observable objects that could affect a view, and displays the correct version of the view after a change.
