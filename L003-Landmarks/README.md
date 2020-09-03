@@ -119,3 +119,7 @@ A binding acts as a reference to a mutable state. When a user taps the toggle fr
 To prepare for the user to control which particular landmarks are favorites, you’ll first store the landmark data in an observable object.
 
 An observable object is a custom object for your data that can be bound to a view from storage in SwiftUI’s environment. SwiftUI watches for any changes to observable objects that could affect a view, and displays the correct version of the view after a change.
+
+#### Section 5 : Adopt the Model Object in Your Views
+
+Now that you’ve created the UserData object, you need to update your views to adopt it as the data store for your app.
