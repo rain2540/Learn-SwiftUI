@@ -139,3 +139,7 @@ If you want to create multiple badges for different kinds of landmarks, try expe
 #### Section 1 : Create a Badge View
 
 To create the badge, you’ll start by creating a Badge view that uses the vector drawing APIs in SwiftUI.
+
+#### Section 2 : Draw the Badge Background
+
+Use the graphics APIs in SwiftUI to draw a custom badge shape.
