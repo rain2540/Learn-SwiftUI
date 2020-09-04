@@ -45,9 +45,15 @@ struct Badge: View {
                     )
                 }
             }
-            .fill(Color.black)
+            .fill(LinearGradient(
+                    gradient: .init(colors: [Self.gradientStart, Self.gradientEnd]),
+                    startPoint: .init(x: 0.5, y: 0),
+                    endPoint: .init(x: 0.5, y: 0.6)
+            ))
         }
     }
+    static let gradientStart = Color(red: 230.0 / 255, green: 120.0 / 255, blue: 221.0 / 255)
+    static let gradientEnd = Color(red: 239.0 / 255, green: 172.0 / 255, blue: 120.0 / 255)
 
 }
 
