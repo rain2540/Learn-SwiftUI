@@ -143,3 +143,9 @@ To create the badge, you’ll start by creating a Badge view that uses the vecto
 #### Section 2 : Draw the Badge Background
 
 Use the graphics APIs in SwiftUI to draw a custom badge shape.
+
+#### Section 3 : Draw the Badge Symbol
+
+The Landmarks badge has a custom insignia in its center that’s based on the mountain that appears in the Landmarks app icon.
+
+The mountain symbol consists of two shapes: one that represents a snowcap at the peak, and the other that represents vegetation along the approach. You’ll draw them using two partially triangular shapes that are set apart by a small gap.
