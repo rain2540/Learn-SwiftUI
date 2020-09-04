@@ -46,10 +46,11 @@ struct Badge: View {
                 }
             }
             .fill(LinearGradient(
-                    gradient: .init(colors: [Self.gradientStart, Self.gradientEnd]),
-                    startPoint: .init(x: 0.5, y: 0),
-                    endPoint: .init(x: 0.5, y: 0.6)
+                gradient: .init(colors: [Self.gradientStart, Self.gradientEnd]),
+                startPoint: .init(x: 0.5, y: 0),
+                endPoint: .init(x: 0.5, y: 0.6)
             ))
+            .aspectRatio(1, contentMode: .fit)i
         }
     }
     static let gradientStart = Color(red: 230.0 / 255, green: 120.0 / 255, blue: 221.0 / 255)
