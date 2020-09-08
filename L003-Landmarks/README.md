@@ -155,3 +155,9 @@ The mountain symbol consists of two shapes: one that represents a snowcap at the
 The badge design calls for the mountain shape to be rotated and repeated multiple times on top of the badge background.
 
 Define a new type for rotation and leverage the ForEach view to apply the same adjustments to multiple copies of the mountain shape.
+
+### 2.2 Animating Views and Transitions
+
+When using SwiftUI, you can individually animate changes to views, or to a view’s state, no matter where the effects are. SwiftUI handles all the complexity of these combined, overlapping, and interruptible animations for you.
+
+In this tutorial, you’ll animate a view that contains a graph for tracking the hikes a user takes while using the Landmarks app. Using the animation(_:) modifier, you’ll see just how easy it is to animate a view.
