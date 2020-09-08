@@ -10,8 +10,18 @@ import SwiftUI
 
 struct Badge: View {
 
+    var badgeSymbols: some View {
+        RotatedBadgeSymbol(angle: .init(degrees: 0))
+            .opacity(0.5)
+    }
+
     var body: some View {
-        BadgeBackground()
+        ZStack {
+            BadgeBackground()
+
+            self.badgeSymbols
+        }
+
     }
 
 }
