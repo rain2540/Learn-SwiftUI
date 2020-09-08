@@ -149,3 +149,9 @@ Use the graphics APIs in SwiftUI to draw a custom badge shape.
 The Landmarks badge has a custom insignia in its center that’s based on the mountain that appears in the Landmarks app icon.
 
 The mountain symbol consists of two shapes: one that represents a snowcap at the peak, and the other that represents vegetation along the approach. You’ll draw them using two partially triangular shapes that are set apart by a small gap.
+
+#### Section 4 : Combine the Badge Foreground and Background
+
+The badge design calls for the mountain shape to be rotated and repeated multiple times on top of the badge background.
+
+Define a new type for rotation and leverage the ForEach view to apply the same adjustments to multiple copies of the mountain shape.
