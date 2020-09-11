@@ -161,3 +161,7 @@ Define a new type for rotation and leverage the ForEach view to apply the same a
 When using SwiftUI, you can individually animate changes to views, or to a view’s state, no matter where the effects are. SwiftUI handles all the complexity of these combined, overlapping, and interruptible animations for you.
 
 In this tutorial, you’ll animate a view that contains a graph for tracking the hikes a user takes while using the Landmarks app. Using the animation(_:) modifier, you’ll see just how easy it is to animate a view.
+
+#### Section 1 : Add Animations to Individual Views
+
+When you use the animation(_:) modifier on a view, SwiftUI animates any changes to animatable properties of the view. A view’s color, opacity, rotation, size, and other properties are all animatable.
