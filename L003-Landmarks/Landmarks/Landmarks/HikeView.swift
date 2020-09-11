@@ -36,7 +36,7 @@ struct HikeView: View {
                         .rotationEffect(.degrees(showDetail ? 90 : 0))
                         .scaleEffect(showDetail ? 1.5 : 1)
                         .padding()
-                        .animation(.easeInOut)
+                        .animation(.spring())
                 }
             }
 
