@@ -170,3 +170,7 @@ When you use the animation(_:) modifier on a view, SwiftUI animates any changes 
 
 Now that you’ve learned how to apply animations to individual views, it’s time to add animations in places where you change your state’s value.
 Here, you’ll apply animations to all of the changes that occur when a user taps a button and toggles the showDetail state property.
+
+#### Section 3 : Customize View Transitions
+
+By default, views transition on- and offscreen by fading in and out. You can customize this transition by using the transition(_:) modifier.
