@@ -8,6 +8,14 @@
 
 import SwiftUI
 
+extension AnyTransition {
+
+    static var moveAndFade: AnyTransition {
+        AnyTransition.slide
+    }
+
+}
+
 struct HikeView: View {
 
     var hike: Hike
