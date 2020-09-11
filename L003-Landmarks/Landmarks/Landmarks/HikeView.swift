@@ -27,7 +27,7 @@ struct HikeView: View {
                 }
 
                 Spacer()
-                
+
                 Button(action: {
                     withAnimation {
                         self.showDetail.toggle()
@@ -40,13 +40,14 @@ struct HikeView: View {
                         .padding()
                 }
             }
-            
+
             if showDetail {
                 HikeDetail(hike: hike)
+                    .transition(.slide)
             }
         }
     }
-    
+
 }
 
 struct HikeView_Previews: PreviewProvider {
