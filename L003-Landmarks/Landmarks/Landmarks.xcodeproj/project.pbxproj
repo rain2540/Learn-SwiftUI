@@ -15,6 +15,7 @@
 		B71AF6D125070F7F0078C912 /* RotatedBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71AF6D025070F7F0078C912 /* RotatedBadgeSymbol.swift */; };
 		B71AF6D3250717300078C912 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71AF6D2250717300078C912 /* Hike.swift */; };
 		B71AF6D5250719AE0078C912 /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71AF6D4250719AE0078C912 /* HikeGraph.swift */; };
+		B7589749250B5E7500A12E70 /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7589748250B5E7500A12E70 /* HikeDetail.swift */; };
 		B77EC57E24FDD99500E08446 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77EC57D24FDD99400E08446 /* LandmarkList.swift */; };
 		B77EC5B724FE430A00E08446 /* silversalmoncreek.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B77EC5AB24FE430900E08446 /* silversalmoncreek.jpg */; };
 		B77EC5B824FE430A00E08446 /* turtlerock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B77EC5AC24FE430900E08446 /* turtlerock.jpg */; };
@@ -72,6 +73,7 @@
 		B71AF6D025070F7F0078C912 /* RotatedBadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatedBadgeSymbol.swift; sourceTree = "<group>"; };
 		B71AF6D2250717300078C912 /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
 		B71AF6D4250719AE0078C912 /* HikeGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
+		B7589748250B5E7500A12E70 /* HikeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
 		B77EC57D24FDD99400E08446 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		B77EC5AB24FE430900E08446 /* silversalmoncreek.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = silversalmoncreek.jpg; sourceTree = "<group>"; };
 		B77EC5AC24FE430900E08446 /* turtlerock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turtlerock.jpg; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				B77EC57D24FDD99400E08446 /* LandmarkList.swift */,
 				B718357124F7B24B004B4A9E /* LandmarkRow.swift */,
 				B7DB833324F4FFC9005C26EF /* LandmarkDetail.swift */,
+				B7589748250B5E7500A12E70 /* HikeDetail.swift */,
 				B78868632500D2AE0069FB79 /* HexagonParameters.swift */,
 				B718357024F7B1C8004B4A9E /* Views */,
 				B718355524F7AFDE004B4A9E /* Resources */,
@@ -399,6 +402,7 @@
 				B7DB836024F5081E005C26EF /* CircleImage.swift in Sources */,
 				B718354F24F7A15A004B4A9E /* MapView.swift in Sources */,
 				B71AF6D3250717300078C912 /* Hike.swift in Sources */,
+				B7589749250B5E7500A12E70 /* HikeDetail.swift in Sources */,
 				B77EC57E24FDD99500E08446 /* LandmarkList.swift in Sources */,
 				B789784A25022F0A00A61849 /* BadgeSymbol.swift in Sources */,
 				B71AF6D125070F7F0078C912 /* RotatedBadgeSymbol.swift in Sources */,
