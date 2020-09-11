@@ -174,3 +174,7 @@ Here, you’ll apply animations to all of the changes that occur when a user tap
 #### Section 3 : Customize View Transitions
 
 By default, views transition on- and offscreen by fading in and out. You can customize this transition by using the transition(_:) modifier.
+
+#### Section 4 : Compose Animations for Complex Effects
+
+The graph switches between three different sets of data when you click the buttons below the bars. In this section, you’ll use a composed animation to give the capsules that make up the graph a dynamic, rippling transition.
