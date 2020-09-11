@@ -178,3 +178,9 @@ By default, views transition on- and offscreen by fading in and out. You can cus
 #### Section 4 : Compose Animations for Complex Effects
 
 The graph switches between three different sets of data when you click the buttons below the bars. In this section, you’ll use a composed animation to give the capsules that make up the graph a dynamic, rippling transition.
+
+## 3. App Design and Layout
+
+### 3.1 Composing Complex Interfaces
+
+The home screen for Landmarks shows a scrolling list of categories, with horizontally scrolling landmarks within each category. As you build this primary navigation, you’ll explore how composed views can adapt to different device sizes and orientations.
