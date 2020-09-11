@@ -165,3 +165,8 @@ In this tutorial, you’ll animate a view that contains a graph for tracking the
 #### Section 1 : Add Animations to Individual Views
 
 When you use the animation(_:) modifier on a view, SwiftUI animates any changes to animatable properties of the view. A view’s color, opacity, rotation, size, and other properties are all animatable.
+
+#### Section 2 : Animate the Effects of State Changes
+
+Now that you’ve learned how to apply animations to individual views, it’s time to add animations in places where you change your state’s value.
+Here, you’ll apply animations to all of the changes that occur when a user taps a button and toggles the showDetail state property.
