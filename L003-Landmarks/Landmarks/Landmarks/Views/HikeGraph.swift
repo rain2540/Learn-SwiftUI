@@ -22,7 +22,7 @@ func magnitude(of range: Range<Double>) -> Double {
 extension Animation {
 
     static func ripple() -> Animation {
-        Animation.default
+        Animation.spring(dampingFraction: 0.5)
     }
 
 }
