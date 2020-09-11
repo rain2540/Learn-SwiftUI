@@ -35,6 +35,7 @@ struct HikeView: View {
                         .imageScale(.large)
                         .rotationEffect(.degrees(showDetail ? 90 : 0))
                         .padding()
+                        .animation(.easeInOut)
                 }
             }
 
@@ -43,7 +44,7 @@ struct HikeView: View {
             }
         }
     }
-    
+
 }
 
 struct HikeView_Previews: PreviewProvider {
