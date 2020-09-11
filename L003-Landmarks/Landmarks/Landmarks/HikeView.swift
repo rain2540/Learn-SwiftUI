@@ -11,7 +11,7 @@ import SwiftUI
 extension AnyTransition {
 
     static var moveAndFade: AnyTransition {
-        AnyTransition.slide
+        AnyTransition.move(edge: .trailing)
     }
 
 }
@@ -51,7 +51,7 @@ struct HikeView: View {
 
             if showDetail {
                 HikeDetail(hike: hike)
-                    .transition(.slide)
+                    .transition(.moveAndFade)
             }
         }
     }
