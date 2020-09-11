@@ -184,3 +184,7 @@ The graph switches between three different sets of data when you click the butto
 ### 3.1 Composing Complex Interfaces
 
 The home screen for Landmarks shows a scrolling list of categories, with horizontally scrolling landmarks within each category. As you build this primary navigation, you’ll explore how composed views can adapt to different device sizes and orientations.
+
+#### Section 1 : Add a Home View
+
+Now that you have all of the views you need for the Landmarks app, it’s time to give them a home — a view to unify the views. The home view not only contains all of the other views, it also provides the means of navigating through and displaying your landmarks.
