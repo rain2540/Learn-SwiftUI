@@ -47,6 +47,12 @@ struct CategoryHome: View {
                     CategoryRow(categoryName: key, items: self.categories[key]!)
                 }
                 .listRowInsets(EdgeInsets())
+
+                NavigationLink(
+                    destination: LandmarkList(),
+                    label: {
+                        Text("See All")
+                    })
             }
             .navigationBarTitle(Text("Featured"))
             .navigationBarItems(trailing: profileButton)
