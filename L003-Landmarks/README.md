@@ -188,3 +188,7 @@ The home screen for Landmarks shows a scrolling list of categories, with horizon
 #### Section 1 : Add a Home View
 
 Now that you have all of the views you need for the Landmarks app, it’s time to give them a home — a view to unify the views. The home view not only contains all of the other views, it also provides the means of navigating through and displaying your landmarks.
+
+#### Section 2 Create a Categories List
+
+The Landmarks app displays all categories in separate rows arranged in a vertical column for easier browsing. You do this by combining vertical and horizontal stacks, and adding scrolling to the list.
