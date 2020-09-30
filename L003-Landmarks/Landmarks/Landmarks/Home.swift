@@ -10,7 +10,9 @@ import SwiftUI
 
 struct CategoryHome: View {
     var body: some View {
-        Text("Landmarks Content")
+        NavigationView {
+            Text("Landmarks Content")
+        }
     }
 }
 
