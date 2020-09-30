@@ -196,3 +196,9 @@ The Landmarks app displays all categories in separate rows arranged in a vertica
 #### Section 3 Add Rows of Landmarks
 
 Landmarks displays each category in a row that scrolls horizontally. Add a new view type to represent the row, then display all the landmarks for that category in the new view.
+
+#### Section 4 Compose the Home View
+
+The home page of the Landmarks app needs to display simple representations of landmarks before the user taps one for more details.
+
+Reuse parts of the Landmark view you created in Creating and Combining Views to create familiar — but simpler — previews of a landmark for the category and feature views.
