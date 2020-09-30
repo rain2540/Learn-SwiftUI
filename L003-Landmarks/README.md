@@ -206,3 +206,9 @@ Reuse parts of the Landmark view you created in Creating and Combining Views to 
 #### Section 5 Add Navigation Between Sections
 
 Now that all the differently categorized landmarks are visible in the home view, the user needs a way to reach each section in the app. Use the navigation and presentation APIs to make the detail view, favorites list, and the user’s profile all navigable from the home view.
+
+### 3.2 Working with UI Controls
+
+In the Landmarks app, users can create a profile to express their personality. To give users the ability to change their profile, you’ll add an edit mode and design the preferences screen.
+
+You’ll work with a variety of common user interface controls for data entry, and update the Landmarks model types whenever the user saves their changes.
