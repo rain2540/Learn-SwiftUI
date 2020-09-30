@@ -21,6 +21,8 @@ struct CategoryHome: View {
         landmarkData.filter { $0.isFeatured }
     }
 
+    @State var showingProfile = false
+
     var body: some View {
         NavigationView {
             List {
@@ -36,6 +38,9 @@ struct CategoryHome: View {
                 .listRowInsets(EdgeInsets())
             }
             .navigationBarTitle(Text("Featured"))
+            .sheet(isPresented: $showingProfile, content: {
+                Text("User Profile")
+            })
         }
     }
 
