@@ -23,7 +23,11 @@ struct CategoryRow: View {
             ScrollView(.horizontal, showsIndicators: false, content: {
                 HStack(alignment: .top, spacing: 0, content: {
                     ForEach(self.items) { landmark in
-                        CategoryItem(landmark: landmark)
+                        NavigationLink(
+                            destination: LandmarkDetail(landmark: landmark),
+                            label: {
+                                CategoryItem(landmark: landmark)
+                            })
                     }
                 })
             })
