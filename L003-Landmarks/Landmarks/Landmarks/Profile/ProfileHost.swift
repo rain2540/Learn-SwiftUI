@@ -16,6 +16,7 @@ struct ProfileHost: View {
         VStack(alignment: .leading, spacing: 20, content: {
             ProfileSummary(profile: draftProfile)
         })
+        .padding()
     }
 
 }
