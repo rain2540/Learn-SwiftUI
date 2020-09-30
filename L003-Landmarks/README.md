@@ -212,3 +212,7 @@ Now that all the differently categorized landmarks are visible in the home view,
 In the Landmarks app, users can create a profile to express their personality. To give users the ability to change their profile, you’ll add an edit mode and design the preferences screen.
 
 You’ll work with a variety of common user interface controls for data entry, and update the Landmarks model types whenever the user saves their changes.
+
+#### Section 1 Display a User Profile
+
+The Landmarks app locally stores some configuration details and preferences. Before the user edits their details, they’re displayed in a summary view that doesn’t have any editing controls.
