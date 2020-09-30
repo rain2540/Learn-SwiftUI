@@ -202,3 +202,7 @@ Landmarks displays each category in a row that scrolls horizontally. Add a new v
 The home page of the Landmarks app needs to display simple representations of landmarks before the user taps one for more details.
 
 Reuse parts of the Landmark view you created in Creating and Combining Views to create familiar — but simpler — previews of a landmark for the category and feature views.
+
+#### Section 5 Add Navigation Between Sections
+
+Now that all the differently categorized landmarks are visible in the home view, the user needs a way to reach each section in the app. Use the navigation and presentation APIs to make the detail view, favorites list, and the user’s profile all navigable from the home view.
