@@ -192,3 +192,7 @@ Now that you have all of the views you need for the Landmarks app, it’s time t
 #### Section 2 Create a Categories List
 
 The Landmarks app displays all categories in separate rows arranged in a vertical column for easier browsing. You do this by combining vertical and horizontal stacks, and adding scrolling to the list.
+
+#### Section 3 Add Rows of Landmarks
+
+Landmarks displays each category in a row that scrolls horizontally. Add a new view type to represent the row, then display all the landmarks for that category in the new view.
