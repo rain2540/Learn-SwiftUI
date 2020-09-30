@@ -216,3 +216,7 @@ You’ll work with a variety of common user interface controls for data entry, a
 #### Section 1 Display a User Profile
 
 The Landmarks app locally stores some configuration details and preferences. Before the user edits their details, they’re displayed in a summary view that doesn’t have any editing controls.
+
+#### Section 2 Add an Edit Mode
+
+Users need to toggle between viewing or editing their profile details. You’ll add an edit mode by adding an EditButton to the existing ProfileHost, and then creating a view with controls for editing individual values.
