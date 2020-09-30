@@ -17,9 +17,18 @@ struct CategoryHome: View {
         )
     }
 
+    var featured: [Landmark] {
+        landmarkData.filter { $0.isFeatured }
+    }
+
     var body: some View {
         NavigationView {
             List {
+                FeaturedLandmarks(landmarks: featured)
+                    .scaledToFill()
+                    .frame(height: 200)
+                    .clipped()
+
                 ForEach(categories.keys.sorted(), id: \.self) { key in
                     CategoryRow(categoryName: key, items: self.categories[key]!)
                 }
@@ -29,6 +38,18 @@ struct CategoryHome: View {
     }
 
 }
+
+
+struct FeaturedLandmarks: View {
+
+    var landmarks: [Landmark]
+
+    var body: some View {
+        landmarks[0].image.resizable()
+    }
+
+}
+
 
 struct CategoryHome_Previews: PreviewProvider {
     static var previews: some View {
