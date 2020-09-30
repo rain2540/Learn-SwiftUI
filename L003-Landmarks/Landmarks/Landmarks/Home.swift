@@ -12,6 +12,7 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             Text("Landmarks Content")
+                .navigationBarTitle(Text("Featured"))
         }
     }
 }
