@@ -24,6 +24,8 @@ struct WatchLandmarkDetail: View {
 
 struct WatchLandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        WatchLandmarkDetail()
+        let userData = UserData()
+        return WatchLandmarkDetail(landmark: userData.landmarks[0])
+            .environmentObject(userData)
     }
 }
