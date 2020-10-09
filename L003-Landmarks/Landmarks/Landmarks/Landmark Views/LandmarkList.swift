@@ -23,7 +23,7 @@ struct LandmarkList<DetailView: View>: View {
                 
                 ForEach(userData.landmarks) { landmark in
                     if !self.userData.showFavoritesOnly || landmark.isFavorite {
-                        NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
+                        NavigationLink(destination: self.detailViewProducer(landmark).environmentObject(self.userData)) {
                             LandmarkRow(landmark: landmark)
                         }
                     }
