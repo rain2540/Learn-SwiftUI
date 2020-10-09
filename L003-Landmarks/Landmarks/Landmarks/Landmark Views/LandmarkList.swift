@@ -35,15 +35,17 @@ struct LandmarkList<DetailView: View>: View {
 
 }
 
+
+#if os(watchOS)
+typealias PreviewDetailView = WatchLandmarkDetail
+#else
+typealias PreviewDetailView = LandmarkDetail
+#endif
+
+
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-        ForEach(["iPhone 8", "iPhone 11 Pro"], id: \.self) { deviceName in
-            NavigationView {
-                LandmarkList()
-                    .environmentObject(UserData())
-                    .previewDevice(PreviewDevice(rawValue: deviceName))
-                    .previewDisplayName(deviceName)
-            }
-        }
+        LandmarkList { PreviewDetailView(landmark: $0) }
+            .environmentObject(UserData())
     }
 }
