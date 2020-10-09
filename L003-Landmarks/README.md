@@ -282,3 +282,7 @@ Now that you’ve created the basic detail view, it’s time to add a map to sho
 #### Section 5 Create a Cross-Platform List View
 
 For the landmark list, you can reuse the rows from the iOS app, but each platform needs to present its own detail view. To support this, you’ll convert the LandmarkList view into a generic list type, where the instantiating code defines the detail view.
+
+#### Section 6 Add the Landmarks List
+
+Now that you’ve updated the LandmarksList view so that it works on both platforms, you can add it to the watchOS app.
