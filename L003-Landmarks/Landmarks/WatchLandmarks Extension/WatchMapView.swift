@@ -9,13 +9,13 @@
 import SwiftUI
 
 struct WatchMapView: WKInterfaceObjectRepresentable {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+
+    var landmark: Landmark
+    
 }
 
 struct WatchMapView_Previews: PreviewProvider {
     static var previews: some View {
-        WatchMapView()
+        WatchMapView(landmark: UserData().landmarks[0])
     }
 }
