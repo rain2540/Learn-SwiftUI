@@ -22,4 +22,10 @@ struct PageViewController: UIViewControllerRepresentable {
         return pageViewController
     }
 
+    func updateUIViewController(_ uiViewController: UIPageViewController, context: Context) {
+        uiViewController.setViewControllers(
+            [controllers[0]], direction: .forward, animated: true
+        )
+    }
+
 }
