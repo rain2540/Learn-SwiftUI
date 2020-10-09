@@ -18,7 +18,10 @@ struct PageView<Page: View>: View {
     }
 
     var body: some View {
-        PageViewController(controllers: viewControllers, currentPage: $currentPage)
+        VStack {
+            PageViewController(controllers: viewControllers, currentPage: $currentPage)
+            Text("Current Page: \(currentPage)")
+        }
     }
 }
 
