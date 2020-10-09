@@ -278,3 +278,7 @@ Now that the iOS target resources are in place for working on the watch app, you
 #### Section 4 Add the watchOS Map View
 
 Now that you’ve created the basic detail view, it’s time to add a map to show the landmark’s location. Unlike CircleImage, you can’t just reuse the iOS app’s MapView. Instead, you’ll need to create a WKInterfaceObjectRepresentable structure to wrap the WatchKit map.
+
+#### Section 5 Create a Cross-Platform List View
+
+For the landmark list, you can reuse the rows from the iOS app, but each platform needs to present its own detail view. To support this, you’ll convert the LandmarkList view into a generic list type, where the instantiating code defines the detail view.
