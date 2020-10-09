@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct LandmarkList: View {
+struct LandmarkList<DetailView: View>: View {
 
     @EnvironmentObject var userData: UserData
 
