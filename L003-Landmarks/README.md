@@ -230,3 +230,11 @@ For consistency with the profile summary, you’ll add the profile details in th
 #### Section 4 Delay Edit Propagation
 
 To make it so edits don’t take effect until after the user exits edit mode, you use the draft copy of their profile during editing, then assign the draft copy to the real copy only when the user confirms an edit.
+
+## 4. Framework Integration
+
+### 3.1 Interfacing with UIKit
+
+SwiftUI works seamlessly with the existing UI frameworks on all Apple platforms. For example, you can place UIKit views and view controllers inside SwiftUI views, and vice versa.
+
+This tutorial shows you how to convert the featured landmark from the home screen to wrap instances of UIPageViewController and UIPageControl. You’ll use UIPageViewController to display a carousel of SwiftUI views, and use state variables and bindings to coordinate data updates throughout the user interface.
