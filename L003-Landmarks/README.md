@@ -262,3 +262,7 @@ You’re ready to add a custom UIPageControl to your view, wrapped in SwiftUI UI
 This tutorial gives you a chance to apply much of what you’ve already learned about SwiftUI, and — with little effort — migrate the Landmarks app to watchOS.
 
 You’ll start by adding a watchOS target to your project, before copying over the shared data and views you created for the iOS app. With all of the assets in place, you’ll customize the SwiftUI views to display the detail and list views on watchOS.
+
+#### Section 1 Add a watchOS Target
+
+To create a watchOS app, start by adding a watchOS target to the project. Xcode adds groups and files for the watchOS app to your project, along with the schemes needed to build and run the app.
