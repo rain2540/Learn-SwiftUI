@@ -41,5 +41,18 @@ class NotificationController: WKUserNotificationHostingController<NotificationVi
         // This method is called when a notification needs to be presented.
         // Implement it if you use a dynamic notification interface.
         // Populate your dynamic notification interface as quickly as possible.
+        let userData = UserData()
+
+        let notificationData = notification.request.content.userInfo as? [String: Any]
+
+        let aps = notificationData?["aps"] as? [String: Any]
+        let alert = aps?["alert"] as? [String: Any]
+
+        title = alert?["title"] as? String
+        message = alert?["message"] as? String
+
+        if let index = notificationData?[landmarkIndexKey] as? Int {
+            landmark = userData.landmarks[index]
+        }
     }
 }
