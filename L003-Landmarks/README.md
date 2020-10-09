@@ -226,3 +226,7 @@ Users need to toggle between viewing or editing their profile details. You’ll 
 The user profile editor consists primarily of different controls that change individual details in the profile. Some items in the profile, like the badges, aren’t user-editable, so they don’t appear in the editor.
 
 For consistency with the profile summary, you’ll add the profile details in the same order in the editor.
+
+#### Section 4 Delay Edit Propagation
+
+To make it so edits don’t take effect until after the user exits edit mode, you use the draft copy of their profile during editing, then assign the draft copy to the real copy only when the user confirms an edit.
