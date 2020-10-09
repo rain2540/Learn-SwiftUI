@@ -23,6 +23,18 @@ struct ProfileEditor: View {
             Toggle(isOn: $profile.prefersNotifications, label: {
                 Text("Enable Notifications")
             })
+
+            VStack(alignment: .leading, spacing: 20, content: {
+                Text("Seasonal Photo").bold()
+
+                Picker("Seasonal Photo", selection: $profile.seasonalPhoto) {
+                    ForEach(Profile.Season.allCases, id: \.self) { (season) in
+                        Text(season.rawValue).tag(season)
+                    }
+                }
+                .pickerStyle(SegmentedPickerStyle())
+            })
+            .padding(.top)
         }
     }
 
