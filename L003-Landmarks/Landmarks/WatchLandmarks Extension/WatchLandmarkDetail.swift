@@ -21,7 +21,7 @@ struct WatchLandmarkDetail: View {
         ScrollView {
             VStack {
                 CircleImage(image: self.landmark.image.resizable())
-                    .scaledToFill()
+                    .scaledToFit()
 
                 Text(self.landmark.name)
                     .font(.headline)
