@@ -13,6 +13,10 @@ struct PageViewController: UIViewControllerRepresentable {
 
     var controllers: [UIViewController]
 
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+
     func makeUIViewController(context: Context) -> UIPageViewController {
         let pageViewController = UIPageViewController(
             transitionStyle: .scroll,
