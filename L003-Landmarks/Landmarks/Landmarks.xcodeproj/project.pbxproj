@@ -194,6 +194,7 @@
 		B718357024F7B1C8004B4A9E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B7A6961225300AFE00EE60A7 /* FeatureCard.swift */,
 				B7DB835F24F5081E005C26EF /* CircleImage.swift */,
 				B718354E24F7A15A004B4A9E /* MapView.swift */,
 				B78868612500D0F70069FB79 /* Badge.swift */,
@@ -202,7 +203,6 @@
 				B789784725022D2F00A61849 /* BadgeBackground.swift */,
 				B71AF6D4250719AE0078C912 /* HikeGraph.swift */,
 				B7BC134C250778B4008491D6 /* GraphCapsule.swift */,
-				B7A6961225300AFE00EE60A7 /* FeatureCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
