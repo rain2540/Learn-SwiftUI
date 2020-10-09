@@ -12,6 +12,8 @@ struct LandmarkList<DetailView: View>: View {
 
     @EnvironmentObject var userData: UserData
 
+    let detailViewProducer: (Landmark) -> DetailView
+
     var body: some View {
 
             List {
