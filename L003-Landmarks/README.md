@@ -233,8 +233,12 @@ To make it so edits don’t take effect until after the user exits edit mode, yo
 
 ## 4. Framework Integration
 
-### 3.1 Interfacing with UIKit
+### 4.1 Interfacing with UIKit
 
 SwiftUI works seamlessly with the existing UI frameworks on all Apple platforms. For example, you can place UIKit views and view controllers inside SwiftUI views, and vice versa.
 
 This tutorial shows you how to convert the featured landmark from the home screen to wrap instances of UIPageViewController and UIPageControl. You’ll use UIPageViewController to display a carousel of SwiftUI views, and use state variables and bindings to coordinate data updates throughout the user interface.
+
+#### Section 1 Create View to Represent a UIPageViewController
+
+To represent UIKit views and view controllers in SwiftUI, you create types that conform to the UIViewRepresentable and UIViewControllerRepresentable protocols. Your custom types create and configure the UIKit types that they represent, while SwiftUI manages their life cycle and updates them when needed.
