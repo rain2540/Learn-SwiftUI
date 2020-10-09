@@ -82,6 +82,7 @@
 		B7A696C9253037FC00EE60A7 /* lakemcdonald.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7A6962E25302FA300EE60A7 /* lakemcdonald.jpg */; };
 		B7A696CA253037FC00EE60A7 /* icybay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7A6963325302FA400EE60A7 /* icybay.jpg */; };
 		B7A696EA25303C0700EE60A7 /* WatchLandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A696E925303C0700EE60A7 /* WatchLandmarkDetail.swift */; };
+		B7A696F12530480000EE60A7 /* WatchMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A696F02530480000EE60A7 /* WatchMapView.swift */; };
 		B7BC134B2507766E008491D6 /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = B7BC134A2507766E008491D6 /* hikeData.json */; };
 		B7BC134D250778B4008491D6 /* GraphCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC134C250778B4008491D6 /* GraphCapsule.swift */; };
 		B7BE949F252462F8005AE282 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BE949E252462F8005AE282 /* CategoryRow.swift */; };
@@ -210,6 +211,7 @@
 		B7A696712530338700EE60A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7A696722530338700EE60A7 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		B7A696E925303C0700EE60A7 /* WatchLandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchLandmarkDetail.swift; sourceTree = "<group>"; };
+		B7A696F02530480000EE60A7 /* WatchMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchMapView.swift; sourceTree = "<group>"; };
 		B7BC134A2507766E008491D6 /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
 		B7BC134C250778B4008491D6 /* GraphCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCapsule.swift; sourceTree = "<group>"; };
 		B7BE949E252462F8005AE282 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
@@ -364,9 +366,10 @@
 		B7A6965F2530338400EE60A7 /* WatchLandmarks Extension */ = {
 			isa = PBXGroup;
 			children = (
-				B7A696602530338400EE60A7 /* HostingController.swift */,
 				B7A696E925303C0700EE60A7 /* WatchLandmarkDetail.swift */,
+				B7A696F02530480000EE60A7 /* WatchMapView.swift */,
 				B7A696622530338400EE60A7 /* ContentView.swift */,
+				B7A696602530338400EE60A7 /* HostingController.swift */,
 				B7A696642530338400EE60A7 /* ExtensionDelegate.swift */,
 				B7A696662530338400EE60A7 /* NotificationController.swift */,
 				B7A696682530338400EE60A7 /* NotificationView.swift */,
@@ -706,6 +709,7 @@
 				B7A696652530338400EE60A7 /* ExtensionDelegate.swift in Sources */,
 				B7A69689253034A400EE60A7 /* Data.swift in Sources */,
 				B7A696692530338400EE60A7 /* NotificationView.swift in Sources */,
+				B7A696F12530480000EE60A7 /* WatchMapView.swift in Sources */,
 				B7A69687253034A400EE60A7 /* LandmarkRow.swift in Sources */,
 				B7A6966B2530338400EE60A7 /* ComplicationController.swift in Sources */,
 				B7A69686253034A400EE60A7 /* Landmark.swift in Sources */,
