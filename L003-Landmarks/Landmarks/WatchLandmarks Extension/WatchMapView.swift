@@ -11,7 +11,12 @@ import SwiftUI
 struct WatchMapView: WKInterfaceObjectRepresentable {
 
     var landmark: Landmark
-    
+
+
+    func makeWKInterfaceObject(context: WKInterfaceObjectRepresentableContext<WatchMapView>) -> WKInterfaceMap {
+        return WKInterfaceMap()
+    }
+
 }
 
 struct WatchMapView_Previews: PreviewProvider {
