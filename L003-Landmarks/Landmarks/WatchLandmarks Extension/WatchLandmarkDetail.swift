@@ -46,6 +46,7 @@ struct WatchLandmarkDetail: View {
             }
             .padding(16)
         }
+        .navigationBarTitle("Landmarks")
     }
 
 }
