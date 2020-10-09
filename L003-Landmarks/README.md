@@ -220,3 +220,9 @@ The Landmarks app locally stores some configuration details and preferences. Bef
 #### Section 2 Add an Edit Mode
 
 Users need to toggle between viewing or editing their profile details. You’ll add an edit mode by adding an EditButton to the existing ProfileHost, and then creating a view with controls for editing individual values.
+
+#### Section 3 Define the Profile Editor
+
+The user profile editor consists primarily of different controls that change individual details in the profile. Some items in the profile, like the badges, aren’t user-editable, so they don’t appear in the editor.
+
+For consistency with the profile summary, you’ll add the profile details in the same order in the editor.
