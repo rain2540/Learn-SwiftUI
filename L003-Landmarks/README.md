@@ -246,3 +246,9 @@ To represent UIKit views and view controllers in SwiftUI, you create types that 
 #### Section 2 Create the View Controller's Data Source
 
 In a few short steps, you’ve done a lot — the PageViewController uses a UIPageViewController to show content from a SwiftUI view. Now it’s time to enable swiping interactions to move from page to page.
+
+#### Section 3 Track the Page in a SwiftUI View’s State
+
+To prepare for adding a custom UIPageControl, you need a way to track the current page from within PageView.
+
+To do this, you’ll declare a @State property in PageView, and pass a binding to this property down to the PageViewController view. The PageViewController updates the binding to match the visible page.
