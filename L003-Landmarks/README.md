@@ -270,3 +270,7 @@ To create a watchOS app, start by adding a watchOS target to the project. Xcode 
 #### Section 2 Share Files Between Targets
 
 With the watchOS target set, you’ll need to share some resources from the iOS target. You’ll reuse the Landmark app’s data model, some resource files, as well as any views that both platforms can display without modification.
+
+#### Section 3 Create the Detail View
+
+Now that the iOS target resources are in place for working on the watch app, you’ll need to create a watch-specific view for displaying landmark details. To test the detail view, you’ll create custom previews for the largest and smallest watch sizes, and make some changes to the circle view so everything fits on the watch face.
