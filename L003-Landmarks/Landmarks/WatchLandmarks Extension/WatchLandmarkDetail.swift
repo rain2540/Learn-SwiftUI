@@ -18,32 +18,35 @@ struct WatchLandmarkDetail: View {
     }
 
     var body: some View {
-        VStack {
-            CircleImage(image: self.landmark.image.resizable())
-                .scaledToFill()
+        ScrollView {
+            VStack {
+                CircleImage(image: self.landmark.image.resizable())
+                    .scaledToFill()
 
-            Text(self.landmark.name)
-                .font(.headline)
-                .lineLimit(0)
+                Text(self.landmark.name)
+                    .font(.headline)
+                    .lineLimit(0)
 
-            Toggle(
-                isOn: $userData.landmarks[self.landmarkIndex].isFavorite,
-                label: {
-                    Text("Favorite")
-                }
-            )
+                Toggle(
+                    isOn: $userData.landmarks[self.landmarkIndex].isFavorite,
+                    label: {
+                        Text("Favorite")
+                    }
+                )
 
-            Divider()
+                Divider()
 
-            Text(self.landmark.park)
-                .font(.caption)
-                .bold()
-                .lineLimit(0)
+                Text(self.landmark.park)
+                    .font(.caption)
+                    .bold()
+                    .lineLimit(0)
 
-            Text(self.landmark.state)
-                .font(.caption)
+                Text(self.landmark.state)
+                    .font(.caption)
+            }
         }
     }
+
 }
 
 struct WatchLandmarkDetail_Previews: PreviewProvider {
