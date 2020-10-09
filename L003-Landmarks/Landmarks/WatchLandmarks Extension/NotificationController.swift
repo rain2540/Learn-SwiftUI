@@ -16,6 +16,8 @@ class NotificationController: WKUserNotificationHostingController<NotificationVi
     var title: String?
     var message: String?
 
+    let landmarkIndexKey = "landmarkIndex"
+
 
     override var body: NotificationView {
         NotificationView(
