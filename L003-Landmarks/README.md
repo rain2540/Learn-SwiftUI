@@ -274,3 +274,7 @@ With the watchOS target set, you’ll need to share some resources from the iOS 
 #### Section 3 Create the Detail View
 
 Now that the iOS target resources are in place for working on the watch app, you’ll need to create a watch-specific view for displaying landmark details. To test the detail view, you’ll create custom previews for the largest and smallest watch sizes, and make some changes to the circle view so everything fits on the watch face.
+
+#### Section 4 Add the watchOS Map View
+
+Now that you’ve created the basic detail view, it’s time to add a map to show the landmark’s location. Unlike CircleImage, you can’t just reuse the iOS app’s MapView. Instead, you’ll need to create a WKInterfaceObjectRepresentable structure to wrap the WatchKit map.
