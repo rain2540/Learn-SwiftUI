@@ -34,13 +34,22 @@ struct PageViewController: UIViewControllerRepresentable {
         )
     }
 
-    class Coordinator: NSObject, UIPageViewControllerDataSource {
+
+    // MARK: -
+
+    class Coordinator: NSObject, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
 
         var parent: PageViewController
+
+
+        // MARK: - Lifecycle
 
         init(_ pageViewController: PageViewController) {
             self.parent = pageViewController
         }
+
+
+        // MARK: - UIPageViewControllerDataSource
 
         func pageViewController(
             _ pageViewController: UIPageViewController,
@@ -66,6 +75,23 @@ struct PageViewController: UIViewControllerRepresentable {
                 return parent.controllers.first
             }
             return parent.controllers[index + 1]
+        }
+
+
+        // MARK: - UIPageViewControllerDelegate
+
+        func pageViewController(
+            _ pageViewController: UIPageViewController,
+            didFinishAnimating finished: Bool,
+            previousViewControllers: [UIViewController],
+            transitionCompleted completed: Bool)
+        {
+            if completed,
+               let visibleViewController = pageViewController.viewControllers?.first,
+               let index = parent.controllers.firstIndex(of: visibleViewController)
+               {
+                parent.currentPage = index
+            }
         }
 
     }
