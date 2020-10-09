@@ -242,3 +242,7 @@ This tutorial shows you how to convert the featured landmark from the home scree
 #### Section 1 Create View to Represent a UIPageViewController
 
 To represent UIKit views and view controllers in SwiftUI, you create types that conform to the UIViewRepresentable and UIViewControllerRepresentable protocols. Your custom types create and configure the UIKit types that they represent, while SwiftUI manages their life cycle and updates them when needed.
+
+#### Section 2 Create the View Controller's Data Source
+
+In a few short steps, you’ve done a lot — the PageViewController uses a UIPageViewController to show content from a SwiftUI view. Now it’s time to enable swiping interactions to move from page to page.
