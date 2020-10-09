@@ -44,6 +44,7 @@ struct WatchLandmarkDetail: View {
                 Text(self.landmark.state)
                     .font(.caption)
             }
+            .padding(16)
         }
     }
 
