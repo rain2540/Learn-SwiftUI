@@ -286,3 +286,10 @@ For the landmark list, you can reuse the rows from the iOS app, but each platfor
 #### Section 6 Add the Landmarks List
 
 Now that you’ve updated the LandmarksList view so that it works on both platforms, you can add it to the watchOS app.
+
+#### Section 7 Create a Custom Notification Interface
+
+Your version of Landmarks for watchOS is almost complete. In this final section, you’ll create a notification interface that displays landmark information whenever you receive a notification indicating that you are close to one of your favorite locations.
+
+> Note
+> This section only covers how to display the notification after you receive it. It doesn’t describe how to set up or send notifications.
