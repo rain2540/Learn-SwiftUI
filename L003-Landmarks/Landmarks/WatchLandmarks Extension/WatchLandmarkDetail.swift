@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct WatchLandmarkDetail: View {
-
+    
     @EnvironmentObject var userData: UserData
     var landmark: Landmark
 
@@ -18,7 +18,8 @@ struct WatchLandmarkDetail: View {
     }
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        CircleImage(image: self.landmark.image.resizable())
+            .scaledToFill()
     }
 }
 
