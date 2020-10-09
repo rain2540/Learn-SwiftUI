@@ -28,4 +28,14 @@ struct PageViewController: UIViewControllerRepresentable {
         )
     }
 
+    class Coordinator: NSObject {
+
+        var parent: PageViewController
+
+        init(_ pageViewController: PageViewController) {
+            self.parent = pageViewController
+        }
+
+    }
+
 }
