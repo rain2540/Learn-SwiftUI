@@ -252,3 +252,7 @@ In a few short steps, you’ve done a lot — the PageViewController uses a UIPa
 To prepare for adding a custom UIPageControl, you need a way to track the current page from within PageView.
 
 To do this, you’ll declare a @State property in PageView, and pass a binding to this property down to the PageViewController view. The PageViewController updates the binding to match the visible page.
+
+#### Section 4 Add a Custom Page Control
+
+You’re ready to add a custom UIPageControl to your view, wrapped in SwiftUI UIViewRepresentable view.
