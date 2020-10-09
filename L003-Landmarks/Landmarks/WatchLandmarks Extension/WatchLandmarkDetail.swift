@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct WatchLandmarkDetail: View {
-    
+
     @EnvironmentObject var userData: UserData
     var landmark: Landmark
 
@@ -26,7 +26,14 @@ struct WatchLandmarkDetail: View {
 struct WatchLandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
         let userData = UserData()
-        return WatchLandmarkDetail(landmark: userData.landmarks[0])
-            .environmentObject(userData)
+        return Group {
+            WatchLandmarkDetail(landmark: userData.landmarks[0])
+                .environmentObject(userData)
+                .previewDevice("Apple Watch Series 6 - 44mm")
+
+            WatchLandmarkDetail(landmark: userData.landmarks[1])
+                .environmentObject(userData)
+                .previewDevice("Apple Watch Series 6 - 40mm")
+        }
     }
 }
