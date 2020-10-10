@@ -11,9 +11,18 @@ import SwiftUI
 struct Filter: View {
 
     @EnvironmentObject private var userData: UserData
+    @Binding var filter: FilterType
 
     var body: some View {
         HStack {
+            Picker(selection: $filter, label: EmptyView()) {
+                ForEach(FilterType.allCases) { choice in
+                    Text(choice.name).tag(choice)
+                }
+            }
+
+            Spacer()
+
             Toggle(isOn: $userData.showFavoritesOnly) {
                 Text("Favorites Only")
             }
@@ -25,7 +34,7 @@ struct Filter: View {
 
 struct Filter_Previews: PreviewProvider {
     static var previews: some View {
-        Filter()
+        Filter(filter: .constant(.all))
             .environmentObject(UserData())
     }
 }
@@ -49,7 +58,7 @@ struct FilterType: CaseIterable, Hashable, Identifiable {
     static let all = FilterType(name: "All")
 
     static var allCases: [FilterType] {
-        return [.all] + Landmark.Category.allCases.map { FilterType(name: $0.rawValue) }
+        return [.all] + Landmark.Category.allCases.map(FilterType.init)
     }
 
     var id: FilterType {
