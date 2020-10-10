@@ -317,3 +317,9 @@ You’ll start by defining the layout of a single row for a list, tailored to ma
 #### Section 4 Assemble Rows into a List
 
 Using the row defined in the previous section, you’ll create a list that presents all of the known landmarks to the user. You limit the display to only those landmarks marked as favorites when the showFavoritesOnly property in the user data is true.
+
+#### Section 5 Create a Filter to Manage the List
+
+Because users can flag a landmark as a favorite, you’ll need to provide a way that lets them view just their favorites. You’ll create a filter view that uses a Toggle to provide the user with a checkbox that they can click to turn filtering on or off.
+
+To let people quickly narrow down their list of favorite landmarks, you’ll add a Picker to create a pop-up button that lets users filter their favorites based on any categories they’ve set.
