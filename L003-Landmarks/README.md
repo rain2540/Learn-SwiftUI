@@ -341,3 +341,7 @@ Like the circle image, you’ll reuse MapView in macOS. However, the map view re
 The detail view displays information about the selected landmark. You created a view like this for the iOS app, but different platforms require different approaches to data presentation.
 
 You’ll tailor the detail view for macOS, and reuse some of the views you prepared in the previous two sections.
+
+#### Section 10 Combine the Primary and Detail Views
+
+Now that you’ve built all of the component views, complete the app by bringing the primary and detail views together in the content view.
