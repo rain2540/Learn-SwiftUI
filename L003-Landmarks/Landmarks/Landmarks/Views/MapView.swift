@@ -9,20 +9,20 @@
 import SwiftUI
 import MapKit
 
-struct MapView: UIViewRepresentable {
+struct MapView {
 
     var coordinate: CLLocationCoordinate2D
 
-    func makeUIView(context: Context) -> MKMapView {
+    func makeMapView() -> MKMapView {
         MKMapView(frame: .zero)
     }
 
-    func updateUIView(_ uiView: MKMapView, context: Context) {
+    func updateMapView(_ view: MKMapView, context: Context) {
         let coordinate = CLLocationCoordinate2D(
             latitude: 34.011286, longitude: -116.166868)
         let span = MKCoordinateSpan(latitudeDelta: 2.0, longitudeDelta: 2.0)
         let region = MKCoordinateRegion(center: coordinate, span: span)
-        uiView.setRegion(region, animated: true)
+        view.setRegion(region, animated: true)
     }
 
 }
@@ -31,6 +31,18 @@ struct MapView: UIViewRepresentable {
 #if os(macOS)
 
 #else
+
+extension MapView: UIViewRepresentable {
+
+    func makeUIView(context: Context) -> MKMapView {
+        makeMapView()
+    }
+
+    func updateUIView(_ uiView: MKMapView, context: Context) {
+       updateMapView(uiView, context: context)
+    }
+
+}
 
 #endif
 
