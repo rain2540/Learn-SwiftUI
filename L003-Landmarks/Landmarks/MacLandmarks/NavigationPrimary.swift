@@ -13,7 +13,12 @@ struct NavigationPrimary: View {
     @State private var filter: FilterType = .all
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Filter(filter: $filter)
+                .controlSize(.small)
+                .padding([.top, .leading], 8)
+                .padding(.trailing, 4)
+        }
     }
 
 }
