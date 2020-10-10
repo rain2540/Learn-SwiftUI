@@ -19,6 +19,9 @@ struct NavigationDetail: View {
 
     var body: some View {
         ScrollView {
+            MapView(coordinate: landmark.locationCoordinate)
+                .frame(height: 250)
+
             VStack(alignment: .leading, spacing: 12) {
                 HStack(alignment: .center, spacing: 24) {
                     CircleImage(image: landmark.image.resizable(), shadowRadius: 4)
@@ -66,6 +69,7 @@ struct NavigationDetail: View {
             }
             .padding()
             .frame(maxWidth: 700)
+            .offset(x: 0, y: -50)
         }
     }
 
