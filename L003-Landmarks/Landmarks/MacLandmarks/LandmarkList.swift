@@ -12,6 +12,7 @@ struct LandmarkList: View {
 
     @EnvironmentObject private var userData: UserData
     @Binding var selectedLandmark: Landmark?
+    @Binding var filter: FilterType
 
     var body: some View {
         List(selection: $selectedLandmark) {
@@ -27,7 +28,8 @@ struct LandmarkList: View {
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkList(selectedLandmark: .constant(landmarkData[0]))
+        LandmarkList(selectedLandmark: .constant(landmarkData[0]),
+                     filter: .constant(.all))
             .environmentObject(UserData())
     }
 }
