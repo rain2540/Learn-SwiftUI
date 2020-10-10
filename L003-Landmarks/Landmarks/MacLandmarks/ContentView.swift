@@ -14,7 +14,7 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            Text("Hello, World!")
+            NavigationPrimary(selectedLandmark: $selectedLandmark)
         }
         .frame(width: 700, height: 300)
     }
