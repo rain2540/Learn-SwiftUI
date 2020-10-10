@@ -307,3 +307,9 @@ Start by adding a macOS target to the project. Xcode adds a new group and set of
 #### Section 2 Share Data and Assets
 
 Next, you’ll reuse the model and resource files from the iOS app, and share those with the macOS target.
+
+#### Section 3 Create a Row View
+
+With SwiftUI, you typically build your views from the bottom up, creating smaller views that you assemble into larger ones.
+
+You’ll start by defining the layout of a single row for a list, tailored to macOS. The row contains the name of the landmark, its location, an image, and an optional marker that indicates whether the landmark is a favorite.
