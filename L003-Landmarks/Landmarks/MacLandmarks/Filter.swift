@@ -40,6 +40,8 @@ struct Filter_Previews: PreviewProvider {
 }
 
 
+// MARK: - 
+
 struct FilterType: CaseIterable, Hashable, Identifiable {
 
     var name: String
