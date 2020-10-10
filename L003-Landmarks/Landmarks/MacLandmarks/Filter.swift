@@ -41,4 +41,11 @@ struct FilterType: Hashable {
         self.category = category
     }
 
+    init(name: String) {
+        self.name = name
+        self.category = nil
+    }
+
+    static let all = FilterType(name: "All")
+
 }
