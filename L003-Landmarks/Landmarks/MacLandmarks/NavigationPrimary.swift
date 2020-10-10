@@ -10,6 +10,7 @@ import SwiftUI
 
 struct NavigationPrimary: View {
 
+    @Binding var selectedLandmark: Landmark?
     @State private var filter: FilterType = .all
 
     var body: some View {
@@ -25,7 +26,7 @@ struct NavigationPrimary: View {
 
 struct NavigationPrimary_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationPrimary()
+        NavigationPrimary(selectedLandmark: .constant(landmarkData[1]))
             .environmentObject(UserData())
     }
 }
