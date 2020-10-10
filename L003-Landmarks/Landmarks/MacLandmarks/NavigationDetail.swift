@@ -25,7 +25,31 @@ struct NavigationDetail: View {
                         .frame(width: 160, height: 160)
 
                     VStack(alignment: .leading) {
-                        Text(landmark.name).font(.title)
+                        HStack {
+                            Text(landmark.name).font(.title)
+
+                            Button(action: {
+                                self.userData.landmarks[self.landmarkIndex]
+                                    .isFavorite.toggle()
+                            }, label: {
+                                if userData.landmarks[self.landmarkIndex].isFavorite {
+                                    Image("star-filled")
+                                        .resizable()
+                                        .renderingMode(.template)
+                                        .foregroundColor(.yellow)
+                                        .accessibility(label: Text("Remove from favorites"))
+                                } else {
+                                    Image("star-empty")
+                                        .resizable()
+                                        .renderingMode(.template)
+                                        .foregroundColor(.gray)
+                                        .accessibility(label: Text("Add to favorites"))
+                                }
+                            })
+                            .frame(width: 20, height: 20)
+                            .buttonStyle(PlainButtonStyle())
+                        }
+                        
                         Text(landmark.park)
                         Text(landmark.state)
                     }
