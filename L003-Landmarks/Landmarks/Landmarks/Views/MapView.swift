@@ -27,6 +27,14 @@ struct MapView: UIViewRepresentable {
 
 }
 
+
+#if os(macOS)
+
+#else
+
+#endif
+
+
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
         MapView(coordinate: landmarkData[0].locationCoordinate)
