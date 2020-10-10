@@ -13,7 +13,11 @@ struct LandmarkList: View {
     @EnvironmentObject private var userData: UserData
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(userData.landmarks) { landmark in
+                LandmarkRow(landmark: landmark)
+            }
+        }
     }
 
 }
