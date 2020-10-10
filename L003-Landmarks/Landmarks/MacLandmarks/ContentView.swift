@@ -15,6 +15,10 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             NavigationPrimary(selectedLandmark: $selectedLandmark)
+
+            if selectedLandmark != nil {
+                NavigationDetail(landmark: selectedLandmark!)
+            }
         }
         .frame(width: 700, height: 300)
     }
