@@ -10,7 +10,12 @@ import SwiftUI
 
 struct NavigationDetail: View {
 
+    @EnvironmentObject var userData: UserData
     var landmark: Landmark
+
+    var landmarkIndex: Int {
+        userData.landmarks.firstIndex(where: { $0.id == landmark.id })!
+    }
 
     var body: some View {
         ScrollView {
@@ -37,5 +42,6 @@ struct NavigationDetail: View {
 struct NavigationDetail_Previews: PreviewProvider {
     static var previews: some View {
         NavigationDetail(landmark: landmarkData[0])
+            .environmentObject(UserData())
     }
 }
