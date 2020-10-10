@@ -36,6 +36,7 @@
 		B70F2D98253142DB004F7382 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71AF6D2250717300078C912 /* Hike.swift */; };
 		B70F2D99253142DB004F7382 /* turtlerock_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7A6963025302FA300EE60A7 /* turtlerock_feature.jpg */; };
 		B70F2D9A253142DB004F7382 /* charleyrivers_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7A6963925302FA400EE60A7 /* charleyrivers_feature.jpg */; };
+		B70F2DA425314565004F7382 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F2DA325314565004F7382 /* LandmarkRow.swift */; };
 		B718354F24F7A15A004B4A9E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718354E24F7A15A004B4A9E /* MapView.swift */; };
 		B718355124F7AE55004B4A9E /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718355024F7AE54004B4A9E /* Landmark.swift */; };
 		B718355424F7AF0D004B4A9E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718355324F7AF0D004B4A9E /* Data.swift */; };
@@ -216,6 +217,7 @@
 		B70F2D5C25313F60004F7382 /* MacLandmarksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacLandmarksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70F2D6025313F60004F7382 /* MacLandmarksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacLandmarksUITests.swift; sourceTree = "<group>"; };
 		B70F2D6225313F60004F7382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B70F2DA325314565004F7382 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		B718354E24F7A15A004B4A9E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		B718355024F7AE54004B4A9E /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		B718355324F7AF0D004B4A9E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -352,6 +354,7 @@
 			children = (
 				B70F2D3F25313F5D004F7382 /* AppDelegate.swift */,
 				B70F2D4125313F5D004F7382 /* ContentView.swift */,
+				B70F2DA325314565004F7382 /* LandmarkRow.swift */,
 				B70F2D4325313F60004F7382 /* Assets.xcassets */,
 				B70F2D4825313F60004F7382 /* Main.storyboard */,
 				B70F2D4B25313F60004F7382 /* Info.plist */,
@@ -937,6 +940,7 @@
 				B70F2D98253142DB004F7382 /* Hike.swift in Sources */,
 				B70F2D90253142DB004F7382 /* UserData.swift in Sources */,
 				B70F2D8A253142DB004F7382 /* Data.swift in Sources */,
+				B70F2DA425314565004F7382 /* LandmarkRow.swift in Sources */,
 				B70F2D97253142DB004F7382 /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
