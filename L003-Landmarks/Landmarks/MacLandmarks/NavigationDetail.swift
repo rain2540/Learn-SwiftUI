@@ -13,7 +13,22 @@ struct NavigationDetail: View {
     var landmark: Landmark
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack(alignment: .leading, spacing: 12) {
+                HStack(alignment: .center, spacing: 24) {
+                    CircleImage(image: landmark.image)
+
+                    VStack(alignment: .leading) {
+                        Text(landmark.name).font(.title)
+                        Text(landmark.park)
+                        Text(landmark.state)
+                    }
+                    .font(.caption)
+                }
+            }
+            .padding()
+            .frame(maxWidth: 700)
+        }
     }
 
 }
