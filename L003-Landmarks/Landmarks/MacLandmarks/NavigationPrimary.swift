@@ -26,5 +26,6 @@ struct NavigationPrimary: View {
 struct NavigationPrimary_Previews: PreviewProvider {
     static var previews: some View {
         NavigationPrimary()
+            .environmentObject(UserData())
     }
 }
