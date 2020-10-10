@@ -19,6 +19,12 @@ struct NavigationPrimary: View {
                 .controlSize(.small)
                 .padding([.top, .leading], 8)
                 .padding(.trailing, 4)
+
+            LandmarkList(
+                selectedLandmark: $selectedLandmark,
+                filter: $filter
+            )
+            .listStyle(SidebarListStyle())
         }
     }
 
