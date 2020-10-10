@@ -335,3 +335,9 @@ You can sometimes share views across platforms with only modest changes. As you 
 #### Section 8 Extend the Map View for macOS
 
 Like the circle image, you’ll reuse MapView in macOS. However, the map view requires more substantial updates because its use of MapKit relies on UIKit framework integration. Using MapKit in macOS requires AppKit framework integration instead, so you’ll add a compile time directive to provide the appropriate integration for the given target.
+
+#### Section 9 Build the Detail View
+
+The detail view displays information about the selected landmark. You created a view like this for the iOS app, but different platforms require different approaches to data presentation.
+
+You’ll tailor the detail view for macOS, and reuse some of the views you prepared in the previous two sections.
