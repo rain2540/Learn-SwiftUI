@@ -22,9 +22,23 @@ struct Filter: View {
 
 }
 
+
 struct Filter_Previews: PreviewProvider {
     static var previews: some View {
         Filter()
             .environmentObject(UserData())
     }
+}
+
+
+struct FilterType: Hashable {
+
+    var name: String
+    var category: Landmark.Category?
+
+    init(_ category: Landmark.Category) {
+        self.name = category.rawValue
+        self.category = category
+    }
+
 }
