@@ -331,3 +331,7 @@ Create a primary view that combines the filter and the list. Provide new state i
 #### Section 7 Prepare the Circle Image for Reuse
 
 You can sometimes share views across platforms with only modest changes. As you build a landmark detail view for macOS, you’ll reuse the CircleImage view that you created for iOS. To handle the different layout requirements of macOS, you’ll add a parameter to control the shadow radius.
+
+#### Section 8 Extend the Map View for macOS
+
+Like the circle image, you’ll reuse MapView in macOS. However, the map view requires more substantial updates because its use of MapKit relies on UIKit framework integration. Using MapKit in macOS requires AppKit framework integration instead, so you’ll add a compile time directive to provide the appropriate integration for the given target.
