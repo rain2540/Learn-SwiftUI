@@ -13,7 +13,11 @@ struct Filter: View {
     @EnvironmentObject private var userData: UserData
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Toggle(isOn: $userData.showFavoritesOnly) {
+                Text("Favorites Only")
+            }
+        }
     }
 
 }
