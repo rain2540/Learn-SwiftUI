@@ -293,3 +293,9 @@ Your version of Landmarks for watchOS is almost complete. In this final section,
 
 > Note
 > This section only covers how to display the notification after you receive it. It doesn’t describe how to set up or send notifications.
+
+### 4.3 Creating a macOS App
+
+After creating a version of the Landmarks app for watchOS, it’s time to set your sights on something bigger: bringing Landmarks to the Mac. You’ll build upon everything you’ve learned so far, to round out the experience of building a SwiftUI app for iOS, watchOS, and macOS.
+
+You’ll start by adding a macOS target to your project, and then reusing the shared data you created for the iOS app. With all of the assets in place, you’ll create SwiftUI views to display list and detail views on macOS.
