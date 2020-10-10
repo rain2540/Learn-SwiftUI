@@ -323,3 +323,7 @@ Using the row defined in the previous section, you’ll create a list that prese
 Because users can flag a landmark as a favorite, you’ll need to provide a way that lets them view just their favorites. You’ll create a filter view that uses a Toggle to provide the user with a checkbox that they can click to turn filtering on or off.
 
 To let people quickly narrow down their list of favorite landmarks, you’ll add a Picker to create a pop-up button that lets users filter their favorites based on any categories they’ve set.
+
+#### Section 6 Combine the List and Filter Views
+
+Create a primary view that combines the filter and the list. Provide new state information for the filter, while binding the landmark selection to the primary view’s parent view.
