@@ -13,7 +13,14 @@ struct LandmarkRow: View {
     var landmark: Landmark
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(alignment: .center, content: {
+            landmark.image
+                .resizable()
+                .aspectRatio(1.0, contentMode: .fit)
+                .frame(width: 32, height: 32)
+                .fixedSize(horizontal: true, vertical: false)
+                .cornerRadius(3.0)
+        })
     }
 
 }
