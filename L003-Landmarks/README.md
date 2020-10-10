@@ -327,3 +327,7 @@ To let people quickly narrow down their list of favorite landmarks, you’ll add
 #### Section 6 Combine the List and Filter Views
 
 Create a primary view that combines the filter and the list. Provide new state information for the filter, while binding the landmark selection to the primary view’s parent view.
+
+#### Section 7 Prepare the Circle Image for Reuse
+
+You can sometimes share views across platforms with only modest changes. As you build a landmark detail view for macOS, you’ll reuse the CircleImage view that you created for iOS. To handle the different layout requirements of macOS, you’ll add a parameter to control the shadow radius.
