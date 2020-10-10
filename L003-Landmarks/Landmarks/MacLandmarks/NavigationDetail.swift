@@ -49,12 +49,20 @@ struct NavigationDetail: View {
                             .frame(width: 20, height: 20)
                             .buttonStyle(PlainButtonStyle())
                         }
-                        
+
                         Text(landmark.park)
                         Text(landmark.state)
                     }
                     .font(.caption)
                 }
+
+                Divider()
+
+                Text("About \(landmark.name)")
+                    .font(.headline)
+
+                Text(landmark.description)
+                    .lineLimit(nil)
             }
             .padding()
             .frame(maxWidth: 700)
