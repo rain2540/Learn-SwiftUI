@@ -30,6 +30,18 @@ struct MapView {
 
 #if os(macOS)
 
+extension MapView: NSViewRepresentable {
+
+    func makeNSView(context: Context) -> MKMapView {
+        makeMapView()
+    }
+
+    func updateNSView(_ nsView: MKMapView, context: Context) {
+        updateMapView(nsView, context: context)
+    }
+
+}
+
 #else
 
 extension MapView: UIViewRepresentable {
