@@ -11,11 +11,12 @@ import SwiftUI
 struct LandmarkList: View {
 
     @EnvironmentObject private var userData: UserData
+    @Binding var selectedLandmark: Landmark?
 
     var body: some View {
-        List {
+        List(selection: $selectedLandmark) {
             ForEach(userData.landmarks) { landmark in
-                LandmarkRow(landmark: landmark)
+                LandmarkRow(landmark: landmark).tag(landmark)
             }
         }
     }
@@ -24,7 +25,7 @@ struct LandmarkList: View {
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkList()
+        LandmarkList(selectedLandmark: .constant(landmarkData[0]))
             .environmentObject(UserData())
     }
 }
