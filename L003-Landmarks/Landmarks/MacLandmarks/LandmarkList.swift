@@ -17,7 +17,13 @@ struct LandmarkList: View {
     var body: some View {
         List(selection: $selectedLandmark) {
             ForEach(userData.landmarks) { landmark in
-                if !self.userData.showFavoritesOnly || landmark.isFavorite {
+                if (!self.userData.showFavoritesOnly
+                        || landmark.isFavorite)
+                    && (self.filter == .all
+                            || self.filter.category == landmark.category
+                            || (self.filter.category == .featured
+                                    && landmark.isFeatured))
+                {
                     LandmarkRow(landmark: landmark).tag(landmark)
                 }
             }
