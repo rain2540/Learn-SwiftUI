@@ -31,7 +31,7 @@ struct Filter_Previews: PreviewProvider {
 }
 
 
-struct FilterType: Hashable {
+struct FilterType: CaseIterable, Hashable {
 
     var name: String
     var category: Landmark.Category?
@@ -47,5 +47,9 @@ struct FilterType: Hashable {
     }
 
     static let all = FilterType(name: "All")
+
+    static var allCases: [FilterType] {
+        return [.all] + Landmark.Category.allCases.map { FilterType(name: $0.rawValue) }
+    }
 
 }
