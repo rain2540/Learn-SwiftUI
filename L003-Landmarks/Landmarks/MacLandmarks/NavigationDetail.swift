@@ -16,7 +16,8 @@ struct NavigationDetail: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 12) {
                 HStack(alignment: .center, spacing: 24) {
-                    CircleImage(image: landmark.image)
+                    CircleImage(image: landmark.image.resizable())
+                        .frame(width: 160, height: 160)
 
                     VStack(alignment: .leading) {
                         Text(landmark.name).font(.title)
