@@ -303,3 +303,7 @@ You’ll start by adding a macOS target to your project, and then reusing the sh
 #### Section 1 Add a macOS Target to the Project
 
 Start by adding a macOS target to the project. Xcode adds a new group and set of starter files for the macOS app, along with the scheme needed to build and run the app.
+
+#### Section 2 Share Data and Assets
+
+Next, you’ll reuse the model and resource files from the iOS app, and share those with the macOS target.
