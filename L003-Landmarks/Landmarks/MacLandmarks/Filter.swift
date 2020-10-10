@@ -10,14 +10,17 @@ import SwiftUI
 
 struct Filter: View {
 
+    @EnvironmentObject private var userData: UserData
+
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
-    
+
 }
 
 struct Filter_Previews: PreviewProvider {
     static var previews: some View {
         Filter()
+            .environmentObject(UserData())
     }
 }
