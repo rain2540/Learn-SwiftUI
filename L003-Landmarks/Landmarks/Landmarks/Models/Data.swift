@@ -6,7 +6,7 @@
 //  Copyright © 2020 Smartech. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import SwiftUI
 import CoreLocation
 import ImageIO
