@@ -90,6 +90,7 @@
 		B725A4EF24D7DB480006710D /* PokemonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725A4EE24D7DB480006710D /* PokemonList.swift */; };
 		B739CB2A2570D54B00A2ACCD /* PokemonInfoPanelAbilityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B739CB292570D54B00A2ACCD /* PokemonInfoPanelAbilityList.swift */; };
 		B739CB302570E5AE00A2ACCD /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B739CB2F2570E5AE00A2ACCD /* BlurView.swift */; };
+		B739CB362570ECBE00A2ACCD /* PokemonInfoPanelHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B739CB352570ECBE00A2ACCD /* PokemonInfoPanelHeader.swift */; };
 		B7F067BD24E233150092056F /* PokemonInfoPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F067BC24E233150092056F /* PokemonInfoPanel.swift */; };
 /* End PBXBuildFile section */
 
@@ -200,6 +201,7 @@
 		B725A4EE24D7DB480006710D /* PokemonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonList.swift; sourceTree = "<group>"; };
 		B739CB292570D54B00A2ACCD /* PokemonInfoPanelAbilityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoPanelAbilityList.swift; sourceTree = "<group>"; };
 		B739CB2F2570E5AE00A2ACCD /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		B739CB352570ECBE00A2ACCD /* PokemonInfoPanelHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoPanelHeader.swift; sourceTree = "<group>"; };
 		B7F067BC24E233150092056F /* PokemonInfoPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoPanel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -430,6 +432,7 @@
 				B725A4EE24D7DB480006710D /* PokemonList.swift */,
 				B7194F2924BF21B9000916ED /* PokemonInfoRow.swift */,
 				B7F067BC24E233150092056F /* PokemonInfoPanel.swift */,
+				B739CB352570ECBE00A2ACCD /* PokemonInfoPanelHeader.swift */,
 				B739CB292570D54B00A2ACCD /* PokemonInfoPanelAbilityList.swift */,
 				B739CB2F2570E5AE00A2ACCD /* BlurView.swift */,
 			);
@@ -631,6 +634,7 @@
 				B7194F2A24BF21B9000916ED /* PokemonInfoRow.swift in Sources */,
 				B739CB2A2570D54B00A2ACCD /* PokemonInfoPanelAbilityList.swift in Sources */,
 				B7194FBF24BF2ACE000916ED /* Sample.swift in Sources */,
+				B739CB362570ECBE00A2ACCD /* PokemonInfoPanelHeader.swift in Sources */,
 				B7194EFA24BF20E7000916ED /* AppDelegate.swift in Sources */,
 				B7194FB524BF2A2C000916ED /* PokemonViewModel.swift in Sources */,
 				B7194FB624BF2A2C000916ED /* Language.swift in Sources */,
