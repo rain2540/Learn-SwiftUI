@@ -92,6 +92,7 @@
 		B739CB302570E5AE00A2ACCD /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B739CB2F2570E5AE00A2ACCD /* BlurView.swift */; };
 		B739CB362570ECBE00A2ACCD /* PokemonInfoPanelHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B739CB352570ECBE00A2ACCD /* PokemonInfoPanelHeader.swift */; };
 		B739CB472570EF5800A2ACCD /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B739CB462570EF5800A2ACCD /* SettingView.swift */; };
+		B739CB4F2570F8EB00A2ACCD /* SettingRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B739CB4E2570F8EB00A2ACCD /* SettingRootView.swift */; };
 		B7F067BD24E233150092056F /* PokemonInfoPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F067BC24E233150092056F /* PokemonInfoPanel.swift */; };
 /* End PBXBuildFile section */
 
@@ -204,6 +205,7 @@
 		B739CB2F2570E5AE00A2ACCD /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		B739CB352570ECBE00A2ACCD /* PokemonInfoPanelHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoPanelHeader.swift; sourceTree = "<group>"; };
 		B739CB462570EF5800A2ACCD /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		B739CB4E2570F8EB00A2ACCD /* SettingRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRootView.swift; sourceTree = "<group>"; };
 		B7F067BC24E233150092056F /* PokemonInfoPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoPanel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -434,6 +436,7 @@
 				B739CB452570EE1D00A2ACCD /* List */,
 				B739CB3D2570EDEF00A2ACCD /* Panel */,
 				B739CB462570EF5800A2ACCD /* SettingView.swift */,
+				B739CB4E2570F8EB00A2ACCD /* SettingRootView.swift */,
 				B739CB442570EE0700A2ACCD /* Utils */,
 			);
 			path = View;
@@ -659,6 +662,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7194F2A24BF21B9000916ED /* PokemonInfoRow.swift in Sources */,
+				B739CB4F2570F8EB00A2ACCD /* SettingRootView.swift in Sources */,
 				B739CB2A2570D54B00A2ACCD /* PokemonInfoPanelAbilityList.swift in Sources */,
 				B7194FBF24BF2ACE000916ED /* Sample.swift in Sources */,
 				B739CB362570ECBE00A2ACCD /* PokemonInfoPanelHeader.swift in Sources */,
