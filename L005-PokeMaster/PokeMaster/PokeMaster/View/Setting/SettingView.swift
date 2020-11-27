@@ -95,7 +95,12 @@ struct SettingView: View {
 
     var actionSection: some View {
         Section(header: Text("")) {
-
+            Button(action: {
+                print("清空缓存")
+            }, label: {
+                Text("清空缓存")
+                    .foregroundColor(.red)
+            })
         }
     }
 
