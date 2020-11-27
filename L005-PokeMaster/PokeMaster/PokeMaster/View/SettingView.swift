@@ -75,6 +75,10 @@ struct SettingView: View {
             })
             .pickerStyle(SegmentedPickerStyle())
             TextField("电子邮箱", text: $settings.email)
+            SecureField("密码", text: $settings.password)
+            if settings.accountBehavior == .register {
+                SecureField("确认密码", text: $settings.verifyPassword)
+            }
         }
     }
 
