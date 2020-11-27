@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct SettingRootView: View {
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            SettingView().navigationBarTitle("设置")
+        }
     }
+
 }
 
 struct SettingRootView_Previews: PreviewProvider {
