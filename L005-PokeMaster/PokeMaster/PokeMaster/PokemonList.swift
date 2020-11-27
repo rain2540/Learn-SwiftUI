@@ -18,23 +18,28 @@ struct PokemonList: View {
                     model: pokemon,
                     expanded: self.expandingIndex == pokemon.id
                 )
-                    .onTapGesture {
-                        withAnimation(
-                            .spring(
-                                response: 0.55,
-                                dampingFraction: 0.425,
-                                blendDuration: 0)
-                            )
-                        {
-                            if self.expandingIndex == pokemon.id {
-                                self.expandingIndex = nil
-                            } else {
-                                self.expandingIndex = pokemon.id
-                            }
+                .onTapGesture {
+                    withAnimation(
+                        .spring(
+                            response: 0.55,
+                            dampingFraction: 0.425,
+                            blendDuration: 0)
+                    )
+                    {
+                        if self.expandingIndex == pokemon.id {
+                            self.expandingIndex = nil
+                        } else {
+                            self.expandingIndex = pokemon.id
                         }
+                    }
                 }
             }
-        }
+        }.overlay(
+            VStack{
+                Spacer()
+                PokemonInfoPanel(model: .sample(id: 1))
+            }.edgesIgnoringSafeArea(.bottom)
+        )
     }
 
 }
