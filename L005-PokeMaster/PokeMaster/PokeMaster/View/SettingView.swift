@@ -30,6 +30,20 @@ class Settings: ObservableObject {
 }
 
 
+extension Settings.Sorting {
+
+    var text: String {
+        switch self {
+            case .id: return "ID"
+            case .name: return "名字"
+            case .color: return "颜色"
+            case .favorite: return "最爱"
+        }
+    }
+
+}
+
+
 struct SettingView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
