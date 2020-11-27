@@ -6,15 +6,42 @@
 //
 
 import SwiftUI
+import UIKit
 
-struct BlurView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct BlurView: UIViewRepresentable {
+
+    let style: UIBlurEffect.Style
+
+    func makeUIView(context: UIViewRepresentableContext<BlurView>) -> UIView {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = UIColor.clear
+
+        let blurEffect = UIBlurEffect(style: style)
+        let blurView = UIVisualEffectView(effect: blurEffect)
+
+        blurView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(blurView)
+        NSLayoutConstraint.activate([
+            blurView.heightAnchor.constraint(equalTo: view.heightAnchor),
+            blurView.widthAnchor.constraint(equalTo: view.widthAnchor)
+        ])
+        return view
     }
+
+    func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<BlurView>) {
+
+    }
+
 }
 
-struct BlurView_Previews: PreviewProvider {
-    static var previews: some View {
-        BlurView()
+
+extension View {
+
+    func blurBackground(style: UIBlurEffect.Style) -> some View {
+        ZStack {
+            BlurView(style: style)
+            self
+        }
     }
+
 }
