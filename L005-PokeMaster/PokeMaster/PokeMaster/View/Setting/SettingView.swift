@@ -89,7 +89,8 @@ struct SettingView: View {
 
     var optionSection: some View {
         Section(header: Text("选项")) {
-
+            Toggle("显示英文名", isOn: $settings.showEnglishName)
+            Toggle("只显示收藏", isOn: $settings.showFavorite)
         }
     }
 
