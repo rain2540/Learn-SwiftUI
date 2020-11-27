@@ -44,6 +44,18 @@ extension Settings.Sorting {
 }
 
 
+extension Settings.AccountBehavior {
+
+    var text: String {
+        switch self {
+            case .register: return "注册"
+            case .login: return "登录"
+        }
+    }
+
+}
+
+
 struct SettingView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
