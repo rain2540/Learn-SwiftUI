@@ -88,6 +88,7 @@
 		B7194FBF24BF2ACE000916ED /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7194FBC24BF2ACE000916ED /* Sample.swift */; };
 		B7194FC024BF2ACE000916ED /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7194FBD24BF2ACE000916ED /* Helpers.swift */; };
 		B725A4EF24D7DB480006710D /* PokemonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725A4EE24D7DB480006710D /* PokemonList.swift */; };
+		B739CB2A2570D54B00A2ACCD /* PokemonInfoPanelAbilityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B739CB292570D54B00A2ACCD /* PokemonInfoPanelAbilityList.swift */; };
 		B7F067BD24E233150092056F /* PokemonInfoPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F067BC24E233150092056F /* PokemonInfoPanel.swift */; };
 /* End PBXBuildFile section */
 
@@ -196,6 +197,7 @@
 		B7194FBC24BF2ACE000916ED /* Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		B7194FBD24BF2ACE000916ED /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		B725A4EE24D7DB480006710D /* PokemonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonList.swift; sourceTree = "<group>"; };
+		B739CB292570D54B00A2ACCD /* PokemonInfoPanelAbilityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoPanelAbilityList.swift; sourceTree = "<group>"; };
 		B7F067BC24E233150092056F /* PokemonInfoPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoPanel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -253,6 +255,7 @@
 				B725A4EE24D7DB480006710D /* PokemonList.swift */,
 				B7194F2924BF21B9000916ED /* PokemonInfoRow.swift */,
 				B7F067BC24E233150092056F /* PokemonInfoPanel.swift */,
+				B739CB292570D54B00A2ACCD /* PokemonInfoPanelAbilityList.swift */,
 				B7194F2B24BF2387000916ED /* JSON */,
 				B7194FAB24BF2A2C000916ED /* Model */,
 				B7194FBA24BF2ACE000916ED /* Utils */,
@@ -615,6 +618,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7194F2A24BF21B9000916ED /* PokemonInfoRow.swift in Sources */,
+				B739CB2A2570D54B00A2ACCD /* PokemonInfoPanelAbilityList.swift in Sources */,
 				B7194FBF24BF2ACE000916ED /* Sample.swift in Sources */,
 				B7194EFA24BF20E7000916ED /* AppDelegate.swift in Sources */,
 				B7194FB524BF2A2C000916ED /* PokemonViewModel.swift in Sources */,
