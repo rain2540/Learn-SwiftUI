@@ -68,7 +68,12 @@ struct SettingView: View {
 
     var accountSection: some View {
         Section(header: Text("账户")) {
-
+            Picker(selection: $settings.accountBehavior, label: Text(""), content: {
+                ForEach(Settings.AccountBehavior.allCases, id: \.self) {
+                    Text($0.text)
+                }
+            })
+            .pickerStyle(SegmentedPickerStyle())
         }
     }
 
