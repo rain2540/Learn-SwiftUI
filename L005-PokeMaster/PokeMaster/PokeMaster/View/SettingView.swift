@@ -79,6 +79,9 @@ struct SettingView: View {
             if settings.accountBehavior == .register {
                 SecureField("确认密码", text: $settings.verifyPassword)
             }
+            Button(settings.accountBehavior.text) {
+                print("登录 / 注册")
+            }
         }
     }
 
