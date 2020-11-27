@@ -62,7 +62,13 @@ struct SettingView: View {
 
     var body: some View {
         Form {
-            
+            accountSection
+        }
+    }
+
+    var accountSection: some View {
+        Section(header: Text("账户")) {
+
         }
     }
 
