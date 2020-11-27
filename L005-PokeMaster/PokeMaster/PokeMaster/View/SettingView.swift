@@ -74,6 +74,7 @@ struct SettingView: View {
                 }
             })
             .pickerStyle(SegmentedPickerStyle())
+            TextField("电子邮箱", text: $settings.email)
         }
     }
 
