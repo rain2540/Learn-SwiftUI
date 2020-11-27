@@ -63,6 +63,8 @@ struct SettingView: View {
     var body: some View {
         Form {
             accountSection
+            optionSection
+            actionSection
         }
     }
 
@@ -82,6 +84,18 @@ struct SettingView: View {
             Button(settings.accountBehavior.text) {
                 print("登录 / 注册")
             }
+        }
+    }
+
+    var optionSection: some View {
+        Section(header: Text("选项")) {
+
+        }
+    }
+
+    var actionSection: some View {
+        Section(header: Text("")) {
+
         }
     }
 
