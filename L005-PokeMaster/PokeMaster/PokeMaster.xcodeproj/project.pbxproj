@@ -91,6 +91,7 @@
 		B739CB2A2570D54B00A2ACCD /* PokemonInfoPanelAbilityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B739CB292570D54B00A2ACCD /* PokemonInfoPanelAbilityList.swift */; };
 		B739CB302570E5AE00A2ACCD /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B739CB2F2570E5AE00A2ACCD /* BlurView.swift */; };
 		B739CB362570ECBE00A2ACCD /* PokemonInfoPanelHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B739CB352570ECBE00A2ACCD /* PokemonInfoPanelHeader.swift */; };
+		B739CB472570EF5800A2ACCD /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B739CB462570EF5800A2ACCD /* SettingView.swift */; };
 		B7F067BD24E233150092056F /* PokemonInfoPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F067BC24E233150092056F /* PokemonInfoPanel.swift */; };
 /* End PBXBuildFile section */
 
@@ -202,6 +203,7 @@
 		B739CB292570D54B00A2ACCD /* PokemonInfoPanelAbilityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoPanelAbilityList.swift; sourceTree = "<group>"; };
 		B739CB2F2570E5AE00A2ACCD /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		B739CB352570ECBE00A2ACCD /* PokemonInfoPanelHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoPanelHeader.swift; sourceTree = "<group>"; };
+		B739CB462570EF5800A2ACCD /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		B7F067BC24E233150092056F /* PokemonInfoPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoPanel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -431,6 +433,7 @@
 			children = (
 				B739CB452570EE1D00A2ACCD /* List */,
 				B739CB3D2570EDEF00A2ACCD /* Panel */,
+				B739CB462570EF5800A2ACCD /* SettingView.swift */,
 				B739CB442570EE0700A2ACCD /* Utils */,
 			);
 			path = View;
@@ -665,6 +668,7 @@
 				B7194FBE24BF2ACE000916ED /* FileHelper.swift in Sources */,
 				B7194FB424BF2A2C000916ED /* AbilityViewModel.swift in Sources */,
 				B7194FB824BF2A2C000916ED /* Pokemon.swift in Sources */,
+				B739CB472570EF5800A2ACCD /* SettingView.swift in Sources */,
 				B7194EFC24BF20E7000916ED /* SceneDelegate.swift in Sources */,
 				B7194FB724BF2A2C000916ED /* Ability.swift in Sources */,
 				B7194FC024BF2ACE000916ED /* Helpers.swift in Sources */,
