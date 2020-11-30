@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct PokemonRootView: View {
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            PokemonList().navigationBarTitle("宝可梦列表")
+        }
     }
+
 }
 
 struct PokemonRootView_Previews: PreviewProvider {
