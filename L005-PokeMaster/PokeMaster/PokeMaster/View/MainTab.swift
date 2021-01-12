@@ -20,7 +20,7 @@ struct MainTab: View {
                 Text("设置")
             }
         }
-        
+        .edgesIgnoringSafeArea(.top)
     }
 }
 
