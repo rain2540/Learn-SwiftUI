@@ -6,7 +6,10 @@
 //
 
 import Foundation
+import Combine
 
-struct Store {
+class Store: ObservableObject {
+
+    @Published var appState = AppState()
 
 }
