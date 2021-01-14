@@ -34,12 +34,13 @@ struct PokemonList: View {
                     }
                 }
             }
-        }.overlay(
+        }
+        /*.overlay(
             VStack{
                 Spacer()
                 PokemonInfoPanel(model: .sample(id: 1))
             }.edgesIgnoringSafeArea(.bottom)
-        )
+        )*/
     }
 
 }
