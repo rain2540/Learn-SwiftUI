@@ -19,9 +19,18 @@ extension AppState {
 
     struct Settings {
 
+        enum AccountBehavior: CaseIterable {
+            case register, login
+        }
+
         enum Sorting: CaseIterable {
             case id, name, color, favorite
         }
+
+        var accountBehavior = AccountBehavior.login
+        var email = ""
+        var password = ""
+        var verifyPassword = ""
 
         var showEnglishName = true
         var sorting = Sorting.id
