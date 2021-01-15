@@ -59,6 +59,10 @@ extension Settings.AccountBehavior {
 struct SettingView: View {
 
     @ObservedObject var settings = Settings()
+    @EnvironmentObject var store: Store
+    var settingsBinding: Binding<AppState.Settings> {
+        $store.appState.settings
+    }
 
     var body: some View {
         Form {
