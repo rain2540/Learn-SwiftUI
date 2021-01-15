@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-
+// Settings 已经被全部移动到 `AppState` 中
+/*
 class Settings: ObservableObject {
 
     enum AccountBehavior: CaseIterable {
@@ -28,7 +29,7 @@ class Settings: ObservableObject {
     @Published var showFavorite = false
 
 }
-
+*/
 
 //extension Settings.Sorting {
 extension AppState.Settings.Sorting {
@@ -45,7 +46,8 @@ extension AppState.Settings.Sorting {
 }
 
 
-extension Settings.AccountBehavior {
+//extension Settings.AccountBehavior {
+extension AppState.Settings.AccountBehavior {
 
     var text: String {
         switch self {
@@ -59,8 +61,11 @@ extension Settings.AccountBehavior {
 
 struct SettingView: View {
 
-    @ObservedObject var settings = Settings()
+    //@ObservedObject var settings = Settings()
     @EnvironmentObject var store: Store
+    var settings: AppState.Settings {
+        store.appState.settings
+    }
     var settingsBinding: Binding<AppState.Settings> {
         $store.appState.settings
     }
@@ -75,16 +80,16 @@ struct SettingView: View {
 
     var accountSection: some View {
         Section(header: Text("账户")) {
-            Picker(selection: $settings.accountBehavior, label: Text(""), content: {
-                ForEach(Settings.AccountBehavior.allCases, id: \.self) {
+            Picker(selection: settingsBinding.accountBehavior, label: Text(""), content: {
+                ForEach(AppState.Settings.AccountBehavior.allCases, id: \.self) {
                     Text($0.text)
                 }
             })
             .pickerStyle(SegmentedPickerStyle())
-            TextField("电子邮箱", text: $settings.email)
-            SecureField("密码", text: $settings.password)
+            TextField("电子邮箱", text: settingsBinding.email)
+            SecureField("密码", text: settingsBinding.password)
             if settings.accountBehavior == .register {
-                SecureField("确认密码", text: $settings.verifyPassword)
+                SecureField("确认密码", text: settingsBinding.verifyPassword)
             }
             Button(settings.accountBehavior.text) {
                 print("登录 / 注册")
