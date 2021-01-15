@@ -30,7 +30,8 @@ class Settings: ObservableObject {
 }
 
 
-extension Settings.Sorting {
+//extension Settings.Sorting {
+extension AppState.Settings.Sorting {
 
     var text: String {
         switch self {
@@ -93,13 +94,32 @@ struct SettingView: View {
 
     var optionSection: some View {
         Section(header: Text("选项")) {
-            Toggle("显示英文名", isOn: $settings.showEnglishName)
+            //Toggle("显示英文名", isOn: $settings.showEnglishName)
+            Toggle(isOn: settingsBinding.showEnglishName, label: {
+                Text("显示英文名")
+            })
+
+            /*
             Picker(selection: $settings.sorting, label: Text("排序方式"), content: {
                 ForEach(Settings.Sorting.allCases, id: \.self) {
                     Text($0.text)
                 }
             })
-            Toggle("只显示收藏", isOn: $settings.showFavorite)
+            */
+            Picker(
+                selection: settingsBinding.sorting,
+                label: Text("排序方式"),
+                content: {
+                    ForEach(AppState.Settings.Sorting.allCases, id: \.self) {
+                        Text($0.text)
+                    }
+                }
+            )
+
+            //Toggle("只显示收藏", isOn: $settings.showFavorite)
+            Toggle(isOn: settingsBinding.showFavoriteOnly, label: {
+                Text("只显示收藏")
+            })
         }
     }
 
