@@ -36,6 +36,8 @@ extension AppState {
         var sorting = Sorting.id
         var showFavoriteOnly = false
 
+        var loginUser: User?
+
     }
 
 }
