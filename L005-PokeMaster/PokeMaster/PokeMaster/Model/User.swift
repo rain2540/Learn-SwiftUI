@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct User {
+struct User: Codable {
 
-
+    var email: String
+    var favoritePokemonIDs: Set<Int>
 
 }
