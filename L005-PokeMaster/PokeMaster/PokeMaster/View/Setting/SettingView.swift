@@ -94,6 +94,12 @@ struct SettingView: View {
                 }
                 Button(settings.accountBehavior.text) {
                     print("登录 / 注册")
+                    self.store.dispatch(
+                        .login(
+                            email: self.settings.email,
+                            password: self.settings.password
+                        )
+                    )
                 }
             } else {
                 Text(settings.loginUser!.email)
