@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B70A16B725DE4FCA00889713 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A16B625DE4FCA00889713 /* AppAction.swift */; };
 		B7194EFA24BF20E7000916ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7194EF924BF20E7000916ED /* AppDelegate.swift */; };
 		B7194EFC24BF20E7000916ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7194EFB24BF20E7000916ED /* SceneDelegate.swift */; };
 		B7194EFE24BF20E7000916ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7194EFD24BF20E7000916ED /* ContentView.swift */; };
@@ -119,6 +120,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B70A16B625DE4FCA00889713 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
 		B7194EF624BF20E7000916ED /* PokeMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7194EF924BF20E7000916ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7194EFB24BF20E7000916ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 				B7194EFB24BF20E7000916ED /* SceneDelegate.swift */,
 				B7194EFD24BF20E7000916ED /* ContentView.swift */,
 				B77FC3E625B088B400CE76A1 /* AppState.swift */,
+				B70A16B625DE4FCA00889713 /* AppAction.swift */,
 				B77FC3EB25B08B5400CE76A1 /* Store.swift */,
 				B739CB342570EC4D00A2ACCD /* View */,
 				B7194F2B24BF2387000916ED /* JSON */,
@@ -697,6 +700,7 @@
 				B7194FBE24BF2ACE000916ED /* FileHelper.swift in Sources */,
 				B7194FB424BF2A2C000916ED /* AbilityViewModel.swift in Sources */,
 				B7789EBF25AD21AF00F90BF8 /* MainTab.swift in Sources */,
+				B70A16B725DE4FCA00889713 /* AppAction.swift in Sources */,
 				B7194FB824BF2A2C000916ED /* Pokemon.swift in Sources */,
 				B739CB472570EF5800A2ACCD /* SettingView.swift in Sources */,
 				B7194EFC24BF20E7000916ED /* SceneDelegate.swift in Sources */,
