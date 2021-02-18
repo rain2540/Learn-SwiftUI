@@ -12,6 +12,15 @@ class Store: ObservableObject {
 
     @Published var appState = AppState()
 
+
+    func dispatch(_ action: AppAction) {
+        #if DEBUG
+        print("[ACTION]: \(action)")
+        #endif
+        let result = Store.reduce(state: appState, action: action)
+        appState = result
+    }
+
     static func reduce(
         state: AppState,
         action: AppAction) -> AppState
