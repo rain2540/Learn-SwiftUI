@@ -6,3 +6,8 @@
 //
 
 import Foundation
+import Combine
+
+protocol AppCommand {
+    func execute(in store: Store)
+}
