@@ -278,12 +278,7 @@
 				B7194EF924BF20E7000916ED /* AppDelegate.swift */,
 				B7194EFB24BF20E7000916ED /* SceneDelegate.swift */,
 				B7194EFD24BF20E7000916ED /* ContentView.swift */,
-				B77FC3E625B088B400CE76A1 /* AppState.swift */,
-				B70A16B625DE4FCA00889713 /* AppAction.swift */,
-				B77FC3EB25B08B5400CE76A1 /* Store.swift */,
-				B75A3D2E26089062003ECDB6 /* LoginRequest.swift */,
-				B75A3D4226089401003ECDB6 /* AppError.swift */,
-				B71C536A262C7F61004B7A07 /* AppCommand.swift */,
+				B7A0434E262D03B300891326 /* State */,
 				B739CB342570EC4D00A2ACCD /* View */,
 				B7194F2B24BF2387000916ED /* JSON */,
 				B7194FAB24BF2A2C000916ED /* Model */,
@@ -502,6 +497,35 @@
 				B739CB462570EF5800A2ACCD /* SettingView.swift */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		B7A0434E262D03B300891326 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				B7A0435C262D03D300891326 /* DataFlow */,
+				B7A04358262D03C000891326 /* Networking */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		B7A04358262D03C000891326 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B75A3D2E26089062003ECDB6 /* LoginRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B7A0435C262D03D300891326 /* DataFlow */ = {
+			isa = PBXGroup;
+			children = (
+				B77FC3EB25B08B5400CE76A1 /* Store.swift */,
+				B77FC3E625B088B400CE76A1 /* AppState.swift */,
+				B70A16B625DE4FCA00889713 /* AppAction.swift */,
+				B75A3D4226089401003ECDB6 /* AppError.swift */,
+				B71C536A262C7F61004B7A07 /* AppCommand.swift */,
+			);
+			path = DataFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
