@@ -37,6 +37,8 @@ struct LoginAppCommand: AppCommand {
 
 class SubscriptionToken {
 
+    var cancellable: AnyCancellable?
 
+    func unseal() { cancellable = nil }
 
 }
