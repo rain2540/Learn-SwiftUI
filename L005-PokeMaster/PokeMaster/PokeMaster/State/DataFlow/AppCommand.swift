@@ -33,3 +33,10 @@ struct LoginAppCommand: AppCommand {
     }
 
 }
+
+
+class SubscriptionToken {
+
+
+
+}
