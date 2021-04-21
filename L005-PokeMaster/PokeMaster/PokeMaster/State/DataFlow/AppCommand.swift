@@ -42,3 +42,12 @@ class SubscriptionToken {
     func unseal() { cancellable = nil }
 
 }
+
+
+extension AnyCancellable {
+
+    func seal(in token: SubscriptionToken) {
+        token.cancellable = self
+    }
+
+}
