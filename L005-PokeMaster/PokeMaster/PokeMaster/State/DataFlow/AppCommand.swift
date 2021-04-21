@@ -19,6 +19,7 @@ struct LoginAppCommand: AppCommand {
     let password: String
 
     func execute(in store: Store) {
+        let token = SubscriptionToken()
         LoginRequest(
             email: email,
             password: password
@@ -27,9 +28,11 @@ struct LoginAppCommand: AppCommand {
             if case .failure(let error) = complete {
 
             }
+            token.unseal()
         }, receiveValue: { (user) in
 
         })
+        .seal(in: token)
     }
 
 }
