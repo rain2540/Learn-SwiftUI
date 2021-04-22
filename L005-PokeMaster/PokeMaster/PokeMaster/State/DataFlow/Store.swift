@@ -23,18 +23,27 @@ class Store: ObservableObject {
 
     static func reduce(
         state: AppState,
-        action: AppAction) -> AppState
+        action: AppAction
+    ) -> (AppState, AppCommand?)
     {
         var appState = state
+        var appCommand: AppCommand?
 
         switch action {
             case .login(let email, let password):
+                guard !appState.settings.loginRequesting else {
+                    break
+                }
+                appState.settings.loginRequesting = true
+                /*
                 if password == "password" {
                     let user = User(email: email, favoritePokemonIDs: [])
                     appState.settings.loginUser = user
                 }
+                */
+                appCommand = LoginAppCommand(email: email, password: password)
         }
-        return appState
+        return (appState, appCommand)
     }
 
 }
