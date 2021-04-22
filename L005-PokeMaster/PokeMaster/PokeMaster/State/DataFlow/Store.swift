@@ -18,7 +18,13 @@ class Store: ObservableObject {
         print("[ACTION]: \(action)")
         #endif
         let result = Store.reduce(state: appState, action: action)
-        appState = result
+        appState = result.0
+        if let command = result.1 {
+            #if DEBUG
+            print("[COMMAND]: \(command)")
+            #endif
+            command.execute(in: self)
+        }
     }
 
     static func reduce(
