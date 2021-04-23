@@ -48,6 +48,17 @@ class Store: ObservableObject {
                 }
                 */
                 appCommand = LoginAppCommand(email: email, password: password)
+
+            case .accountBehaviorDone(result: let result):
+                appState.settings.loginRequesting = false
+                switch result {
+                    case .success(let user):
+                        appState.settings.loginUser = user
+
+                    case .failure(let error):
+                        print("Error: \(error)")
+
+                }
         }
         return (appState, appCommand)
     }
