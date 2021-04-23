@@ -26,11 +26,15 @@ struct LoginAppCommand: AppCommand {
         ).publisher
         .sink(receiveCompletion: { (complete) in
             if case .failure(let error) = complete {
-
+                store.dispatch(
+                    .accountBehaviorDone(result: .failure(error))
+                )
             }
             token.unseal()
         }, receiveValue: { (user) in
-
+            store.dispatch(
+                .accountBehaviorDone(result: .success(user))
+            )
         })
         .seal(in: token)
     }
