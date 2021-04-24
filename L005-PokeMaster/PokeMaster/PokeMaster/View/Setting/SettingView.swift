@@ -92,14 +92,18 @@ struct SettingView: View {
                 if settings.accountBehavior == .register {
                     SecureField("确认密码", text: settingsBinding.verifyPassword)
                 }
-                Button(settings.accountBehavior.text) {
-                    print("登录 / 注册")
-                    self.store.dispatch(
-                        .login(
-                            email: self.settings.email,
-                            password: self.settings.password
+                if settings.loginRequesting {
+                    Text("登录中...")
+                } else {
+                    Button(settings.accountBehavior.text) {
+                        print("登录 / 注册")
+                        self.store.dispatch(
+                            .login(
+                                email: self.settings.email,
+                                password: self.settings.password
+                            )
                         )
-                    )
+                    }
                 }
             } else {
                 Text(settings.loginUser!.email)
