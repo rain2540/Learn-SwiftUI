@@ -39,6 +39,7 @@ extension AppState {
         var loginUser: User?
 
         var loginRequesting = false
+        var loginError: AppError?
 
     }
 
