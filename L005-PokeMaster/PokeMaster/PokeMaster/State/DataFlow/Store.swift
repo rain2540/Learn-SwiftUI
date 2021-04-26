@@ -56,7 +56,8 @@ class Store: ObservableObject {
                         appState.settings.loginUser = user
 
                     case .failure(let error):
-                        print("Error: \(error)")
+                        //print("Error: \(error)")
+                        appState.settings.loginError = error
 
                 }
         }
