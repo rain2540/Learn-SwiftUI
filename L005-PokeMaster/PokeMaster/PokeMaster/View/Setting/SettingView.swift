@@ -76,6 +76,9 @@ struct SettingView: View {
             optionSection
             actionSection
         }
+        .alert(item: settingsBinding.loginError) { (error) -> Alert in
+            Alert(title: Text(error.localizedDescription))
+        }
     }
 
     var accountSection: some View {
