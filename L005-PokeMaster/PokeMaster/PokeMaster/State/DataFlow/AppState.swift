@@ -36,7 +36,23 @@ extension AppState {
         var sorting = Sorting.id
         var showFavoriteOnly = false
 
-        var loginUser: User?
+        var loginUser: User? = try? FileHelper.loadJSON(
+            from: .documentDirectory,
+            fileName: "user.json")
+        {
+            didSet {
+                if let value = loginUser {
+                    try? FileHelper.writeJSON(
+                        value,
+                        to: .documentDirectory,
+                        fileName: "user.json")
+                } else {
+                    try? FileHelper.delete(
+                        from: .documentDirectory,
+                        fileName: "user.json")
+                }
+            }
+        }
 
         var loginRequesting = false
         var loginError: AppError?
