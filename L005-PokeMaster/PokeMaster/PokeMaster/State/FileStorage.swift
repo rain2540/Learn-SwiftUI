@@ -7,6 +7,14 @@
 
 import Foundation
 
-struct FileStorage {
+
+struct FileStorage<T: Codable> {
+
+    var value: T?
+
+    let directory: FileManager.SearchPathDirectory
+    let fileName: String
+
+
 
 }
