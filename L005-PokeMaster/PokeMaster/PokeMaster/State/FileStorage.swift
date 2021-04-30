@@ -16,5 +16,13 @@ struct FileStorage<T: Codable> {
     let fileName: String
 
 
+    init(directory: FileManager.SearchPathDirectory, fileName: String) {
+        value = try? FileHelper.loadJSON(
+            from: directory,
+            fileName: fileName
+        )
+        self.directory = directory
+        self.fileName = fileName
+    }
 
 }
