@@ -36,7 +36,8 @@ extension AppState {
         var sorting = Sorting.id
         var showFavoriteOnly = false
 
-        var loginUser: User? = try? FileHelper.loadJSON(
+        @FileStorage(directory: .documentDirectory, fileName: "user.json")
+        var loginUser: User?/* = try? FileHelper.loadJSON(
             from: .documentDirectory,
             fileName: "user.json")
         {
@@ -53,7 +54,7 @@ extension AppState {
                 }
             }
         }
-
+         */
         var loginRequesting = false
         var loginError: AppError?
 
