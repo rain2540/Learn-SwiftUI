@@ -37,24 +37,7 @@ extension AppState {
         var showFavoriteOnly = false
 
         @FileStorage(directory: .documentDirectory, fileName: "user.json")
-        var loginUser: User?/* = try? FileHelper.loadJSON(
-            from: .documentDirectory,
-            fileName: "user.json")
-        {
-            didSet {
-                if let value = loginUser {
-                    try? FileHelper.writeJSON(
-                        value,
-                        to: .documentDirectory,
-                        fileName: "user.json")
-                } else {
-                    try? FileHelper.delete(
-                        from: .documentDirectory,
-                        fileName: "user.json")
-                }
-            }
-        }
-         */
+        var loginUser: User?
         var loginRequesting = false
         var loginError: AppError?
 
