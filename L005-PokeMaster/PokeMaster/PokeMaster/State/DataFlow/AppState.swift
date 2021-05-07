@@ -26,12 +26,12 @@ extension AppState {
         enum AccountBehavior: CaseIterable {
             case register, login
         }
-
+        /*
         var accountBehavior = AccountBehavior.login
         var email = ""
         var password = ""
         var verifyPassword = ""
-
+         */
         class AccountChecker {
 
             @Published var accountBehavior = AccountBehavior.login
