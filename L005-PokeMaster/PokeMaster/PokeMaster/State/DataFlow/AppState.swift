@@ -34,6 +34,11 @@ extension AppState {
 
         class AccountChecker {
 
+            @Published var accountBehavior = AccountBehavior.login
+            @Published var email = ""
+            @Published var password = ""
+            @Published var verifyPassword = ""
+
         }
 
         var checker = AccountChecker()
