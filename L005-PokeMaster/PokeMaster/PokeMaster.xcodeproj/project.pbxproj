@@ -506,7 +506,7 @@
 			children = (
 				B7A0435C262D03D300891326 /* DataFlow */,
 				B7A04358262D03C000891326 /* Networking */,
-				B75F34CA263AAC4600B2E90A /* FileStorage.swift */,
+				B7F283A02644C4B40042FBAE /* FileIO */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -529,6 +529,14 @@
 				B71C536A262C7F61004B7A07 /* AppCommand.swift */,
 			);
 			path = DataFlow;
+			sourceTree = "<group>";
+		};
+		B7F283A02644C4B40042FBAE /* FileIO */ = {
+			isa = PBXGroup;
+			children = (
+				B75F34CA263AAC4600B2E90A /* FileStorage.swift */,
+			);
+			path = FileIO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
