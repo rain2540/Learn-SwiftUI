@@ -277,18 +277,16 @@
 		B7194EF824BF20E7000916ED /* PokeMaster */ = {
 			isa = PBXGroup;
 			children = (
-				B7194EF924BF20E7000916ED /* AppDelegate.swift */,
-				B7194EFB24BF20E7000916ED /* SceneDelegate.swift */,
-				B7194EFD24BF20E7000916ED /* ContentView.swift */,
 				B7A0434E262D03B300891326 /* State */,
 				B739CB342570EC4D00A2ACCD /* View */,
 				B7194F2B24BF2387000916ED /* JSON */,
 				B7194FAB24BF2A2C000916ED /* Model */,
 				B7194FBA24BF2ACE000916ED /* Utils */,
+				B7194EF924BF20E7000916ED /* AppDelegate.swift */,
+				B7194EFB24BF20E7000916ED /* SceneDelegate.swift */,
+				B7194EFD24BF20E7000916ED /* ContentView.swift */,
 				B7194EFF24BF20E9000916ED /* Assets.xcassets */,
-				B7194F0424BF20E9000916ED /* LaunchScreen.storyboard */,
-				B7194F0724BF20E9000916ED /* Info.plist */,
-				B7194F0124BF20E9000916ED /* Preview Content */,
+				B7F283A12644C62B0042FBAE /* Supporting Files */,
 			);
 			path = PokeMaster;
 			sourceTree = "<group>";
@@ -537,6 +535,16 @@
 				B75F34CA263AAC4600B2E90A /* FileStorage.swift */,
 			);
 			path = FileIO;
+			sourceTree = "<group>";
+		};
+		B7F283A12644C62B0042FBAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7194F0724BF20E9000916ED /* Info.plist */,
+				B7194F0424BF20E9000916ED /* LaunchScreen.storyboard */,
+				B7194F0124BF20E9000916ED /* Preview Content */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
