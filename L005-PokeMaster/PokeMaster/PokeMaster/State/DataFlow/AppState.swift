@@ -32,6 +32,10 @@ extension AppState {
         var password = ""
         var verifyPassword = ""
 
+        class AccountChecker {
+
+        }
+
         var showEnglishName = true
         var sorting = Sorting.id
         var showFavoriteOnly = false
