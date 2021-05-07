@@ -36,6 +36,8 @@ extension AppState {
 
         }
 
+        var checker = AccountChecker()
+
         var showEnglishName = true
         var sorting = Sorting.id
         var showFavoriteOnly = false
