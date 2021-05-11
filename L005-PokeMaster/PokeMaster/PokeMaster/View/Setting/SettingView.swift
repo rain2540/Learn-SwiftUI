@@ -84,26 +84,26 @@ struct SettingView: View {
     var accountSection: some View {
         Section(header: Text("账户")) {
             if settings.loginUser == nil {
-                Picker(selection: settingsBinding.accountBehavior, label: Text(""), content: {
+                Picker(selection: settingsBinding.checker.accountBehavior, label: Text(""), content: {
                     ForEach(AppState.Settings.AccountBehavior.allCases, id: \.self) {
                         Text($0.text)
                     }
                 })
                 .pickerStyle(SegmentedPickerStyle())
-                TextField("电子邮箱", text: settingsBinding.email)
-                SecureField("密码", text: settingsBinding.password)
-                if settings.accountBehavior == .register {
-                    SecureField("确认密码", text: settingsBinding.verifyPassword)
+                TextField("电子邮箱", text: settingsBinding.checker.email)
+                SecureField("密码", text: settingsBinding.checker.password)
+                if settings.checker.accountBehavior == .register {
+                    SecureField("确认密码", text: settingsBinding.checker.verifyPassword)
                 }
                 if settings.loginRequesting {
                     Text("登录中...")
                 } else {
-                    Button(settings.accountBehavior.text) {
+                    Button(settings.checker.accountBehavior.text) {
                         print("登录 / 注册")
                         self.store.dispatch(
                             .login(
-                                email: self.settings.email,
-                                password: self.settings.password
+                                email: self.settings.checker.email,
+                                password: self.settings.checker.password
                             )
                         )
                     }
