@@ -103,6 +103,7 @@
 		B77FC3E725B088B400CE76A1 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77FC3E625B088B400CE76A1 /* AppState.swift */; };
 		B77FC3EC25B08B5400CE76A1 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77FC3EB25B08B5400CE76A1 /* Store.swift */; };
 		B784439725C0E97A00E6FDBE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B784439625C0E97A00E6FDBE /* User.swift */; };
+		B7915C1E264BCE6900D649CB /* EmailCheckingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7915C1D264BCE6900D649CB /* EmailCheckingRequest.swift */; };
 		B7F067BD24E233150092056F /* PokemonInfoPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F067BC24E233150092056F /* PokemonInfoPanel.swift */; };
 /* End PBXBuildFile section */
 
@@ -226,6 +227,7 @@
 		B77FC3E625B088B400CE76A1 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		B77FC3EB25B08B5400CE76A1 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		B784439625C0E97A00E6FDBE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B7915C1D264BCE6900D649CB /* EmailCheckingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCheckingRequest.swift; sourceTree = "<group>"; };
 		B7F067BC24E233150092056F /* PokemonInfoPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoPanel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -513,6 +515,7 @@
 			isa = PBXGroup;
 			children = (
 				B75A3D2E26089062003ECDB6 /* LoginRequest.swift */,
+				B7915C1D264BCE6900D649CB /* EmailCheckingRequest.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -760,6 +763,7 @@
 				B739CB472570EF5800A2ACCD /* SettingView.swift in Sources */,
 				B7194EFC24BF20E7000916ED /* SceneDelegate.swift in Sources */,
 				B7194FB724BF2A2C000916ED /* Ability.swift in Sources */,
+				B7915C1E264BCE6900D649CB /* EmailCheckingRequest.swift in Sources */,
 				B7194FC024BF2ACE000916ED /* Helpers.swift in Sources */,
 				B75A3D4326089401003ECDB6 /* AppError.swift in Sources */,
 				B7F067BD24E233150092056F /* PokemonInfoPanel.swift in Sources */,
