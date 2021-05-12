@@ -63,6 +63,15 @@ extension AppState {
                                 return Just(true).eraseToAnyPublisher()
                         }
                     }
+
+                let emailLocalValid = $email.map { $0.isValidEmailAddress }
+                let canSkipLocalValid = $accountBehavior.map { $0 == .login }
+
+                return Publishers.CombineLatest3(
+                    emailLocalValid, canSkipLocalValid, remoteVerify
+                )
+                .map { $0 && ($1 || $2) }
+                .eraseToAnyPublisher()
             }
 
         }
