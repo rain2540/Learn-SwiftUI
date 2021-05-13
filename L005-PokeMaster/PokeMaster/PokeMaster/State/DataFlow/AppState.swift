@@ -78,6 +78,8 @@ extension AppState {
 
         var checker = AccountChecker()
 
+        var isEmailValid: Bool = false
+
         var showEnglishName = true
         var sorting = Sorting.id
         var showFavoriteOnly = false
