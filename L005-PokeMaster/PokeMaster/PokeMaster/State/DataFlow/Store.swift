@@ -13,6 +13,12 @@ class Store: ObservableObject {
     @Published var appState = AppState()
 
 
+    func setupObservers() {
+        appState.settings.checker.isEmailValid.sink { (isValid) in
+            
+        }
+    }
+
     func dispatch(_ action: AppAction) {
         #if DEBUG
         print("[ACTION]: \(action)")
