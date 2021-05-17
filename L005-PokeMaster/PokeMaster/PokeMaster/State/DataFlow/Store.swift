@@ -60,6 +60,9 @@ class Store: ObservableObject {
                         appState.settings.loginError = error
 
                 }
+
+            case .emailValid(let valid):
+                appState.settings.isEmailValid = valid
         }
         return (appState, appCommand)
     }
