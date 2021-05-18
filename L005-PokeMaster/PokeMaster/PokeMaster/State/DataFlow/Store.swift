@@ -19,7 +19,7 @@ class Store: ObservableObject {
 
     func setupObservers() {
         appState.settings.checker.isEmailValid.sink { (isValid) in
-
+            self.dispatch(.emailValid(valid: isValid))
         }
     }
 
