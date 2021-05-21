@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B70A16B725DE4FCA00889713 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A16B625DE4FCA00889713 /* AppAction.swift */; };
+		B7152C802657362400DAE879 /* LoadPokemonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7152C7F2657362400DAE879 /* LoadPokemonRequest.swift */; };
 		B7194EFA24BF20E7000916ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7194EF924BF20E7000916ED /* AppDelegate.swift */; };
 		B7194EFC24BF20E7000916ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7194EFB24BF20E7000916ED /* SceneDelegate.swift */; };
 		B7194EFE24BF20E7000916ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7194EFD24BF20E7000916ED /* ContentView.swift */; };
@@ -126,6 +127,7 @@
 
 /* Begin PBXFileReference section */
 		B70A16B625DE4FCA00889713 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		B7152C7F2657362400DAE879 /* LoadPokemonRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadPokemonRequest.swift; sourceTree = "<group>"; };
 		B7194EF624BF20E7000916ED /* PokeMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7194EF924BF20E7000916ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7194EFB24BF20E7000916ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -516,6 +518,7 @@
 			children = (
 				B75A3D2E26089062003ECDB6 /* LoginRequest.swift */,
 				B7915C1D264BCE6900D649CB /* EmailCheckingRequest.swift */,
+				B7152C7F2657362400DAE879 /* LoadPokemonRequest.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -763,6 +766,7 @@
 				B739CB472570EF5800A2ACCD /* SettingView.swift in Sources */,
 				B7194EFC24BF20E7000916ED /* SceneDelegate.swift in Sources */,
 				B7194FB724BF2A2C000916ED /* Ability.swift in Sources */,
+				B7152C802657362400DAE879 /* LoadPokemonRequest.swift in Sources */,
 				B7915C1E264BCE6900D649CB /* EmailCheckingRequest.swift in Sources */,
 				B7194FC024BF2ACE000916ED /* Helpers.swift in Sources */,
 				B75A3D4326089401003ECDB6 /* AppError.swift in Sources */,
