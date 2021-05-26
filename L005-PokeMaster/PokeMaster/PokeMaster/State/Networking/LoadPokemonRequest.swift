@@ -22,4 +22,16 @@ struct LoadPokemonRequest {
         .eraseToAnyPublisher()
     }
 
+    func speciesPublisher(
+        _ pokemon: Pokemon
+    ) -> AnyPublisher<(Pokemon, PokemonSpecies), Error>
+    {
+        URLSession.shared
+            .dataTaskPublisher(for: pokemon.species.url)
+            .map { $0.data }
+            .decode(type: PokemonSpecies.self, decoder: appDecoder)
+            .map { (pokemon, $0) }
+            .eraseToAnyPublisher()
+    }
+
 }
