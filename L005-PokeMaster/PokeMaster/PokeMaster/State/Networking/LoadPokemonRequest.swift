@@ -12,6 +12,15 @@ struct LoadPokemonRequest {
 
     let id: Int
 
+    var publisher: AnyPublisher<PokemonViewModel, AppError> {
+        pokemonPublisher(id)
+            .flatMap { self.speciesPublisher($0) }
+            .map { PokemonViewModel(pokemon: $0, species: $1) }
+            .mapError { AppError.networkingFailed($0) }
+            .receive(on: DispatchQueue.main)
+            .eraseToAnyPublisher()
+    }
+
 
     func pokemonPublisher(_ id: Int) -> AnyPublisher<Pokemon, Error> {
         URLSession.shared.dataTaskPublisher(
