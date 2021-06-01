@@ -10,6 +10,12 @@ import Combine
 
 struct LoadPokemonRequest {
 
+    static var all: AnyPublisher<[PokemonViewModel], AppError> {
+        (1 ... 30)
+            .map { LoadPokemonRequest(id: $0).publisher }
+            .zipAll
+    }
+
     let id: Int
 
     var publisher: AnyPublisher<PokemonViewModel, AppError> {
