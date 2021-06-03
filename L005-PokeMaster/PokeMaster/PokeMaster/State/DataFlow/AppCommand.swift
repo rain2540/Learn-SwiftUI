@@ -42,6 +42,13 @@ struct LoginAppCommand: AppCommand {
 }
 
 
+struct LoadPokemonsCommand {
+
+
+
+}
+
+
 class SubscriptionToken {
 
     var cancellable: AnyCancellable?
