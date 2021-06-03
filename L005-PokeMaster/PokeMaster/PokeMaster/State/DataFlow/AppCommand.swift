@@ -42,9 +42,11 @@ struct LoginAppCommand: AppCommand {
 }
 
 
-struct LoadPokemonsCommand {
+struct LoadPokemonsCommand: AppCommand {
 
+    func execute(in store: Store) {
 
+    }
 
 }
 
