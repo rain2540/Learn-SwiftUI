@@ -11,6 +11,7 @@ import Combine
 struct AppState {
 
     var settings = Settings()
+    var pokemonList = PokemonList()
 
 }
 
