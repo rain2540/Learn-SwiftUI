@@ -94,3 +94,12 @@ extension AppState {
     }
 
 }
+
+
+extension AppState {
+
+    struct PokemonList {
+
+    }
+
+}
