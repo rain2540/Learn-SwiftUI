@@ -76,7 +76,11 @@ class Store: ObservableObject {
                 appState.settings.isEmailValid = valid
 
             case .loadPokemons:
-                break
+                if appState.pokemonList.loadingPokemons {
+                    break
+                }
+                appState.pokemonList.loadingPokemons = true
+                appCommand = LoadPokemonsCommand()
 
             case .loadPokemonsDone(let result):
                 switch result {
