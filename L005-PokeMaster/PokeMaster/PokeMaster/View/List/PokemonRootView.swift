@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PokemonRootView: View {
 
+    @EnvironmentObject var store: Store
+
     var body: some View {
         NavigationView {
             PokemonList().navigationBarTitle("宝可梦列表")
