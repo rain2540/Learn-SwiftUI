@@ -13,7 +13,13 @@ struct PokemonRootView: View {
 
     var body: some View {
         NavigationView {
-            PokemonList().navigationBarTitle("宝可梦列表")
+            if store.appState.pokemonList.pokemons == nil {
+                Text("Loading...").onAppear(perform: {
+                    self.store.dispatch(.loadPokemons)
+                })
+            } else {
+                PokemonList().navigationBarTitle("宝可梦列表")
+            }
         }
     }
 
