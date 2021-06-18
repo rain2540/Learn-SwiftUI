@@ -9,11 +9,12 @@ import SwiftUI
 
 struct PokemonList: View {
 
+    @EnvironmentObject var store: Store
     @State var expandingIndex: Int?
 
     var body: some View {
         ScrollView {
-            ForEach(PokemonViewModel.all) { pokemon in
+            ForEach(store.appState.pokemonList.allPokemonsByID/*PokemonViewModel.all*/) { pokemon in
                 PokemonInfoRow(
                     model: pokemon,
                     expanded: self.expandingIndex == pokemon.id
