@@ -9,7 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!").foregroundColor(/*@START_MENU_TOKEN@*/.orange/*@END_MENU_TOKEN@*/).padding()
+        RoundedRectangle(cornerRadius: 20)
+            .stroke(lineWidth: 3)
+            .padding(.horizontal)
+            .foregroundColor(.red)
+        //Text("Hello, world!").foregroundColor(/*@START_MENU_TOKEN@*/.orange/*@END_MENU_TOKEN@*/).padding()
 
     }
 }
