@@ -41,57 +41,56 @@ class Store: ObservableObject {
     static func reduce(
         state: AppState,
         action: AppAction
-    ) -> (AppState, AppCommand?)
-    {
+    ) -> (AppState, AppCommand?) {
         var appState = state
         var appCommand: AppCommand?
 
         switch action {
-            case .login(let email, let password):
-                guard !appState.settings.loginRequesting else {
-                    break
-                }
-                appState.settings.loginRequesting = true
-                /*
-                if password == "password" {
-                    let user = User(email: email, favoritePokemonIDs: [])
-                    appState.settings.loginUser = user
-                }
-                */
-                appCommand = LoginAppCommand(email: email, password: password)
+        case .login(let email, let password):
+            guard !appState.settings.loginRequesting else {
+                break
+            }
+            appState.settings.loginRequesting = true
+            /*
+            if password == "password" {
+                let user = User(email: email, favoritePokemonIDs: [])
+                appState.settings.loginUser = user
+            }
+            */
+            appCommand = LoginAppCommand(email: email, password: password)
 
-            case .accountBehaviorDone(result: let result):
-                appState.settings.loginRequesting = false
-                switch result {
-                    case .success(let user):
-                        appState.settings.loginUser = user
+        case .accountBehaviorDone(result: let result):
+            appState.settings.loginRequesting = false
+            switch result {
+            case .success(let user):
+                appState.settings.loginUser = user
 
-                    case .failure(let error):
-                        //print("Error: \(error)")
-                        appState.settings.loginError = error
+            case .failure(let error):
+                //print("Error: \(error)")
+                appState.settings.loginError = error
 
-                }
+            }
 
-            case .emailValid(let valid):
-                appState.settings.isEmailValid = valid
+        case .emailValid(let valid):
+            appState.settings.isEmailValid = valid
 
-            case .loadPokemons:
-                if appState.pokemonList.loadingPokemons {
-                    break
-                }
-                appState.pokemonList.loadingPokemons = true
-                appCommand = LoadPokemonsCommand()
+        case .loadPokemons:
+            if appState.pokemonList.loadingPokemons {
+                break
+            }
+            appState.pokemonList.loadingPokemons = true
+            appCommand = LoadPokemonsCommand()
 
-            case .loadPokemonsDone(let result):
-                switch result {
-                    case .success(let models):
-                        appState.pokemonList.pokemons = Dictionary(
-                            uniqueKeysWithValues: models.map { ($0.id, $0) }
-                        )
+        case .loadPokemonsDone(let result):
+            switch result {
+            case .success(let models):
+                appState.pokemonList.pokemons = Dictionary(
+                    uniqueKeysWithValues: models.map { ($0.id, $0) }
+                )
 
-                    case .failure(let error):
-                        print(error)
-                }
+            case .failure(let error):
+                print(error)
+            }
         }
         return (appState, appCommand)
     }
