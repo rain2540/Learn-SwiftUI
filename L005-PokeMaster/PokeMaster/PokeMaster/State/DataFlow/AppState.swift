@@ -52,16 +52,16 @@ extension AppState {
                         let canSkip = self.accountBehavior == .login
 
                         switch (validEmail, canSkip) {
-                            case (false, _):
-                                return Just(false).eraseToAnyPublisher()
+                        case (false, _):
+                            return Just(false).eraseToAnyPublisher()
 
-                            case (true, false):
-                                return EmailCheckingRequest(email: email)
-                                    .publisher
-                                    .eraseToAnyPublisher()
+                        case (true, false):
+                            return EmailCheckingRequest(email: email)
+                                .publisher
+                                .eraseToAnyPublisher()
 
-                            case (true, true):
-                                return Just(true).eraseToAnyPublisher()
+                        case (true, true):
+                            return Just(true).eraseToAnyPublisher()
                         }
                     }
 
