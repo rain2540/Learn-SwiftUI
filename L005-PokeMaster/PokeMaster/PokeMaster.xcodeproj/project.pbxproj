@@ -1115,8 +1115,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://gitee.com/rain2540/Kingfisher.git";
 			requirement = {
-				kind = versionRange;
-				maximumVersion = 7.0.0;
+				kind = upToNextMajorVersion;
 				minimumVersion = 6.3.0;
 			};
 		};
