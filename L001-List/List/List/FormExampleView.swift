@@ -8,65 +8,65 @@
 import SwiftUI
 
 struct FormExampleView: View {
-    
-    let options = ["One", "Two"]
 
-    @State private var text = ""
-    @State private var password = ""
-    @State private var toggleOn = true
-    @State private var pickerSelection = 0
-    @State private var date = Date()
-    @State private var sliderValue = 4.0
-    @State private var stepperValue = 1
-    
-    var body: some View {
-      NavigationView {
-        Form {
+  let options = ["One", "Two"]
 
-          Section(header: Text("First Section")) {
+  @State private var text = ""
+  @State private var password = ""
+  @State private var toggleOn = true
+  @State private var pickerSelection = 0
+  @State private var date = Date()
+  @State private var sliderValue = 4.0
+  @State private var stepperValue = 1
 
-            Text("Text")
+  var body: some View {
+    NavigationView {
+      Form {
 
-            Image(systemName: "circle")
+        Section(header: Text("First Section")) {
 
-            TextField("TextField", text: $text)
+          Text("Text")
 
-            SecureField("SecureField", text: $password)
-          }
+          Image(systemName: "circle")
 
-          Section(header: Text("Second Section")) {
+          TextField("TextField", text: $text)
 
-            Button("Button") {
-              print("CLick Button in a list row")
-            }
-
-            Toggle("Toggle", isOn: $toggleOn)
-
-            HStack {
-              Text("Slider, Value: \(Int(sliderValue))")
-              Slider(value: $sliderValue, in: 0 ... 10)
-            }
-
-            Stepper("Stepper, Value: \(stepperValue)", value: $stepperValue)
-          }
-
-          Section(header: Text("Third Section")) {
-            Picker(selection: $pickerSelection, label: Text("Picker")) {
-              ForEach(0 ..< options.count) {
-                Text(self.options[$0]).tag($0)
-              }
-            }
-
-            DatePicker("DatePicker", selection: $date)
-          }
+          SecureField("SecureField", text: $password)
         }
-        .navigationBarTitle(Text("Form Examples"))
+
+        Section(header: Text("Second Section")) {
+
+          Button("Button") {
+            print("CLick Button in a list row")
+          }
+
+          Toggle("Toggle", isOn: $toggleOn)
+
+          HStack {
+            Text("Slider, Value: \(Int(sliderValue))")
+            Slider(value: $sliderValue, in: 0 ... 10)
+          }
+
+          Stepper("Stepper, Value: \(stepperValue)", value: $stepperValue)
+        }
+
+        Section(header: Text("Third Section")) {
+          Picker(selection: $pickerSelection, label: Text("Picker")) {
+            ForEach(0 ..< options.count) {
+              Text(self.options[$0]).tag($0)
+            }
+          }
+
+          DatePicker("DatePicker", selection: $date)
+        }
       }
+      .navigationBarTitle(Text("Form Examples"))
     }
+  }
 }
 
 struct FormExampleView_Previews: PreviewProvider {
-    static var previews: some View {
-        FormExampleView()
-    }
+  static var previews: some View {
+    FormExampleView()
+  }
 }
